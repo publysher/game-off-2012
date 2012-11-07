@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dinner at the Long Branch Saloon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link href='http://fonts.googleapis.com/css?family=Smokum' rel='stylesheet' type='text/css'>
+    <!--<link rel="stylesheet" href="assets/game/interpreter/glkote.css" type="text/css">-->
+    <style>
+        #errorpane {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            background: #FF4040;
+            padding-bottom: 3px;
+        }
+
+        #errorcontent {
+            padding: 8px;
+            text-align: center;
+            background: #FFA0A0;
+        }
+
+        #loadingpane {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 20%;
+        }
+
+        #layouttestpane {
+            position: absolute;
+            visibility: hidden;
+            top: 0;
+            /* Move this way off the screen. Even though it's hidden, Firefox has
+   a nasty habit of showing the inactive scroll bar. */
+            left: -1000px;
+        }
+
+        .WindowFrame {
+            /* This class provides the default background color of windows. You
+  can change that, but don't touch the position or margin. */
+            position: absolute;
+            margin: 0;
+            background: white;
+        }
+
+        .BufferWindow {
+            overflow: scroll;   /* vertical scrollbar is mandatory */
+            overflow-x: hidden; /* but horizontal scrollbar is forbidden */
+            /*font-family: Georgia, "Times New Roman", Times, serif;*/
+            /*font-size: 13px;*/
+            /*line-height: 1.4;*/
+            padding: 6px 10px 6px 10px;
+        }
+
+        .BufferLine {
+        }
+
+        .GridWindow {
+            background: #D0D0C0;
+            overflow: hidden;
+            font-family: monaco, andale mono, lucidatypewriter, courier, courier new, monospace; /* necessary! */
+            font-size: 12px;
+            padding: 6px 10px 6px 10px;
+        }
+
+        .GridLine {
+            white-space: pre; /* required for spaces to work right */
+        }
+
+        .InvisibleCursor {
+            /* This provides the padding below the last line of text (and the input
+ prompt). Without this, they'd be flush against the bottom of the
+ window, which would be ugly. Do not modify this CSS class. */
+            position: relative;
+            padding-bottom: 14px;
+        }
+
+        .MorePrompt {
+            /* This describes the "More" prompt that flashes in the bottom right corner
+     of a window when it needs paging. */
+            font-weight: bold;
+            position: absolute;
+            background: #603010;
+            color: #FFFFCC;
+            opacity: 0.5;
+            padding: 2px 6px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+        }
+
+        .Input {
+            /* This class mimicks the Style_input class. It also eliminates the
+  usual decoration of an <input> field, as much as possible. */
+            border: none;
+            margin: 0px;
+            padding: 0px;
+            outline-width: 0px;
+            outline-style: none;
+            background: none;
+            font-weight: bold;
+        }
+
+        .BufferWindow .Input {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            font-size: 13px;
+        }
+
+        .GridWindow .Input {
+            font-family: monaco, andale mono, lucidatypewriter, courier, courier new, monospace;  necessary!
+            font-size: 12px;
+        }
+
+            /* The following are the standard Glk styles. */
+
+        .Style_normal {
+        }
+
+        .Style_emphasized {
+            font-style: italic;
+        }
+
+        .Style_preformatted {
+            font-family: monaco, andale mono, lucidatypewriter, courier, courier new, monospace;
+        }
+
+        .Style_header {
+            font-weight: bold;
+        }
+
+        .BufferWindow .Style_header {
+            font-size: 18px;
+        }
+
+        .Style_subheader {
+            font-weight: bold;
+        }
+
+        .Style_alert {
+            font-weight: bold;
+        }
+
+        .Style_note {
+            font-style: italic;
+        }
+
+        .Style_blockquote {
+            background: #FFF0C0;
+        }
+
+        .Style_input {
+            font-weight: bold;
+            color: #300000;
+        }
+
+        .Style_user1 {
+        }
+
+        .Style_user2 {
+        }
+    </style>
+    <link rel="stylesheet" href="assets/game/interpreter/dialog.css" type="text/css">
+    <style>
+        body {
+        }
+
+        h1 {
+            font-family: 'Smokum', cursive; 
+        }
+
+        .game-area {
+            min-height: 480px;
+        }
+
+        .input-area {
+            display: none;
+        }
+
+        #gameport {
+            position: relative;
+        }
+
+        #windowport {
+            min-height: 450px;
+            margin-top: -32px;
+        }
+
+        #windowport > div:first-child {
+            display: none;
+        }
+
+        #windowport .WindowFrame input {
+            display: none;
+        }
+
+        /* bootstrap fix */
+        .dropup .dropdown-submenu > .dropdown-menu {
+            top: auto;
+            bottom: 0;
+        }
+
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="container">
+    <h1 class="page-header">Dinner at the Long Branch Saloon</h1>
+    <div class="row game-area">
+        <div class="span5" id="image-area">
+            <div class="thumbnail">
+                <img src="" class="span12"/>
+                <h5>Caption</h5>
+            </div>
+        </div>
+
+        <div class="span7 text-area">
+            <div id="gameport">
+                <div id="windowport">
+                    <noscript><hr>
+                        <p>You'll need to turn on Javascript in your web browser to play this game.</p>
+                        <hr></noscript>
+                </div>
+                <div id="loadingpane">
+                    <img src="assets/game/interpreter/waiting.gif" alt="LOADING"><br>
+                    <em>&nbsp;&nbsp;&nbsp;Loading...</em>
+                </div>
+                <div id="errorpane" style="display:none;"><div id="errorcontent">...</div></div>
+                <div id="layouttestpane">
+                    This should not be visible
+                    <div id="layouttest_grid" class="WindowFrame GridWindow"><div id="layouttest_gridline" class="GridLine"><span id="layouttest_gridspan" class="Style_normal">12345678</span></div><div id="layouttest_gridline2" class="GridLine"><span class="Style_normal">12345678</span></div></div>
+                    <div id="layouttest_buffer" class="WindowFrame BufferWindow"><div id="layouttest_bufferline" class="BufferLine"><span id="layouttest_bufferspan" class="Style_normal">12345678</span></div><div id="layouttest_bufferline2" class="BufferLine"><span class="Style_normal">12345678</span></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-area">
+        <div class="btn-toolbar pull-left">
+            <a href="#" class="btn btn-large" data-command="save">
+                <i class="icon-save"></i>
+                Save
+            </a>
+            <a href="#" class="btn btn-large" data-command="restore">
+                <i class="icon-download"></i>
+                Load
+            </a>
+        </div>
+
+        <div class="btn-toolbar pull-right">
+            <div class="btn-group dropup">
+                <a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="go">
+                    <i class="icon-move"></i>
+                    Go
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" data-command="go">
+                    <li><a href="">North</a></li>
+                    <li><a href="">South</a></li>
+                    <li><a href="">East</a></li>
+                </ul>
+            </div>
+            <div class="btn-group dropup">
+                <a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="look">
+                    <i class="icon-eye-open"></i>
+                    Look at
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" data-command="look">
+                    <li class="nav-header">Items</li>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li class="nav-header">Your inventory</li>
+                    <li><a href="">Item 3</a></li>
+                </ul>
+            </div>
+            <div class="btn-group dropup">
+                <a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="ask">
+                    <i class="icon-comment"></i>
+                    Ask
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" data-command="ask">
+                    <li class="nav-header">Items</li>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li class="nav-header">Your inventory</li>
+                    <li><a href="">Item 3</a></li>
+                </ul>
+            </div>
+            <div class="btn-group dropup">
+                <a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="take">
+                    <i class="icon-briefcase"></i>
+                    Take
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" data-command="take">
+                    <li class="nav-header">Items</li>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li class="nav-header">Your inventory</li>
+                    <li><a href="">Item 3</a></li>
+                </ul>
+            </div>
+            <div class="btn-group dropup">
+                <a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="drop">
+                    <i class="icon-trash"></i>
+                    Drop
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" data-command="drop">
+                    <li class="nav-header">Items</li>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li class="nav-header">Your inventory</li>
+                    <li><a href="">Item 3</a></li>
+                </ul>
+            </div>
+            <div class="btn-group dropup">
+                <a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="use">
+                    <i class="icon-wrench"></i>
+                    Use
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" data-command="use">
+                    <li class="nav-header">Items</li>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li class="nav-header">Your inventory</li>
+                    <li><a href="">Item 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="input-area">
+        <div class="control-group">
+            <!--<label for="prompt" class="control-label"></label>-->
+            <div class="controls">
+                <div class="input-prepend">
+                    <span class="add-on"><i class="icon-chevron-right"></i></span>
+                    <input class="span11" type="text" id="prompt" autofocus/>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/game/interpreter/glkote.min.js" type="text/javascript"></script>
+<script src="assets/game/interpreter/quixe.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    game_options = {
+        use_query_story: false,
+        set_page_title: false,
+        inspacing: 0,     // gap between windows
+        outspacing: 0     // gap between windows and edge of gameport
+    };
+</script>
+<script>
+    (function($) {
+
+        function glk_wrapper(delegate) {
+            var game;
+            var generation = 0;
+            var game_win;
+            var initialized = false;
+            var querying = false;
+
+            function init(iface) {
+                game = iface;
+
+                delegate.init(game);
+            }
+
+            function evaluate(json) {
+                var update = $.parseJSON(json);
+                UI.update(update);
+            }
+
+            function filter(arg, lines_to_remove) {
+                // filters the information passed from the game to glkote.
+
+                if (arg.content && arg.content.length == 2) {
+                    var lines = arg.content[1].text;
+                    var newlines = [];
+
+                    for (var i = 0; lines.length; i++) {
+                        var line = lines.shift();
+
+                        if (i < lines_to_remove) {
+                            continue;
+                        }
+
+                        if (line && line.content) {
+                            if (line.content[1] == ">") {
+                                continue;
+                            }
+
+                            if (line.content[1].startsWith("{")) {
+                                evaluate(line.content[1]);
+                                continue;
+                            }
+                            if (line.content[1] == "urbzig") {
+                                continue;
+                            }
+                        }
+
+                        newlines.push(line);
+                    }
+
+                    arg.content[1].text = newlines;
+                }
+            }
+
+            function update(arg) {
+                var lines_to_remove = 0;
+                if (!initialized) {
+                    game_win = arg.content[1].id;
+                    lines_to_remove = 4;
+                    initialized = true;
+                }
+
+                generation = arg.gen;
+                filter(arg, lines_to_remove);
+
+                delegate.update(arg);
+
+                if (!querying) {
+                    querying = true;
+                    command("urbzig");
+                    querying = false;
+                }
+            }
+
+            function command(command) {
+                game.accept({
+                    type: 'line',
+                    gen: generation,
+                    window: game_win,
+                    value: command
+                });
+            }
+
+            return {
+                log: delegate.log,
+                error: delegate.error,
+                init: init,
+                update: update,
+                getinterface: delegate.getinterface,
+                command: command
+            };
+        }
+
+        GlkOte = glk_wrapper(GlkOte);
+
+    })(jQuery);
+</script>
+
+<script>
+    var UI;
+
+    (function($){
+        var $image;
+        var $imageCaption;
+        var $save;
+        var $load;
+        var $menu_look = $("ul[data-command='look']");
+        var $menu_go = $("ul[data-command='go']");
+        var $menu_take = $("ul[data-command='take']");
+        var $menu_drop = $("ul[data-command='drop']");
+        var $menu_ask = $("ul[data-command='ask']");
+        var $menu_use = $("ul[data-command='use']");
+
+        var $menus;
+
+
+        function init() {
+            $image = $("#image-area img");
+            $imageCaption = $("#image-area h5");
+            $save = $("a[data-command='save']");
+            $load = $("a[data-command='restore']");
+
+            $menus = $menu_look.add($menu_go).add($menu_take).add($menu_drop).add($menu_ask).add($menu_use);
+
+            $save.add($load).on("click", function(evt) {
+                evt.preventDefault();
+                GlkOte.command($(this).attr("data-command"));
+            });
+
+        }
+
+        function add_command($menu, text, command) {
+            var $li = $("<li></li>");
+            var $a = $("<a></a>").appendTo($li).attr("href", "#");
+            $a.text(text);
+            $a.on("click", function(evt) {
+                GlkOte.command(command);
+            });
+            $menu.append($li);
+        }
+
+        function add_header($menu, text) {
+            var $li = $("<li></li>").addClass("nav-header");
+            $li.text(text);
+            $menu.append($li);
+        }
+
+        function add_menu($menu, text) {
+            var $li = $("<li></li>").addClass("dropdown-submenu");
+            var $a = $("<a></a>").appendTo($li).attr("href", "#").text(text);
+            $menu.append($li);
+
+            var $new_menu = $("<ul></ul>").addClass("dropdown-menu");
+            $li.append($new_menu);
+
+            return $new_menu;
+        }
+
+        function update(data) {
+            console.log("Updating ", data);
+            $image.attr("src", "game-assets/" + data.location.replace(/\s+/g, "-") + ".jpg");
+            $imageCaption.text(data.location);
+
+            $menus.empty();
+
+            $.each(data.directions, function(i, dir) {
+                add_command($menu_go, dir, "go " + dir);
+            });
+
+            if (data.items.length) {
+                add_header($menu_look, "Items in the room");
+            }
+            $.each(data.items, function(i, item) {
+                add_command($menu_look, item, "look at " + item);
+                add_command($menu_take, item, "take " + item);
+            });
+
+            if (data.persons.length) {
+                add_header($menu_look, "People in the room");
+            }
+            $.each(data.persons, function(i, person) {
+                add_command($menu_look, person, "look at " + person);
+                var $menu = add_menu($menu_ask, person);
+
+                if (data.items.length) {
+                    add_header($menu, "About your surroundings");
+                    $.each(data.items, function(i, item) {
+                        add_command($menu, item, "ask " + person + " about " + item);
+                    });
+                }
+
+                if (data.subjects.length) {
+                    add_header($menu, "About various subjects");
+                    $.each(data.subjects, function(i, item) {
+                        add_command($menu, item, "ask " + person + " about " + item);
+                    });
+                }
+
+                if (data.inventory.length) {
+                    add_header($menu, "About your inventory");
+                    $.each(data.inventory, function(i, item) {
+                        add_command($menu, item, "ask " + person + " about " + item);
+                    });
+                }
+            });
+
+            if (data.inventory.length) {
+                add_header($menu_look, "Your inventory")
+            }
+            $.each(data.inventory, function(i, item) {
+                add_command($menu_look, item, "look at " + item);
+                add_command($menu_drop, item, "drop " + item);
+                add_command($menu_use, item, "use " + item);
+            });
+        }
+
+        UI = {
+            update: update
+        };
+
+        $(init);
+    })(jQuery);
+</script>
+
+<script src="assets/game/interpreter/Dinner at the Long Branch Saloo.gblorb.js" type="text/javascript"></script>
+</body>
+</html>
