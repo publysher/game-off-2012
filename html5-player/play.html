@@ -114,7 +114,7 @@
         }
 
         .GridWindow .Input {
-            font-family: monaco, andale mono, lucidatypewriter, courier, courier new, monospace;  necessary!
+            font-family: monaco, andale mono, lucidatypewriter, courier, courier new, monospace;
             font-size: 12px;
         }
 
@@ -124,7 +124,9 @@
         }
 
         .Style_emphasized {
-            font-style: italic;
+            /*font-style: italic;*/
+            font-variant: small-caps;
+            color: #333;
         }
 
         .Style_preformatted {
@@ -158,6 +160,15 @@
         .Style_input {
             font-weight: bold;
             color: #300000;
+
+            display: block;
+            margin-top: 1em;
+            padding-top: 1em;
+            border-top: 1px solid black;
+        }
+        .Style_input:before {
+            content: '> ';
+            font-weight: bold;
         }
 
         .Style_user1 {
@@ -188,7 +199,7 @@
         }
 
         #windowport {
-            min-height: 450px;
+            min-height: 510px;
             margin-top: -32px;
         }
 
@@ -246,113 +257,121 @@
         </div>
     </div>
     <div class="button-area">
-        <div class="btn-toolbar pull-left">
-            <a href="#" class="btn btn-large" data-command="save">
-                <i class="icon-save"></i>
-                Save
-            </a>
-            <a href="#" class="btn btn-large" data-command="restore">
-                <i class="icon-download"></i>
-                Load
-            </a>
-        </div>
-
-        <div class="btn-toolbar pull-right">
-            <div class="btn-group dropup">
-                <a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="go">
-                    <i class="icon-move"></i>
-                    Go
-                    <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" data-command="go">
-                    <li><a href="">North</a></li>
-                    <li><a href="">South</a></li>
-                    <li><a href="">East</a></li>
-                </ul>
-            </div>
-            <div class="btn-group dropup">
-                <a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="look">
-                    <i class="icon-eye-open"></i>
-                    Look at
-                    <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" data-command="look">
-                    <li class="nav-header">Items</li>
-                    <li><a href="">Item 1</a></li>
-                    <li><a href="">Item 2</a></li>
-                    <li class="nav-header">Your inventory</li>
-                    <li><a href="">Item 3</a></li>
-                </ul>
-            </div>
-            <div class="btn-group dropup">
-                <a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="ask">
-                    <i class="icon-comment"></i>
-                    Ask
-                    <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" data-command="ask">
-                    <li class="nav-header">Items</li>
-                    <li><a href="">Item 1</a></li>
-                    <li><a href="">Item 2</a></li>
-                    <li class="nav-header">Your inventory</li>
-                    <li><a href="">Item 3</a></li>
-                </ul>
-            </div>
-            <div class="btn-group dropup">
-                <a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="take">
-                    <i class="icon-briefcase"></i>
-                    Take
-                    <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" data-command="take">
-                    <li class="nav-header">Items</li>
-                    <li><a href="">Item 1</a></li>
-                    <li><a href="">Item 2</a></li>
-                    <li class="nav-header">Your inventory</li>
-                    <li><a href="">Item 3</a></li>
-                </ul>
-            </div>
-            <div class="btn-group dropup">
-                <a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="drop">
-                    <i class="icon-trash"></i>
-                    Drop
-                    <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" data-command="drop">
-                    <li class="nav-header">Items</li>
-                    <li><a href="">Item 1</a></li>
-                    <li><a href="">Item 2</a></li>
-                    <li class="nav-header">Your inventory</li>
-                    <li><a href="">Item 3</a></li>
-                </ul>
-            </div>
-            <div class="btn-group dropup">
-                <a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="use">
-                    <i class="icon-wrench"></i>
-                    Use
-                    <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" data-command="use">
-                    <li class="nav-header">Items</li>
-                    <li><a href="">Item 1</a></li>
-                    <li><a href="">Item 2</a></li>
-                    <li class="nav-header">Your inventory</li>
-                    <li><a href="">Item 3</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="input-area">
-        <div class="control-group">
-            <!--<label for="prompt" class="control-label"></label>-->
+        <!--<div class="btn-toolbar pull-left">-->
+            <!--<a href="#" class="btn btn-large" data-command="save">-->
+                <!--<i class="icon-save"></i>-->
+                <!--Save-->
+            <!--</a>-->
+            <!--<a href="#" class="btn btn-large" data-command="restore">-->
+                <!--<i class="icon-download"></i>-->
+                <!--Load-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="btn-toolbar pull-right">-->
+            <!--<div class="btn-group dropup">-->
+                <!--<a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="go">-->
+                    <!--<i class="icon-move"></i>-->
+                    <!--Go-->
+                    <!--<span class="caret"></span>-->
+                <!--</a>-->
+                <!--<ul class="dropdown-menu" data-command="go">-->
+                    <!--<li><a href="">North</a></li>-->
+                    <!--<li><a href="">South</a></li>-->
+                    <!--<li><a href="">East</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="btn-group dropup">-->
+                <!--<a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="look">-->
+                    <!--<i class="icon-eye-open"></i>-->
+                    <!--Look at-->
+                    <!--<span class="caret"></span>-->
+                <!--</a>-->
+                <!--<ul class="dropdown-menu" data-command="look">-->
+                    <!--<li class="nav-header">Items</li>-->
+                    <!--<li><a href="">Item 1</a></li>-->
+                    <!--<li><a href="">Item 2</a></li>-->
+                    <!--<li class="nav-header">Your inventory</li>-->
+                    <!--<li><a href="">Item 3</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="btn-group dropup">-->
+                <!--<a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="ask">-->
+                    <!--<i class="icon-comment"></i>-->
+                    <!--Ask-->
+                    <!--<span class="caret"></span>-->
+                <!--</a>-->
+                <!--<ul class="dropdown-menu" data-command="ask">-->
+                    <!--<li class="nav-header">Items</li>-->
+                    <!--<li><a href="">Item 1</a></li>-->
+                    <!--<li><a href="">Item 2</a></li>-->
+                    <!--<li class="nav-header">Your inventory</li>-->
+                    <!--<li><a href="">Item 3</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="btn-group dropup">-->
+                <!--<a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="take">-->
+                    <!--<i class="icon-briefcase"></i>-->
+                    <!--Take-->
+                    <!--<span class="caret"></span>-->
+                <!--</a>-->
+                <!--<ul class="dropdown-menu" data-command="take">-->
+                    <!--<li class="nav-header">Items</li>-->
+                    <!--<li><a href="">Item 1</a></li>-->
+                    <!--<li><a href="">Item 2</a></li>-->
+                    <!--<li class="nav-header">Your inventory</li>-->
+                    <!--<li><a href="">Item 3</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="btn-group dropup">-->
+                <!--<a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="drop">-->
+                    <!--<i class="icon-trash"></i>-->
+                    <!--Drop-->
+                    <!--<span class="caret"></span>-->
+                <!--</a>-->
+                <!--<ul class="dropdown-menu" data-command="drop">-->
+                    <!--<li class="nav-header">Items</li>-->
+                    <!--<li><a href="">Item 1</a></li>-->
+                    <!--<li><a href="">Item 2</a></li>-->
+                    <!--<li class="nav-header">Your inventory</li>-->
+                    <!--<li><a href="">Item 3</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div class="btn-group dropup">-->
+                <!--<a href="#" class="btn btn-large dropdown-toggle" data-toggle="dropdown" data-command="use">-->
+                    <!--<i class="icon-wrench"></i>-->
+                    <!--Use-->
+                    <!--<span class="caret"></span>-->
+                <!--</a>-->
+                <!--<ul class="dropdown-menu" data-command="use">-->
+                    <!--<li class="nav-header">Items</li>-->
+                    <!--<li><a href="">Item 1</a></li>-->
+                    <!--<li><a href="">Item 2</a></li>-->
+                    <!--<li class="nav-header">Your inventory</li>-->
+                    <!--<li><a href="">Item 3</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+        <form id="prompt-form" class="control-group pull-right">
+            <label for="prompt" class="control-label"></label>
             <div class="controls">
                 <div class="input-prepend">
-                    <span class="add-on"><i class="icon-chevron-right"></i></span>
-                    <input class="span11" type="text" id="prompt" autofocus/>
-                </div>
-           </div>
+                <span class="add-on"><i class="icon-chevron-right"></i></span>
+                <input class="span7" type="text" id="prompt" autofocus/>
+            </div>
         </div>
+        </form>
     </div>
+    <div class="input-area">
+        <!--<div class="control-group">-->
+            <!--<label for="prompt" class="control-label"></label>-->
+            <!--<div class="controls">-->
+                <!--<div class="input-prepend">-->
+                    <!--<span class="add-on"><i class="icon-chevron-right"></i></span>-->
+                    <!--<input class="span11" type="text" id="prompt" autofocus/>-->
+                <!--</div>-->
+           <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
 </div>
 
 <script src="assets/js/jquery.js"></script>
@@ -481,6 +500,8 @@
         var $menu_drop = $("ul[data-command='drop']");
         var $menu_ask = $("ul[data-command='ask']");
         var $menu_use = $("ul[data-command='use']");
+        var $promptForm = $("#prompt-form");
+        var $prompt = $("#prompt-form #prompt");
 
         var $menus;
 
@@ -492,6 +513,12 @@
             $load = $("a[data-command='restore']");
 
             $menus = $menu_look.add($menu_go).add($menu_take).add($menu_drop).add($menu_ask).add($menu_use);
+
+            $promptForm.on("submit", function(evt) {
+                evt.preventDefault();
+                GlkOte.command($prompt.val());
+                $prompt.val("").focus();
+            });
 
             $save.add($load).on("click", function(evt) {
                 evt.preventDefault();
@@ -528,7 +555,6 @@
         }
 
         function update(data) {
-            console.log("Updating ", data);
             $image.attr("src", "game-assets/" + data.location.replace(/\s+/g, "-") + ".jpg");
             $imageCaption.text(data.location);
 
