@@ -1,25 +1,28 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x297830" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x2057300" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1744dca0" />
-  <item nodeId="node-0x297830">
+  <activeNode nodeId="node-0x2057300" />
+  <item nodeId="node-0x2057300">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
+
 The player has the default description.
-Thoroughfare has no description.
 Zimmermann&apos;s Hardware Store has no description.
+Thoroughfare has no description.
 Hoover&apos;s Liquor and Cigar store has no description.
-Dodge Town has no description.
-Great Western Cattle Trail has no description.
-bank in Abilene has no description.
-dinner has no description.
-fork has no description.
-steak has no description.
 bull&apos;s horns has no description.
 rickety chairs and tables has no description.
 wall has no description.
+Dodge Town has no description.
+Great Western Cattle Trail has no description.
+bank in Abilene has no description.
+steak has no description.
+fork has no description.
+spoon has no description.
+dinner has no description.
+
 
 
 
@@ -32,7 +35,7 @@ Travelers on the road have suggested dinner in the Long Branch Saloon.
  
 Dinner at the Long Branch Saloon
 An adventure on the American Frontier by Publysher
-Release 1 / Serial number 121107 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 121109 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Long Branch Saloon
 The saloon is dominated by a long bar to the right. Behind the bar, a few paintings try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
@@ -41,482 +44,59 @@ At the back of the saloon a few rickety chairs and tables have been haphazardly 
 
 You can see a barman here.
 
-Exits: outside.
-
 You can review your surroundings at any time by typing LOOK. Try it -- type LOOK now. (Or, if you don&apos;t need instructions, you can turn the tutorial off by typing TUTORIAL MODE OFF.)
+
 &gt;</result>
     <commentary xml:space="preserve">
 
 
+The player has the default description.
+Zimmermann&apos;s Hardware Store has no description.
+Thoroughfare has no description.
+Hoover&apos;s Liquor and Cigar store has no description.
+bull&apos;s horns has no description.
+rickety chairs and tables has no description.
+wall has no description.
+Dodge Town has no description.
+Great Western Cattle Trail has no description.
+bank in Abilene has no description.
+steak has no description.
+fork has no description.
+spoon has no description.
+dinner has no description.
 
+
+
+In 1878, the American Frontier is still very much alive. Especially so in the new settlement called Dodge Town. As the endpoint of the Great Western Cattle Trail, it is nicknamed the Queen of the Cow Cities. Founded only six years ago, Dodge Town is growing rapidly and known as a true frontier settlement.
+
+You are Glen &quot;The Gentleman&quot; Fletcher, outlaw by name, gentleman by nature.  Only two days ago you robbed a bank in Abilene and decided to lay low for a while in this interesting town. You have arrived safely, but you have one pressing need: you are very hungry and need some food as soon as possible.
+
+Travelers on the road have suggested dinner in the Long Branch Saloon. 
+
+ 
 Dinner at the Long Branch Saloon
 An adventure on the American Frontier by Publysher
-Release 1 / Serial number 121031 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 121108 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
-The Thoroughfare
-Exits: west, east and north.
+Long Branch Saloon
+The saloon is dominated by a long bar to the right. Behind the bar, a few paintings try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
+
+At the back of the saloon a few rickety chairs and tables have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few paintings. Below the paintings you can see today&apos;s menu. 
+
+You can see a barman here.
+
+You can review your surroundings at any time by typing LOOK. Try it -- type LOOK now. (Or, if you don&apos;t need instructions, you can turn the tutorial off by typing TUTORIAL MODE OFF.)
 
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="38">NO</temporary>
+    <temporary score="71">NO</temporary>
     <children>
-      <child nodeId="node-0x2db240" />
-      <child nodeId="node-0x2daf20" />
-      <child nodeId="node-0x2dae40" />
-      <child nodeId="node-0x2dadd0" />
-      <child nodeId="node-0x2da640" />
-      <child nodeId="node-0x2dab30" />
-      <child nodeId="node-0x2daac0" />
-      <child nodeId="node-0x2da580" />
-      <child nodeId="node-0x2da8d0" />
-      <child nodeId="node-0x2da4a0" />
-      <child nodeId="node-0x2da3b0" />
-      <child nodeId="node-0x2da120" />
-      <child nodeId="node-0x2977a0" />
+      <child nodeId="node-0x2070f50" />
+      <child nodeId="node-0x2057660" />
     </children>
   </item>
-  <item nodeId="node-0x2977a0">
-    <command xml:space="preserve">extensions</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="307">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da0d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da0d0">
-    <command xml:space="preserve">?</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="306">YES</temporary>
-  </item>
-  <item nodeId="node-0x2da120">
-    <command xml:space="preserve">showme steak</command>
-    <result xml:space="preserve">steak - thing
-location: out of play
-singular-named, improper-named; unlit, edible, portable, unseen, unfamiliar
-printed name: &quot;steak&quot;
-printed plural name: none
-indefinite article: none
-description: none
-initial appearance: none
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="174">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da2c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da2c0">
-    <command xml:space="preserve">ask barman about steak</command>
-    <result xml:space="preserve">You don&apos;t what to say about the steak.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="174">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da310" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da310">
-    <command xml:space="preserve">x menu</command>
-    <result xml:space="preserve">&quot;Today: steak,&quot; someone has written. Catchy and to the point.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="174">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da360" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da360">
-    <command xml:space="preserve">ask barman about steak</command>
-    <result xml:space="preserve">The barman shakes his head. &quot;I don&apos;t know anything about that.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="173">YES</temporary>
-  </item>
-  <item nodeId="node-0x2da3b0">
-    <command xml:space="preserve">ask barman about food</command>
-    <result xml:space="preserve">&quot;Barman, I&apos;d like some food,&quot; you say.  
-
-&quot;Some food?,&quot; the barman replies, &quot;We don&apos;t serve no f***ing some food. Look at the f***ing menu and make up your mind.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="188">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da400" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da400">
-    <command xml:space="preserve">look at the menu</command>
-    <result xml:space="preserve">&quot;Today: steak,&quot; someone has written. Catchy and to the point.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="188">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da450" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da450">
-    <command xml:space="preserve">ask barman about steak</command>
-    <result xml:space="preserve">&quot;Here you are, sir, one of the finest steaks in Dodge Town. Slaughtered and prepared for your f***ing pleasure.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="187">YES</temporary>
-  </item>
-  <item nodeId="node-0x2da4a0">
-    <command xml:space="preserve">x signs</command>
-    <result xml:space="preserve">That noun did not make sense in this context.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="244">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da510" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da510">
-    <command xml:space="preserve">x sign</command>
-    <result xml:space="preserve">Dodge City
-
-Check your guns.
-
-Try Prickly Ash Bitters 
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="243">YES</temporary>
-  </item>
-  <item nodeId="node-0x2da8d0">
-    <command xml:space="preserve">east</command>
-    <result xml:space="preserve">You don&apos;t want to go there.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="246">YES</temporary>
-  </item>
-  <item nodeId="node-0x2da580">
-    <command xml:space="preserve">go east</command>
-    <result xml:space="preserve">You don&apos;t want to go there.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="249">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da5d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da5d0">
-    <command xml:space="preserve">x sign</command>
-    <result xml:space="preserve">Dodge City
-
-The carrying 
- of Fire Arms 
- is prohibited
-
-Try 
- Prickly Ash 
- Bitters 
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="248">YES</temporary>
-  </item>
-  <item nodeId="node-0x2daac0">
-    <command xml:space="preserve">read sign</command>
-    <result xml:space="preserve">The sign reads: &quot;Dodge City
-
-The carrying of Fire Arms is prohibited.
-
-Try Prickly Ash Bitters!&quot; 
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="250">YES</temporary>
-  </item>
-  <item nodeId="node-0x2dab30">
-    <command xml:space="preserve">x sign</command>
-    <result xml:space="preserve">The sign reads: &quot;Dodge City 
- The carrying of Fire Arms is prohibited. 
- Try Prickly Ash Bitters!&quot; 
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="257">YES</temporary>
-    <children>
-      <child nodeId="node-0x2daba0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2daba0">
-    <command xml:space="preserve">x</command>
-    <result xml:space="preserve">(the sign)
-The sign reads: &quot;Dodge City 
- The carrying of Fire Arms is prohibited. 
- Try Prickly Ash Bitters!&quot; 
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="257">YES</temporary>
-    <children>
-      <child nodeId="node-0x2dac10" />
-    </children>
-  </item>
-  <item nodeId="node-0x2dac10">
-    <command xml:space="preserve">look around</command>
-    <result xml:space="preserve">That noun did not make sense in this context.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="257">YES</temporary>
-    <children>
-      <child nodeId="node-0x2dac80" />
-    </children>
-  </item>
-  <item nodeId="node-0x2dac80">
-    <command xml:space="preserve">look</command>
-    <result xml:space="preserve">The Thoroughfare
-You can see a sign here.
-
-Exits: west, east to the Road to Abilene and north.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="257">YES</temporary>
-    <children>
-      <child nodeId="node-0x2dacf0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2dacf0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-The Thoroughfare
-Exits: east to The Thoroughfare, west and north.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="257">YES</temporary>
-    <children>
-      <child nodeId="node-0x2dad60" />
-    </children>
-  </item>
-  <item nodeId="node-0x2dad60">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Long Branch Saloon
-The interior of the saloon.
-
-Exits: south to The Thoroughfare.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="256">YES</temporary>
-  </item>
-  <item nodeId="node-0x2da640">
-    <command xml:space="preserve">go outside</command>
-    <result xml:space="preserve">Not without your dinner.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="48">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da690" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da690">
-    <command xml:space="preserve">x menu</command>
-    <result xml:space="preserve">&quot;Today: steak,&quot; someone has written. Catchy and to the point.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="48">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da6e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da6e0">
-    <command xml:space="preserve">ask barman about steak</command>
-    <result xml:space="preserve">&quot;Here you are, sir, one of the finest steaks in Dodge Town. Slaughtered and prepared for your f***ing pleasure.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="48">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da730" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da730">
-    <command xml:space="preserve">go outside</command>
-    <result xml:space="preserve">Not without your dinner.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="48">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da780" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da780">
-    <command xml:space="preserve">eat steak</command>
-    <result xml:space="preserve">Eating steak without a fork? You might be an outlaw, but you are no barbarian!
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="48">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da7f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da7f0">
-    <command xml:space="preserve">go outside</command>
-    <result xml:space="preserve">
-Thoroughfare
-Exits: inside to the Long Branch Saloon.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="48">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da860" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da860">
-    <command xml:space="preserve">go inside</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="47">YES</temporary>
-  </item>
-  <item nodeId="node-0x2dadd0">
-    <command xml:space="preserve">ask barman about dinner</command>
-    <result xml:space="preserve">&quot;Barman, I&apos;d like some food,&quot; you say.  
-
-&quot;Some food?,&quot; the barman replies, &quot;We don&apos;t serve no f***ing some food. Check the f***ing menu and make up your mind.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="184">YES</temporary>
-  </item>
-  <item nodeId="node-0x2dae40">
-    <command xml:space="preserve">x</command>
-    <result xml:space="preserve">What do you want to examine?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="238">YES</temporary>
-    <children>
-      <child nodeId="node-0x2daeb0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2daeb0">
-    <command xml:space="preserve">x saloon</command>
-    <result xml:space="preserve">The exterior of the saloon.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="237">YES</temporary>
-  </item>
-  <item nodeId="node-0x2daf20">
-    <command xml:space="preserve">ask barman about steak</command>
-    <result xml:space="preserve">You don&apos;t what to say about the steak.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="181">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da940" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da940">
-    <command xml:space="preserve">x menu</command>
-    <result xml:space="preserve">&quot;Today: steak,&quot; someone has written. Catchy and to the point.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="181">YES</temporary>
-    <children>
-      <child nodeId="node-0x2da9b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2da9b0">
-    <command xml:space="preserve">ask barman about steak</command>
-    <result xml:space="preserve">&quot;Here you are, one of the finest steaks in Dodge Town&quot;.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="181">YES</temporary>
-    <children>
-      <child nodeId="node-0x2daa20" />
-    </children>
-  </item>
-  <item nodeId="node-0x2daa20">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">You are carrying:
-  a steak
-  a gun
-  a knife
-  an unlimited amount of money
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="181">YES</temporary>
-    <children>
-      <child nodeId="node-0x2db1d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2db1d0">
-    <command xml:space="preserve">eat steak</command>
-    <result xml:space="preserve">You eat the steak. Not bad.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="180">YES</temporary>
-  </item>
-  <item nodeId="node-0x2db240">
+  <item nodeId="node-0x2057660">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Excellent -- LOOK will print a description of your environment, like so:
 
@@ -527,180 +107,11 @@ At the back of the saloon a few rickety chairs and tables have been haphazardly 
 
 You can see a barman here.
 
-Exits: outside.
+Individual objects have descriptions, too. You can find out more by examining them, as in EXAMINE PAINTINGS.
 
-Individual objects have descriptions, too. You can find out more by examining them, as in EXAMINE THE PAINTINGS.
 &gt;</result>
     <annotation xml:space="preserve">Unit Tests</annotation>
-    <commentary xml:space="preserve">The Thoroughfare
-Exits: west, east and north.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="38">NO</temporary>
-    <children>
-      <child nodeId="node-0x2ba3f0" />
-      <child nodeId="node-0x1744dca0" />
-      <child nodeId="node-0x2db470" />
-      <child nodeId="node-0x2db2b0" />
-      <child nodeId="node-0x174c7230" />
-      <child nodeId="node-0x1746f760" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746f760">
-    <command xml:space="preserve">examine the barman</command>
-    <result xml:space="preserve">Very good. Since you&apos;re likely to examine things frequently, you can also abbreviate this command as X, as in X the bull&apos;s horns.
-
-This guy looks like he has been standing behind the bar for at least three days straight without any sleep. His handlebar moustache is yellow with nicotine stains.
-
-Now, it turns out that you&apos;re holding something. To find out what, try typing INVENTORY.
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="29">YES</temporary>
-  </item>
-  <item nodeId="node-0x174c7230">
-    <command xml:space="preserve">examine the long bar</command>
-    <result xml:space="preserve">Very good. Since you&apos;re likely to examine things frequently, you can also abbreviate this command as X, as in X the gun.
-
-Yes, this is a bar.
-
-Now, it turns out that you&apos;re holding something. To find out what, try typing INVENTORY.
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="28">YES</temporary>
-    <children>
-      <child nodeId="node-0x17354a30" />
-    </children>
-  </item>
-  <item nodeId="node-0x17354a30">
-    <command xml:space="preserve">inventory</command>
-    <result xml:space="preserve">Right! In the future, you can also shorten this command to INV or just I. As you see, it will print out a description of what you&apos;ve got:
-
-You are carrying:
-  a gun
-  a knife
-  an unlimited amount of money
-
-If you want to get rid of something that you&apos;re holding you can always drop it, like this: DROP THE GUN.
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="28">YES</temporary>
-    <children>
-      <child nodeId="node-0x174af630" />
-      <child nodeId="node-0x2f41aa0" />
-      <child nodeId="node-0x5e0ea0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5e0ea0">
-    <command xml:space="preserve">drop the knife</command>
-    <result xml:space="preserve">Dropping things will move them into your environment, like this:
-
-You carefully place the knife on the ground.
-
-You can pick things up when you see them, like this: TAKE GUN.
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0x17370860" />
-    </children>
-  </item>
-  <item nodeId="node-0x17370860">
-    <command xml:space="preserve">take gun</command>
-    <result xml:space="preserve">Well done. Now you&apos;ll get a message to tell you whether you succeeded in picking up something:
-
-You already have that.
-
-To move from place to place, you can use the compass directions (NORTH, SOUTH, EAST, WEST, as well as NORTHEAST, NORTHWEST, etc.) 
-
-From here, try OUTSIDE.
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0x2cdbe0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2cdbe0">
-    <command xml:space="preserve">take knife</command>
-    <result xml:space="preserve">Sorry, that&apos;s not it.
-To move from place to place, you can use the compass directions (NORTH, SOUTH, EAST, WEST, as well as NORTHEAST, NORTHWEST, etc.) 
-
-From here, try OUTSIDE.
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0x1733a560" />
-    </children>
-  </item>
-  <item nodeId="node-0x1733a560">
-    <command xml:space="preserve">outside</command>
-    <result xml:space="preserve">Good! Like other often-used instructions, compass directions can be abbreviated down to N, S, E, W, NE, NW, and so on. UP and DOWN are also possible -- keep an eye on room descriptions in order to learn more about where you can go and when. 
-
-As soon as you enter a new room, you&apos;ll get a description of what&apos;s there, like this:
-
-Not without your dinner.
-
-And that covers most of what you need to know! There are lots of other verbs you can type as you go along, but you&apos;ll likely be able to guess them from context. Don&apos;t be afraid to experiment with new actions.
-
-To stop the game, type QUIT; to save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved, and RESTART starts the game over again at the beginning.
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0x2e2ac60" />
-    </children>
-  </item>
-  <item nodeId="node-0x2e2ac60">
-    <command xml:space="preserve">restart</command>
-    <result xml:space="preserve">Are you sure you want to restart? </result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="10">YES</temporary>
-    <children>
-      <child nodeId="node-0x2dcd40" />
-    </children>
-  </item>
-  <item nodeId="node-0x2dcd40">
-    <command xml:space="preserve">yes</command>
-    <result xml:space="preserve">
-
-
-The player has the default description.
-Thoroughfare has no description.
-Zimmermann&apos;s Hardware Store has no description.
-Hoover&apos;s Liquor and Cigar store has no description.
-Dodge Town has no description.
-Great Western Cattle Trail has no description.
-bank in Abilene has no description.
-dinner has no description.
-fork has no description.
-steak has no description.
-bull&apos;s horns has no description.
-rickety chairs and tables has no description.
-wall has no description.
-
-
-
-In 1878, the American Frontier is still very much alive. Especially so in the new settlement called Dodge Town. As the endpoint of the Great Western Cattle Trail, it is nicknamed the Queen of the Cow Cities. Founded only six years ago, Dodge Town is growing rapidly and known as a true frontier settlement.
-
-You are Glen &quot;The Gentleman&quot; Fletcher, outlaw by name, gentleman by nature.  Only two days ago you robbed a bank in Abilene and decided to lay low for a while in this interesting town. You have arrived safely, but you have one pressing need: you are very hungry and need some food as soon as possible.
-
-Travelers on the road have suggested dinner in the Long Branch Saloon. 
-
- 
-Dinner at the Long Branch Saloon
-An adventure on the American Frontier by Publysher
-Release 1 / Serial number 121107 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+    <commentary xml:space="preserve">Excellent -- LOOK will print a description of your environment, like so:
 
 Long Branch Saloon
 The saloon is dominated by a long bar to the right. Behind the bar, a few paintings try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
@@ -709,372 +120,42 @@ At the back of the saloon a few rickety chairs and tables have been haphazardly 
 
 You can see a barman here.
 
-Exits: outside.
-
-You can review your surroundings at any time by typing LOOK. Try it -- type LOOK now. (Or, if you don&apos;t need instructions, you can turn the tutorial off by typing TUTORIAL MODE OFF.)
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="9">YES</temporary>
-  </item>
-  <item nodeId="node-0x2f41aa0">
-    <command xml:space="preserve">drop the unlimited amount of money</command>
-    <result xml:space="preserve">Dropping things will move them into your environment, like this:
-
-You worked hard to earn this money. Dropping it seems kind of pointless.
-
-You can pick things up when you see them, like this: TAKE GUN.
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="16">YES</temporary>
-    <children>
-      <child nodeId="node-0x174b4e60" />
-    </children>
-  </item>
-  <item nodeId="node-0x174b4e60">
-    <command xml:space="preserve">take gun</command>
-    <result xml:space="preserve">Well done. Now you&apos;ll get a message to tell you whether you succeeded in picking up something:
-
-You already have that.
-
-To move from place to place, you can use the compass directions (NORTH, SOUTH, EAST, WEST, as well as NORTHEAST, NORTHWEST, etc.) 
-
-From here, try OUTSIDE.
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="16">YES</temporary>
-    <children>
-      <child nodeId="node-0x174e1b40" />
-    </children>
-  </item>
-  <item nodeId="node-0x174e1b40">
-    <command xml:space="preserve">outside</command>
-    <result xml:space="preserve">Good! Like other often-used instructions, compass directions can be abbreviated down to N, S, E, W, NE, NW, and so on. UP and DOWN are also possible -- keep an eye on room descriptions in order to learn more about where you can go and when. 
-
-As soon as you enter a new room, you&apos;ll get a description of what&apos;s there, like this:
-
-Not without your dinner.
-
-Thoroughfare
-Exits: inside to the Long Branch Saloon.
-
-And that covers most of what you need to know! There are lots of other verbs you can type as you go along, but you&apos;ll likely be able to guess them from context. Don&apos;t be afraid to experiment with new actions.
-
-To stop the game, type QUIT; to save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved, and RESTART starts the game over again at the beginning.
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="15">YES</temporary>
-  </item>
-  <item nodeId="node-0x174af630">
-    <command xml:space="preserve">drop the gun</command>
-    <result xml:space="preserve">Dropping things will move them into your environment, like this:
-
-You carefully place the gun on the ground.
-
-You can pick things up when you see them, like this: TAKE GUN.
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="28">YES</temporary>
-    <children>
-      <child nodeId="node-0x174bb050" />
-    </children>
-  </item>
-  <item nodeId="node-0x174bb050">
-    <command xml:space="preserve">take gun</command>
-    <result xml:space="preserve">Well done. Now you&apos;ll get a message to tell you whether you succeeded in picking up something:
-
-You pick up the gun, being careful not to harm anyone in the process.
-
-To move from place to place, you can use the compass directions (NORTH, SOUTH, EAST, WEST, as well as NORTHEAST, NORTHWEST, etc.) 
-
-From here, try OUTSIDE.
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="28">YES</temporary>
-    <children>
-      <child nodeId="node-0x1746a9f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1746a9f0">
-    <command xml:space="preserve">outside</command>
-    <result xml:space="preserve">Nice work!
-
-Not without your dinner.
-
-And that covers most of what you need to know! There are lots of other verbs you can type as you go along, but you&apos;ll likely be able to guess them from context. Don&apos;t be afraid to experiment with new actions.
-
-To stop the game, type QUIT; to save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved, and RESTART starts the game over again at the beginning.
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="27">YES</temporary>
-  </item>
-  <item nodeId="node-0x2db2b0">
-    <command xml:space="preserve">look at cattle</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <annotation xml:space="preserve">Looking around</annotation>
-    <commentary xml:space="preserve">You can&apos;t see any such thing.
+Individual objects have descriptions, too. You can find out more by examining them, as in EXAMINE PAINTINGS.
 
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="171">NO</temporary>
+    <temporary score="65">NO</temporary>
     <children>
-      <child nodeId="node-0x2db320" />
+      <child nodeId="node-0x2070f00" />
+      <child nodeId="node-0x20576b0" />
     </children>
   </item>
-  <item nodeId="node-0x2db320">
-    <command xml:space="preserve">look at saloon</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <commentary xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="171">NO</temporary>
-    <children>
-      <child nodeId="node-0x2db390" />
-    </children>
-  </item>
-  <item nodeId="node-0x2db390">
-    <command xml:space="preserve">look at passers-by</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <commentary xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="171">NO</temporary>
-    <children>
-      <child nodeId="node-0x2db400" />
-    </children>
-  </item>
-  <item nodeId="node-0x2db400">
-    <command xml:space="preserve">look at sherrif</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <commentary xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="170">NO</temporary>
-  </item>
-  <item nodeId="node-0x2db470">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Long Branch Saloon
-Exits: south to The Thoroughfare.
-
-&gt;</result>
-    <annotation xml:space="preserve">Walking around</annotation>
-    <commentary xml:space="preserve">
-Long Branch Saloon
-Exits: south to The Thoroughfare.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="181">NO</temporary>
-    <children>
-      <child nodeId="node-0x2db4e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2db4e0">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-The Thoroughfare
-Exits: west, east and north to the Long Branch Saloon.
-
-&gt;</result>
-    <commentary xml:space="preserve">
-The Thoroughfare
-Exits: west, east and north to the Long Branch Saloon.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="181">NO</temporary>
-    <children>
-      <child nodeId="node-0x2db550" />
-    </children>
-  </item>
-  <item nodeId="node-0x2db550">
-    <command xml:space="preserve">e</command>
-    <result xml:space="preserve">
-The Thoroughfare
-Exits: west to The Thoroughfare and north.
-
-&gt;</result>
-    <commentary xml:space="preserve">
-The Thoroughfare
-Exits: west to The Thoroughfare and north.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="181">NO</temporary>
-    <children>
-      <child nodeId="node-0x2db5c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2db5c0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Hoover&apos;s Liquor and Cigar store
-Exits: south to The Thoroughfare.
-
-&gt;</result>
-    <commentary xml:space="preserve">
-Hoover&apos;s Liquor and Cigar store
-Exits: south to The Thoroughfare.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="181">NO</temporary>
-    <children>
-      <child nodeId="node-0x2db630" />
-    </children>
-  </item>
-  <item nodeId="node-0x2db630">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-The Thoroughfare
-Exits: west to The Thoroughfare and north to the Hoover&apos;s Liquor and Cigar store.
-
-&gt;</result>
-    <commentary xml:space="preserve">
-The Thoroughfare
-Exits: west to The Thoroughfare and north to the Hoover&apos;s Liquor and Cigar store.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="181">NO</temporary>
-    <children>
-      <child nodeId="node-0x2db6a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2db6a0">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-The Thoroughfare
-Exits: west, east to The Thoroughfare and north to the Long Branch Saloon.
-
-&gt;</result>
-    <commentary xml:space="preserve">
-The Thoroughfare
-Exits: west, east to The Thoroughfare and north to the Long Branch Saloon.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="181">NO</temporary>
-    <children>
-      <child nodeId="node-0x2db710" />
-    </children>
-  </item>
-  <item nodeId="node-0x2db710">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-The Thoroughfare
-Exits: east to The Thoroughfare and north.
-
-&gt;</result>
-    <commentary xml:space="preserve">
-The Thoroughfare
-Exits: east to The Thoroughfare and north.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="181">NO</temporary>
-    <children>
-      <child nodeId="node-0x2db780" />
-    </children>
-  </item>
-  <item nodeId="node-0x2db780">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Zimmermann&apos;s Hardware Store
-Exits: south to The Thoroughfare.
-
-&gt;</result>
-    <commentary xml:space="preserve">
-Zimmermann&apos;s Hardware Store
-Exits: south to The Thoroughfare.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="181">NO</temporary>
-    <children>
-      <child nodeId="node-0x2db7f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x2db7f0">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">
-The Thoroughfare
-Exits: east to The Thoroughfare and north to the Zimmermann&apos;s Hardware Store.
-
-&gt;</result>
-    <commentary xml:space="preserve">
-The Thoroughfare
-Exits: east to The Thoroughfare and north to the Zimmermann&apos;s Hardware Store.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="180">NO</temporary>
-  </item>
-  <item nodeId="node-0x1744dca0">
+  <item nodeId="node-0x20576b0">
     <command xml:space="preserve">examine paintings</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="37">YES</temporary>
-  </item>
-  <item nodeId="node-0x2ba3f0">
-    <command xml:space="preserve">x paintings</command>
-    <result xml:space="preserve">No.
-Individual objects have descriptions, too. You can find out more by examining them, as in EXAMINE THE PAINTINGS.
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="36">YES</temporary>
-    <children>
-      <child nodeId="node-0x17490070" />
-    </children>
-  </item>
-  <item nodeId="node-0x17490070">
-    <command xml:space="preserve">examine the paintings</command>
-    <result xml:space="preserve">Very good. Since you&apos;re likely to examine things frequently, you can also abbreviate this command as X, as in X the rickety chairs and tables.
+    <result xml:space="preserve">Very good. Since you&apos;re likely to examine things frequently, you can also abbreviate this command as X, as in X the menu.
 
 It&apos;s not that the paintings are ugly, but they manage to hurt the eye nevertheless.
 
 Now, it turns out that you&apos;re holding something. To find out what, try typing INVENTORY.
+
 &gt;</result>
+    <annotation xml:space="preserve">Tutorial mode</annotation>
+    <commentary xml:space="preserve">Very good. Since you&apos;re likely to examine things frequently, you can also abbreviate this command as X, as in X the menu.
+
+It&apos;s not that the paintings are ugly, but they manage to hurt the eye nevertheless.
+
+Now, it turns out that you&apos;re holding something. To find out what, try typing INVENTORY.
+
+&gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="36">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="65">NO</temporary>
     <children>
-      <child nodeId="node-0x5e0610" />
+      <child nodeId="node-0x2057350" />
     </children>
   </item>
-  <item nodeId="node-0x5e0610">
+  <item nodeId="node-0x2057350">
     <command xml:space="preserve">inventory</command>
     <result xml:space="preserve">Right! In the future, you can also shorten this command to INV or just I. As you see, it will print out a description of what you&apos;ve got:
 
@@ -1084,41 +165,235 @@ You are carrying:
   an unlimited amount of money
 
 If you want to get rid of something that you&apos;re holding you can always drop it, like this: DROP THE GUN.
+
 &gt;</result>
+    <commentary xml:space="preserve">Right! In the future, you can also shorten this command to INV or just I. As you see, it will print out a description of what you&apos;ve got:
+
+You are carrying:
+  a gun
+  a knife
+  an unlimited amount of money
+
+If you want to get rid of something that you&apos;re holding you can always drop it, like this: DROP THE GUN.
+
+&gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="36">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="65">NO</temporary>
     <children>
-      <child nodeId="node-0x5bca20" />
+      <child nodeId="node-0x20573a0" />
     </children>
   </item>
-  <item nodeId="node-0x5bca20">
+  <item nodeId="node-0x20573a0">
     <command xml:space="preserve">drop the gun</command>
     <result xml:space="preserve">Dropping things will move them into your environment, like this:
 
 You carefully place the gun on the ground.
 
 You can pick things up when you see them, like this: TAKE GUN.
+
 &gt;</result>
+    <commentary xml:space="preserve">Dropping things will move them into your environment, like this:
+
+You carefully place the gun on the ground.
+
+You can pick things up when you see them, like this: TAKE GUN.
+
+&gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="36">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="65">NO</temporary>
     <children>
-      <child nodeId="node-0x5628d0" />
+      <child nodeId="node-0x20573f0" />
     </children>
   </item>
-  <item nodeId="node-0x5628d0">
+  <item nodeId="node-0x20573f0">
     <command xml:space="preserve">take gun</command>
     <result xml:space="preserve">Well done. Now you&apos;ll get a message to tell you whether you succeeded in picking up something:
 
 You pick up the gun, being careful not to harm anyone in the process.
 
+You can also converse with other people, like this: ASK BARMAN ABOUT DINNER.
+
+&gt;</result>
+    <commentary xml:space="preserve">Well done. Now you&apos;ll get a message to tell you whether you succeeded in picking up something:
+
+You pick up the gun, being careful not to harm anyone in the process.
+
+You can also converse with other people, like this: ASK BARMAN ABOUT DINNER.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="65">NO</temporary>
+    <children>
+      <child nodeId="node-0x2057440" />
+    </children>
+  </item>
+  <item nodeId="node-0x2057440">
+    <command xml:space="preserve">ask barman about dinner</command>
+    <result xml:space="preserve">Well spoken. If you asked about something sensible, you will get a reply.
+
+You approach the barman: &quot;Good afternoon&quot;.
+
+&quot;A good afternoon to you as well, sir. How may I help you? &quot;
+
+&quot;I&apos;d like some food,&quot; you say.  
+
+&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
+
 And that covers most of what you need to know! There are lots of other verbs you can type as you go along, but you&apos;ll likely be able to guess them from context. Don&apos;t be afraid to experiment with new actions.
 
 To stop the game, type QUIT; to save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved, and RESTART starts the game over again at the beginning.
+
+You&apos;re on your own now.
+
 &gt;</result>
+    <commentary xml:space="preserve">Well spoken. If you asked about something sensible, you will get a reply.
+
+You approach the barman: &quot;Good afternoon&quot;.
+
+&quot;A good afternoon to you as well, sir. How may I help you? &quot;
+
+&quot;I&apos;d like some food,&quot; you say.  
+
+&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
+
+And that covers most of what you need to know! There are lots of other verbs you can type as you go along, but you&apos;ll likely be able to guess them from context. Don&apos;t be afraid to experiment with new actions.
+
+To stop the game, type QUIT; to save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved, and RESTART starts the game over again at the beginning.
+
+You&apos;re on your own now.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="64">NO</temporary>
+  </item>
+  <item nodeId="node-0x2070f00">
+    <command xml:space="preserve">tutorial mode off</command>
+    <result xml:space="preserve">Tutorial mode is now off.
+
+&gt;</result>
+    <annotation xml:space="preserve">Real mode</annotation>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="144">NO</temporary>
+  </item>
+  <item nodeId="node-0x2070f50">
+    <command xml:space="preserve">tutorial mode off</command>
+    <result xml:space="preserve">Tutorial mode is now off.
+
+&gt;</result>
+    <annotation xml:space="preserve">Solution</annotation>
+    <commentary xml:space="preserve">Tutorial mode is now off.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="71">NO</temporary>
+    <children>
+      <child nodeId="node-0x2070fa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2070fa0">
+    <command xml:space="preserve">ask barman about dinner</command>
+    <result xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
+
+&quot;A good afternoon to you as well, sir. How may I help you? &quot;
+
+&quot;I&apos;d like some food,&quot; you say.  
+
+&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
+
+&quot;A good afternoon to you as well, sir. How may I help you? &quot;
+
+&quot;I&apos;d like some food,&quot; you say.  
+
+&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="71">NO</temporary>
+    <children>
+      <child nodeId="node-0x2070ff0" />
+    </children>
+  </item>
+  <item nodeId="node-0x2070ff0">
+    <command xml:space="preserve">x menu</command>
+    <result xml:space="preserve">&quot;Today: steak,&quot; someone has written. Catchy and to the point.
+
+&gt;</result>
+    <commentary xml:space="preserve">&quot;Today: steak,&quot; someone has written. Catchy and to the point.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="71">NO</temporary>
+    <children>
+      <child nodeId="node-0x2071060" />
+    </children>
+  </item>
+  <item nodeId="node-0x2071060">
+    <command xml:space="preserve">ask barman about steak</command>
+    <result xml:space="preserve">&quot;One steak please,&quot; you ask. 
+
+&quot;STEAK!,&quot; the barman shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. 
+
+ The barman slams the steak on a plate. &quot;Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.&quot;
+
+The barman hands you a steak.
+
+&gt;</result>
+    <commentary xml:space="preserve">&quot;One steak please,&quot; you ask. 
+
+&quot;STEAK!,&quot; the barman shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. 
+
+ The barman slams the steak on a plate. &quot;Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.&quot;
+
+The barman hands you a steak.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="71">NO</temporary>
+    <children>
+      <child nodeId="node-0x2071190" />
+    </children>
+  </item>
+  <item nodeId="node-0x2071190">
+    <command xml:space="preserve">eat steak</command>
+    <result xml:space="preserve">You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
+
+&gt;</result>
+    <commentary xml:space="preserve">You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="71">NO</temporary>
+    <children>
+      <child nodeId="node-0x20711e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x20711e0">
+    <command xml:space="preserve">ask barman about fork</command>
+    <result xml:space="preserve">I&apos;d like a fork to eat this,&quot; you suggest.
+
+&quot;A fork?&quot;, the barman responds. If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.
+
+&gt;</result>
+    <commentary xml:space="preserve">I&apos;d like a fork to eat this,&quot; you suggest.
+
+&quot;A fork?&quot;, the barman responds. If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.
+
+&gt;</commentary>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="35">YES</temporary>
+    <temporary score="70">NO</temporary>
   </item>
 </Skein>

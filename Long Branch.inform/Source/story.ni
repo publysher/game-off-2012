@@ -9,7 +9,12 @@ The story creation year is 2012. The release number is 1.
 Release along with
 	the source text,
 	the library card,
-	an interpreter.
+	the "Vorple" interpreter,
+	a file of "Custom CSS" called "vorple.custom.css",
+	a file of "Custom JavaScript" called "vorple.custom.js",
+	a file of "Saloon" called "saloon.jpg", 
+	a file of "Gun" called "lemat-revolver.jpg"
+	.
 	
 Use no scoring. 
 
@@ -18,12 +23,16 @@ Part 1 – Definitions
 
 Chapter 1 - References
 
-Include Exit Descriptions by Matthew Fletcher. 
 Include Epistemology by Eric Eve. 
+Include Vorple Core by The Vorple Project.
+Include Multimedia by The Vorple Project. 
+
 
 Chapter 2 - Dialogue
 
 A person has a table-name called topic list. The topic list of a person is usually the Table of Default Topics.
+
+A person has a text called the default greeting. 
 
 The current interlocutor is a person that varies. 
 
@@ -33,6 +42,8 @@ Check interrogating someone about something (this is the Never ask about unknown
 	if the second noun is unknown, say "You don't what to say about [the second noun]." instead. 
 
 Carry out interrogating someone about something:
+	if the current interlocutor is not the noun:
+		say "[the default greeting of the noun][paragraph break]";	
 	now the current interlocutor is the noun; 
 	let the current list be the topic list of the noun;
 	if the second noun is an item listed in the current list:
@@ -47,12 +58,16 @@ an object	--
 yourself	"[The current interlocutor] is not interested in talking about you."
 
 
-Understand "talk to [someone]" as a mistake ("Try to ASK [the noun] ABOUT something.")
+Understand "talk to [someone]" as a mistake ("[italic type]Try to ASK [the noun] ABOUT something[roman type].")
 
 Understand the commands "show" and "display" and "present" as something new. Understand "show [something] to [someone]" or "display [something] to [someone]" or "present [something] to [someone]" as interrogating it about (with nouns reversed). Understand "show [someone] [something]" as interrogating it about.
 
+Chapter 3 - Mentioning
 
-Chapter 3 - Weapons
+An object can be mentioned or unmentioned. An object is usually unmentioned. 
+
+
+Chapter 4 - Weapons
 
 A weapon is a kind of thing. 
 
@@ -62,25 +77,27 @@ Report dropping a weapon:
 Report taking a weapon:
 	say "You pick up [the noun], being careful not to harm anyone in the process." instead. 
 	
-Chapter 4 - Buildings
+Chapter 5 - Buildings
 
 A building is a kind of room. 
 
-Chapter 5 - Notable 
+Chapter 6 - Notable 
 
 An object can be notable or unnotable. An object is usually unnotable. 
 
 	
-Chapter 6 - NSFW
+Chapter 7 - NSFW
 
 To say fucking:
 	say "f***ing". 
 
 Part 2 – The Game
 
+The Long Branch Saloon is mentioned. [TODO: FInd better way to make the player start here]
+
 Chapter 1 - Background
 
-Dodge Town is a familiar subject. Dodge Town is proper-named. 
+Dodge Town is a familiar subject. Dodge Town is proper-named. Understand "town" as Dodge Town. Understand "city" as Dodge Town. Understand "this place" as Dodge Town. 
 
 The Great Western Cattle Trail is a familiar subject. 
 
@@ -93,7 +110,7 @@ When play begins, say "[paragraph break]In 1878, the American Frontier is still 
 You are Glen 'The Gentleman' Fletcher, outlaw by name, gentleman by nature.  Only two days ago you robbed [a bank in Abilene] and decided to lay low for a while in this interesting town. You have arrived safely, but you have one pressing need: you are very hungry and need some food as soon as possible. 
 
 Travelers on the road have suggested dinner in the Long Branch Saloon. [paragraph break]
-" 
+"
 
 The player carries a gun, a knife and an unlimited amount of money. 
 
@@ -101,7 +118,8 @@ The knife is a weapon.
 The description of the knife is "Your trusted Bowie knife. Outlawed in more states than you yourself, this knife has been your trusted ally for years. "
 
 The gun is a weapon. 
-The description of the gun is "Just an ordinary gun. Being a gentleman, you regard this gun as a necessity of the trade."
+The description of the gun is "This is a rare 10-shot LeMat revolver."
+The associated image of the gun is "lemat-revolver.jpg".
 
 Understand "money" as the unlimited amount of money. The description of the unlimited amount of money is "A huge pile of hard-earned cash. Hard-earned by other people, that is."
 
@@ -111,21 +129,29 @@ Instead of dropping the unlimited amount of money:
 
 Chapter 3 - Getting Dinner
 
-Obtaining Dinner is scene. Obtaining Dinner begins when play begins. Obtaining Dinner ends when the fork is a known thing. 
+The steak is an unfamiliar edible thing. 
+The fork is an unfamiliar portable thing.
+The spoon is a familiar subject. 
+The hardware store is unmentioned. 
+
+Obtaining Dinner is scene. 
+Obtaining Dinner begins when play begins. 
+Obtaining Dinner ends when the hardware store is mentioned. 
 
 Before going outside from the saloon during Obtaining Dinner: say "Not without your dinner." instead. 
 
-dinner is a subject. Understand "food" as dinner. 
+The dinner is a subject. Understand "food" as dinner. 
 
-The fork is an unfamiliar portable thing.
-
-The steak is an unfamiliar edible thing. 
+Before dropping the steak, say "Why would you want to drop such a lovely steak?" instead.
 
 After eating the steak, end the story finally saying "That was a good steak."
 Before eating the steak:
 	if the player is not carrying the fork:
 		now the fork is familiar;
-		say "Eating steak without a fork? You might be an outlaw, but you are no barbarian!" instead. 
+		say "[first time]You notice that you don't have a fork on you. And let's be honest: [only]Eating steak without a fork? You might be an outlaw, but you are no barbarian!" instead. 
+
+After interrogating the barman about the fork:
+	now the hardware store is mentioned. 
 
 
 Part 3 - The Setting
@@ -138,6 +164,8 @@ The Long Branch Saloon is a building. Understand "saloon" as the Long Branch Sal
 "The saloon is dominated by a [long bar] to the right. Behind the bar, a few [paintings] try to liven up the place, accompanied by the obligatory pair of [bull's horns].  
 
 At the back of the saloon a few [furniture] have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few [paintings]. Below the [paintings] you can see today's [menu]. "
+
+The associated image of the saloon is "saloon.jpg";	
 
 The long bar is scenery in the saloon. The description of the bar is "Yes, this is a bar." 
 
@@ -180,91 +208,49 @@ The handlebar moustache is part of the barman. The description of the handlebar 
 
 The topic list of the barman is the Table of Barman Topics. 
 
+The default greeting of the barman is "You approach the barman: 'Good afternoon'. 
+
+'A good afternoon to you as well, sir. How may I help you? '"
+
 [After interrogating the barman about an item listed in the Table of Barman Topics:
 	say "[reply entry][paragraph break]".]
 
 Table of Barman Topics
 item    	reply
-dinner	"'Barman, I'd like some food,' you say.  [paragraph break]'Some food?,' the barman replies, 'We don't serve no [fucking] some food. Look at the [fucking] menu and make up your mind.'"
-menu	"'It's behind you, pinned to the [fucking] [wall].'"
-steak	"'Here you are, sir, one of the finest steaks in Dodge Town. Slaughtered and prepared for your [fucking] pleasure.'"
+dinner	"'I'd like some food,' you say.  [paragraph break][if the player carries the steak]'I was under the impression you were already served a beautiful steak,' the barman answers. He does not seem to be inclined to give you another steak.[otherwise]'But of course,' [the barman] replies, '[one of]such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?[or]Have you made your choice after carefully examining our menu?[stopping]'"
+menu	"'Can you tell me more about the menu?' you ask. [paragraph break]
+'[one of]Considering the multitude of choices presented on our menu, I'd suggest you examine the menu yourself.[or]But of course,' he answers. 'Our menu is a work of beauty, if I may say so myself. But please examine the menu.[stopping]'"
+steak	"'One steak please,' you ask. [paragraph break][if the player does not have the steak]'STEAK!,' [the barman] shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. [paragraph break] [The barman] slams the steak on a plate. 'Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.'[paragraph break]The barman hands you a steak.[otherwise]'I'm afraid I've already given you the last steak available.'"
+spoon	"[if the player has the steak]It's a steak, not a bowl of soup. There is no need to ask [the barman] for a spoon.[otherwise]Why would you want to ask the barman about a spoon?"
+fork	"I'd like a fork to eat this,' you suggest.[paragraph break]'A fork?', the barman responds. [one of]If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.[or]'If I recall correctly, I have already suggested you look elsewhere. Just go outside and then go to the hardware store.'[stopping]"
 
-After interrogating the barman about the steak, move the steak to the player. 
+After interrogating the barman about the steak, move the steak to the player.
+After interrogating the barman about the fork, now the hardware store is familiar.  
+
+Part 5 - Vorple
+
+Chapter 1 - Images
+
+An object has some text called the associated image. 
+
+When play begins (this is the show ingress rule):
+	display "Dinner at the Long Branch Saloon" inside element "h1" with class "page-header";
+	
+Rule for printing the banner text when Vorple is available: do nothing. 
+The display vorple credits rule is not listed in the after printing the banner text rulebook.
 
 
-Part 5 – Extensions
+Before printing the name of a room when Vorple is available:
+	if the number of characters in the associated image > 0:
+		display image "[associated image]" in an element with class "location centered";
 
-Chapter 1 - HTML Integration
+Before examining a thing when Vorple is available:
+	if the number of characters in the associated image > 0:
+		display image "[associated image]" in an element with class "item centered";
 
-Urbzing is an action applying to nothing. 
-Understand "urbzig" as urbzing. 
+Part 6 – Extensions
 
-Carry out urbzing:
-	now the left hand status line is "";
-	now the right hand status line is "";	
-	[locations]
-	say "{'location': '[location]' [no line break]";
-	[directions]
-	let num be 0;
-	say ",'directions': [bracket][no line break]"; 
-	repeat with destination running through adjacent rooms:
-		let way be the best route from the location to the destination;
-		if the way is a direction:
-			if num is not 0, say ",[no line break]";
-			say "'[way]'[no line break]";
-		increase num by 1;  
-	say "[close bracket][no line break]";
-	[items]
-	let num be 0;
-	say ",'items': [bracket][no line break]";
-	repeat with thingy running through objects in the location:
-		unless thingy is a person:
-			if num is not 0, say ",[no line break]";
-			say "'[thingy]'";
-			increase num by 1;  
-	say "[close bracket][no line break]";
-	[persons]
-	let num be 0;
-	say ",'persons': [bracket][no line break]";
-	repeat with thingy running through persons in the location:
-		unless thingy is yourself:
-			if num is not 0, say ",[no line break]";
-			say "'[thingy]'";
-			increase num by 1;  
-	say "[close bracket][no line break]";
-	[inventory]
-	let num be 0;
-	say ",'inventory': [bracket][no line break]";
-	repeat with thingy running through objects carried by the player:
-		if num is not 0, say ",[no line break]";
-		say "'[thingy]'";
-		increase num by 1;  
-	say "[close bracket][no line break]";
-	[subjects]
-	let num be 0;
-	say ",'subjects': [bracket][no line break]";
-	repeat with thingy running through known subjects:
-		if num is not 0, say ",[no line break]";
-		say "'[thingy]'";
-		increase num by 1;  
-	repeat with thingy running through notable things:
-		if num is not 0, say ",[no line break]";
-		say "'[thingy]'";
-		increase num by 1;  
-	repeat with thingy running through known buildings:
-		if num is not 0, say ",[no line break]";
-		say "'[thingy]'";
-		increase num by 1;  
-	say "[close bracket][no line break]";
-	[actions]
-	say ",'actions': [bracket]'examine', 'take', 'drop', 'eat', 'ask'[close bracket][no line break]";
-	[done]
-	say "}";
-
-Chapter 2 - Debugging - Not For Release
-
-Include Property Checking by Emily Short. 
-Include Object Response Tests by Juhana Leinonen.
+Chapter 1 - Debugging - Not For Release
 
 Understand "check conversation" as checking the conversations. Checking the conversations is an action applying to nothing. 
 
@@ -277,7 +263,7 @@ Carry out checking the conversations:
 				say "   [t] - not implemented[line break]";
 
 
-Chapter 3 - Tutorial Mode by Emily Short
+Chapter 2 - Tutorial Mode by Emily Short
 [Small modification because the original does not seem to work]
 
 Section 1 - Creating tutorial mode and controls
@@ -315,7 +301,7 @@ The expected command is indexed text that varies.
 The held rule is a rule that varies. 
 The completed instruction list is a list of rules that varies.
 
-Understand "restore" or "quit" or "save" or "restart" or "version" as "[meta]".
+Understand "restore" or "quit" or "save" or "restart" or "version" or "urbzig" as "[meta]".
 
 After reading a command when tutorial mode is true (this is the require correct response rule):
 	if the player's command includes "tutorial", make no decision;
@@ -341,7 +327,8 @@ After reading a command when tutorial mode is true (this is the require correct 
 Section 3 - The Instructional Rules
 
 Before reading a command when tutorial mode is true (this is the offer new prompt rule):
-	follow the instructional rules.
+	if the player's command does not include "[meta]":
+		follow the instructional rules.
 
 Definition: a thing is non-player if it is not the player. 
 
@@ -354,7 +341,7 @@ The instructional rules are a rulebook.
 
 An instructional rule (this is the teach looking rule): 
 	if the teach looking rule is listed in the completed instruction list, make no decision;
-	say "[italic type]You can review your surroundings at any time by typing LOOK. Try it -- type LOOK now. (Or, if you don't need instructions, you can turn the tutorial off by typing TUTORIAL MODE OFF.)[roman type]";
+	say "[italic type]You can review your surroundings at any time by typing LOOK. Try it -- type LOOK now. (Or, if you don't need instructions, you can turn the tutorial off by typing TUTORIAL MODE OFF.)[roman type][paragraph break]";
 	now the expected command is "look";
 	now the held rule is the teach looking rule;
 	rule succeeds.
@@ -364,7 +351,7 @@ An instructional rule (this is the teach examining rule):
 	if the player can see a previously-mentioned non-player thing (called target):
 		let N be indexed text;
 		let N be "[paintings]";
-		say "[italic type]Individual objects have descriptions, too. You can find out more by examining them, as in EXAMINE [N in upper case].[roman type]";
+		say "[italic type]Individual objects have descriptions, too. You can find out more by examining them, as in EXAMINE [N in upper case].[roman type][paragraph break]";
 		now the expected command is "examine [N]";
 		now the held rule is the teach examining rule;
 		rule succeeds;
@@ -374,7 +361,7 @@ An instructional rule (this is the teach examining rule):
 An instructional rule (this is the teach inventory rule): 
 	if the teach inventory rule is listed in the completed instruction list, make no decision;
 	if the player carries nothing, make no decision;
-	say "[italic type]Now, it turns out that you're holding something. To find out what, try typing INVENTORY.[roman type]";
+	say "[italic type]Now, it turns out that you're holding something. To find out what, try typing INVENTORY.[roman type][paragraph break]";
 	now the expected command is "inventory";
 	now the held rule is the teach inventory rule;
 	rule succeeds.
@@ -384,7 +371,7 @@ An instructional rule (this is the teach dropping rule):
 	if the player carries nothing, make no decision;
 	let N be indexed text;
 	let N be "[the gun]";
-	say "[italic type]If you want to get rid of something that you're holding you can always drop it, like this: DROP [N in upper case].[roman type]";
+	say "[italic type]If you want to get rid of something that you're holding you can always drop it, like this: DROP [N in upper case].[roman type][paragraph break]";
 	now the expected command is "drop [N]";
 	now the held rule is the teach dropping rule;
 	rule succeeds.
@@ -394,9 +381,23 @@ An instructional rule (this is the teach taking rule):
 	if the player can see a portable non-player thing (called target item):
 		let N be indexed text;
 		let N be "[gun]";
-		say "[italic type]You can pick things up when you see them, like this: TAKE [N in upper case].[roman type]";
+		say "[italic type]You can pick things up when you see them, like this: TAKE [N in upper case].[roman type][paragraph break]";
 		now the expected command is "take [N]";
 		now the held rule is the teach taking rule;
+		rule succeeds;
+	otherwise:
+		make no decision.
+		
+An instructional rule (this is the teach conversation rule):
+	if the teach conversation rule is listed in the completed instruction list, make no decision;
+	if the player can see the barman:
+		let N be indexed text;
+		let N be "[barman]";
+		let M be indexed text;
+		let M be "[dinner]";
+		say "[italic type]You can also converse with other people, like this: ASK [N in upper case] ABOUT [M in upper case].[roman type][paragraph break]";
+		now the expected command is "ask [N] about [M]";
+		now the held rule is the teach conversation rule;
 		rule succeeds;
 	otherwise:
 		make no decision.
@@ -422,17 +423,18 @@ An instructional rule (this is the teach taking rule):
 
 A last instructional rule (this is the teach meta-features rule):
 	if the teach meta-features rule is listed in the completed instruction list, make no decision;
-	say "[italic type]And that covers most of what you need to know! There are lots of other verbs you can type as you go along, but you'll likely be able to guess them from context. Don't be afraid to experiment with new actions.[paragraph break]To stop the game, type QUIT; to save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved, and RESTART starts the game over again at the beginning.[roman type]";
+	say "[italic type]And that covers most of what you need to know! There are lots of other verbs you can type as you go along, but you'll likely be able to guess them from context. Don't be afraid to experiment with new actions.[paragraph break]To stop the game, type QUIT; to save your current position, type SAVE. RESTORE allows you to bring back a game you have previously saved, and RESTART starts the game over again at the beginning.[roman type][paragraph break]You're on your own now.";
 	add the teach meta-features rule to the completed instruction list;
 	rule succeeds. 
 
 Table of Instruction Followups
 selector	followup
 teach looking rule	"Excellent -- LOOK will print a description of your environment, like so:"
-teach examining rule	"Very good. Since you're likely to examine things frequently, you can also abbreviate this command as X, as in X [the random visible non-player thing]."
+teach examining rule	"Very good. Since you're likely to examine things frequently, you can also abbreviate this command as X, as in X [the menu]."
 teach inventory rule	"Right! In the future, you can also shorten this command to INV or just I. As you see, it will print out a description of what you've got:"
 teach dropping rule	"Dropping things will move them into your environment, like this:"
 teach taking rule	"Well done. Now you'll get a message to tell you whether you succeeded in picking up something:"
+teach conversation rule	"Well spoken. If you asked about something sensible, you will get a reply."
 
 
 
