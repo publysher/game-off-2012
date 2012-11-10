@@ -96,6 +96,8 @@ Part 2 – The Game
 
 The Long Branch Saloon is mentioned. [TODO: FInd better way to make the player start here]
 
+Test all with "test part1".
+
 Chapter 1 - Background
 
 Dodge Town is a familiar subject. Dodge Town is proper-named. Understand "town" as Dodge Town. Understand "city" as Dodge Town. Understand "this place" as Dodge Town. 
@@ -135,9 +137,6 @@ The description of the steak is "A lovely steak.".
 Before dropping the steak, say "Why would you want to drop such a lovely steak?" instead.
 The associated image of the steak is "steak.jpg".
 
-
-
-
 The fork is an unfamiliar portable thing.
 The spoon is a familiar subject. 
 The hardware store is unmentioned. 
@@ -159,6 +158,8 @@ Before eating the steak:
 After interrogating the barman about the fork:
 	now the hardware store is mentioned. 
 
+
+Test part1 with "go outside / ask barman about dinner / ask barman about menu / x menu / ask barman about steak / ask barman about steak / drop steak / eat steak / ask barman about fork / go outside". 
 
 Part 3 - The Setting
 
@@ -196,7 +197,10 @@ The wall is scenery in the saloon.
 
 Section 2 – The thoroughfare
 
-The Thoroughfare is outside from the saloon. 
+The Thoroughfare is outside from the saloon. The description of the Thoroughfare is "You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west. 
+
+Right now, you are standing in front of the Long Branch Saloon.
+"
 
 
 Section 3 - The hardware store
@@ -281,6 +285,9 @@ Understand "xcheck pictures" as xchecking the images. Xchecking the images is an
 Carry out xchecking the images:
 	repeat with p running through the list of things:
 		say "[p]: [associated image of p][line break]"
+		
+When play begins:
+	now tutorial mode is false. 
 
 
 Chapter 2 - Tutorial Mode by Emily Short

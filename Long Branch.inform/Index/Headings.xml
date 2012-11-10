@@ -74,133 +74,133 @@
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>99</integer>
+        <key>Line</key><integer>101</integer>
         <key>Title</key><string>Chapter 1 - Background</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>107</integer>
+        <key>Line</key><integer>109</integer>
         <key>Title</key><string>Chapter 2 - The player</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>131</integer>
+        <key>Line</key><integer>133</integer>
         <key>Title</key><string>Chapter 3 - Getting Dinner</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>163</integer>
+        <key>Line</key><integer>164</integer>
         <key>Title</key><string>Part 3 - The Setting</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>14</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>165</integer>
+        <key>Line</key><integer>166</integer>
         <key>Title</key><string>Chapter 1 - Dodge City</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>167</integer>
+        <key>Line</key><integer>168</integer>
         <key>Title</key><string>Section 1 - The saloon</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>16</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>197</integer>
+        <key>Line</key><integer>198</integer>
         <key>Title</key><string>Section 2 - The thoroughfare</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>17</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>202</integer>
+        <key>Line</key><integer>206</integer>
         <key>Title</key><string>Section 3 - The hardware store</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>206</integer>
+        <key>Line</key><integer>210</integer>
         <key>Title</key><string>Section 4 - The liquor store</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>211</integer>
+        <key>Line</key><integer>215</integer>
         <key>Title</key><string>Part 4 - The Cast</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>20</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>213</integer>
+        <key>Line</key><integer>217</integer>
         <key>Title</key><string>Chapter 1 - The Barman</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>240</integer>
+        <key>Line</key><integer>244</integer>
         <key>Title</key><string>Part 5 - Vorple</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>242</integer>
+        <key>Line</key><integer>246</integer>
         <key>Title</key><string>Chapter 1 - Images</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>263</integer>
+        <key>Line</key><integer>267</integer>
         <key>Title</key><string>Part 6 - Extensions</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>265</integer>
+        <key>Line</key><integer>269</integer>
         <key>Title</key><string>Chapter 1 - Debugging - Not For Release</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>286</integer>
+        <key>Line</key><integer>293</integer>
         <key>Title</key><string>Chapter 2 - Tutorial Mode by Emily Short</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>289</integer>
+        <key>Line</key><integer>296</integer>
         <key>Title</key><string>Section 1 - Creating tutorial mode and controls</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>318</integer>
+        <key>Line</key><integer>325</integer>
         <key>Title</key><string>Section 2 - Forcing player response</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/inform/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>347</integer>
+        <key>Line</key><integer>354</integer>
         <key>Title</key><string>Section 3 - The Instructional Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>

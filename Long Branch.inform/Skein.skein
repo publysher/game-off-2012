@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x1df85d0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x1eaecc0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1df87f0" />
-  <item nodeId="node-0x1df85d0">
+  <activeNode nodeId="node-0xb04deb0" />
+  <item nodeId="node-0x1eaecc0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -28,8 +28,6 @@ The saloon is dominated by a long bar to the right. Behind the bar, a few pictur
 At the back of the saloon a few rickety chairs and tables have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few pictures. Below the pictures you can see today&apos;s menu. 
 
 You can see a barman here.
-
-You can review your surroundings at any time by typing LOOK. Try it -- type LOOK now. (Or, if you don&apos;t need instructions, you can turn the tutorial off by typing TUTORIAL MODE OFF.)
 
 &gt;</result>
     <commentary xml:space="preserve">
@@ -57,18 +55,249 @@ At the back of the saloon a few rickety chairs and tables have been haphazardly 
 
 You can see a barman here.
 
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="59">NO</temporary>
+    <children>
+      <child nodeId="node-0x18ee160" />
+      <child nodeId="node-0x18c0730" />
+      <child nodeId="node-0xce02e30" />
+    </children>
+  </item>
+  <item nodeId="node-0xce02e30">
+    <command xml:space="preserve">test all</command>
+    <result xml:space="preserve">(Testing.)
+
+&gt;[1] test part1
+(Testing.)
+
+&gt;[2] go outside
+Not without your dinner.
+
+&gt;[3] ask barman about dinner
+You approach the barman: &quot;Good afternoon&quot;.
+
+&quot;A good afternoon to you as well, sir. How may I help you? &quot;
+
+&quot;I&apos;d like some food,&quot; you say.  
+
+&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
+
+&gt;[4] ask barman about menu
+&quot;Can you tell me more about the menu?&quot; you ask. 
+
+ &quot;Considering the multitude of choices presented on our menu, I&apos;d suggest you examine the menu yourself.&quot;
+
+&gt;[5] x menu
+&quot;Today: steak,&quot; someone has written. Catchy and to the point.
+
+&gt;[6] ask barman about steak
+&quot;One steak please,&quot; you ask. 
+
+&quot;STEAK!,&quot; the barman shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. 
+
+ The barman slams the steak on a plate. &quot;Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.&quot;
+
+The barman hands you a steak.
+
+&gt;[7] ask barman about steak
+&quot;One steak please,&quot; you ask. 
+
+&quot;I&apos;m afraid I&apos;ve already given you the last steak available.&quot;
+
+&gt;[8] drop steak
+Why would you want to drop such a lovely steak?
+
+&gt;[9] eat steak
+You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
+
+&gt;[10] ask barman about fork
+I&apos;d like a fork to eat this,&quot; you suggest.
+
+&quot;A fork?&quot;, the barman responds. If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.
+
+&gt;[11] go outside
+
+Thoroughfare
+You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west.
+
+Right now, you are standing in front of the Long Branch Saloon. 
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="59">NO</temporary>
+    <children>
+      <child nodeId="node-0xd01c900" />
+    </children>
+  </item>
+  <item nodeId="node-0xd01c900">
+    <command xml:space="preserve">go inside</command>
+    <result xml:space="preserve">
+Long Branch Saloon
+The saloon is dominated by a long bar to the right. Behind the bar, a few pictures try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
+
+At the back of the saloon a few rickety chairs and tables have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few pictures. Below the pictures you can see today&apos;s menu. 
+
+You can see a barman here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="59">YES</temporary>
+    <children>
+      <child nodeId="node-0xb04deb0" />
+    </children>
+  </item>
+  <item nodeId="node-0xb04deb0">
+    <command xml:space="preserve">go outside</command>
+    <result xml:space="preserve">
+Thoroughfare
+You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west.
+
+Right now, you are standing in front of the Long Branch Saloon. 
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="58">YES</temporary>
+  </item>
+  <item nodeId="node-0x18c0730">
+    <command xml:space="preserve">ask barman about dinner</command>
+    <result xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
+
+&quot;A good afternoon to you as well, sir. How may I help you? &quot;
+
+&quot;I&apos;d like some food,&quot; you say.  
+
+&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
+
+&gt;</result>
+    <annotation xml:space="preserve">Solution</annotation>
+    <commentary xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
+
+&quot;A good afternoon to you as well, sir. How may I help you? &quot;
+
+&quot;I&apos;d like some food,&quot; you say.  
+
+&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="54">NO</temporary>
+    <children>
+      <child nodeId="node-0x18e1660" />
+    </children>
+  </item>
+  <item nodeId="node-0x18e1660">
+    <command xml:space="preserve">x menu</command>
+    <result xml:space="preserve">&quot;Today: steak,&quot; someone has written. Catchy and to the point.
+
+&gt;</result>
+    <commentary xml:space="preserve">&quot;Today: steak,&quot; someone has written. Catchy and to the point.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="54">NO</temporary>
+    <children>
+      <child nodeId="node-0xd43bec0" />
+    </children>
+  </item>
+  <item nodeId="node-0xd43bec0">
+    <command xml:space="preserve">ask barman about steak</command>
+    <result xml:space="preserve">&quot;One steak please,&quot; you ask. 
+
+&quot;STEAK!,&quot; the barman shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. 
+
+ The barman slams the steak on a plate. &quot;Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.&quot;
+
+The barman hands you a steak.
+
+&gt;</result>
+    <commentary xml:space="preserve">&quot;One steak please,&quot; you ask. 
+
+&quot;STEAK!,&quot; the barman shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. 
+
+ The barman slams the steak on a plate. &quot;Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.&quot;
+
+The barman hands you a steak.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="54">NO</temporary>
+    <children>
+      <child nodeId="node-0xd440f90" />
+    </children>
+  </item>
+  <item nodeId="node-0xd440f90">
+    <command xml:space="preserve">eat steak</command>
+    <result xml:space="preserve">You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
+
+&gt;</result>
+    <commentary xml:space="preserve">You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="54">NO</temporary>
+    <children>
+      <child nodeId="node-0xd441750" />
+    </children>
+  </item>
+  <item nodeId="node-0xd441750">
+    <command xml:space="preserve">ask barman about fork</command>
+    <result xml:space="preserve">I&apos;d like a fork to eat this,&quot; you suggest.
+
+&quot;A fork?&quot;, the barman responds. If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.
+
+&gt;</result>
+    <commentary xml:space="preserve">I&apos;d like a fork to eat this,&quot; you suggest.
+
+&quot;A fork?&quot;, the barman responds. If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="54">NO</temporary>
+    <children>
+      <child nodeId="node-0x18f2a60" />
+    </children>
+  </item>
+  <item nodeId="node-0x18f2a60">
+    <command xml:space="preserve">go outside</command>
+    <result xml:space="preserve">
+Thoroughfare
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="53">NO</temporary>
+  </item>
+  <item nodeId="node-0x18ee160">
+    <command xml:space="preserve">tutorial mode on</command>
+    <result xml:space="preserve">Tutorial mode is now on.
+
+You can review your surroundings at any time by typing LOOK. Try it -- type LOOK now. (Or, if you don&apos;t need instructions, you can turn the tutorial off by typing TUTORIAL MODE OFF.)
+
+&gt;</result>
+    <annotation xml:space="preserve">Tutorial mode</annotation>
+    <commentary xml:space="preserve">Tutorial mode is now on.
+
 You can review your surroundings at any time by typing LOOK. Try it -- type LOOK now. (Or, if you don&apos;t need instructions, you can turn the tutorial off by typing TUTORIAL MODE OFF.)
 
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="46">NO</temporary>
+    <temporary score="47">NO</temporary>
     <children>
-      <child nodeId="node-0x1df88a0" />
-      <child nodeId="node-0x1df84c0" />
+      <child nodeId="node-0x18dacd0" />
     </children>
   </item>
-  <item nodeId="node-0x1df84c0">
+  <item nodeId="node-0x18dacd0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Excellent -- LOOK will print a description of your environment, like so:
 
@@ -82,7 +311,6 @@ You can see a barman here.
 Individual objects have descriptions, too. You can find out more by examining them, as in EXAMINE PICTURES.
 
 &gt;</result>
-    <annotation xml:space="preserve">Unit Tests</annotation>
     <commentary xml:space="preserve">Excellent -- LOOK will print a description of your environment, like so:
 
 Long Branch Saloon
@@ -97,13 +325,12 @@ Individual objects have descriptions, too. You can find out more by examining th
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="40">NO</temporary>
+    <temporary score="47">NO</temporary>
     <children>
-      <child nodeId="node-0x1df8850" />
-      <child nodeId="node-0x1df8620" />
+      <child nodeId="node-0xd01ca20" />
     </children>
   </item>
-  <item nodeId="node-0x1df8620">
+  <item nodeId="node-0xd01ca20">
     <command xml:space="preserve">examine pictures</command>
     <result xml:space="preserve">Very good. Since you&apos;re likely to examine things frequently, you can also abbreviate this command as X, as in X the menu.
 
@@ -112,7 +339,6 @@ You take a close look at one of the pictures. It seems to be a photograph of gen
 Now, it turns out that you&apos;re holding something. To find out what, try typing INVENTORY.
 
 &gt;</result>
-    <annotation xml:space="preserve">Tutorial mode</annotation>
     <commentary xml:space="preserve">Very good. Since you&apos;re likely to examine things frequently, you can also abbreviate this command as X, as in X the menu.
 
 You take a close look at one of the pictures. It seems to be a photograph of general Custer.
@@ -121,13 +347,13 @@ Now, it turns out that you&apos;re holding something. To find out what, try typi
 
 &gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="40">NO</temporary>
+    <changed>NO</changed>
+    <temporary score="47">NO</temporary>
     <children>
-      <child nodeId="node-0x1df8670" />
+      <child nodeId="node-0xd012920" />
     </children>
   </item>
-  <item nodeId="node-0x1df8670">
+  <item nodeId="node-0xd012920">
     <command xml:space="preserve">inventory</command>
     <result xml:space="preserve">Right! In the future, you can also shorten this command to INV or just I. As you see, it will print out a description of what you&apos;ve got:
 
@@ -151,12 +377,12 @@ If you want to get rid of something that you&apos;re holding you can always drop
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="40">NO</temporary>
+    <temporary score="47">NO</temporary>
     <children>
-      <child nodeId="node-0x1df86c0" />
+      <child nodeId="node-0x1b2d350" />
     </children>
   </item>
-  <item nodeId="node-0x1df86c0">
+  <item nodeId="node-0x1b2d350">
     <command xml:space="preserve">drop the gun</command>
     <result xml:space="preserve">Dropping things will move them into your environment, like this:
 
@@ -174,12 +400,12 @@ You can pick things up when you see them, like this: TAKE GUN.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="40">NO</temporary>
+    <temporary score="47">NO</temporary>
     <children>
-      <child nodeId="node-0x1df8710" />
+      <child nodeId="node-0xd016140" />
     </children>
   </item>
-  <item nodeId="node-0x1df8710">
+  <item nodeId="node-0xd016140">
     <command xml:space="preserve">take gun</command>
     <result xml:space="preserve">Well done. Now you&apos;ll get a message to tell you whether you succeeded in picking up something:
 
@@ -197,12 +423,12 @@ You can also converse with other people, like this: ASK BARMAN ABOUT DINNER.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="40">NO</temporary>
+    <temporary score="47">NO</temporary>
     <children>
-      <child nodeId="node-0x1df8760" />
+      <child nodeId="node-0xd01a3f0" />
     </children>
   </item>
-  <item nodeId="node-0x1df8760">
+  <item nodeId="node-0xd01a3f0">
     <command xml:space="preserve">ask barman about dinner</command>
     <result xml:space="preserve">Well spoken. If you asked about something sensible, you will get a reply.
 
@@ -240,160 +466,6 @@ You&apos;re on your own now.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="39">NO</temporary>
-  </item>
-  <item nodeId="node-0x1df8850">
-    <command xml:space="preserve">tutorial mode off</command>
-    <result xml:space="preserve">Tutorial mode is now off.
-
-&gt;</result>
-    <annotation xml:space="preserve">Real mode</annotation>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="144">NO</temporary>
-  </item>
-  <item nodeId="node-0x1df88a0">
-    <command xml:space="preserve">tutorial mode off</command>
-    <result xml:space="preserve">Tutorial mode is now off.
-
-&gt;</result>
-    <annotation xml:space="preserve">Solution</annotation>
-    <commentary xml:space="preserve">Tutorial mode is now off.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
     <temporary score="46">NO</temporary>
-    <children>
-      <child nodeId="node-0x1d198a0" />
-      <child nodeId="node-0x124190a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x124190a0">
-    <command xml:space="preserve">check pictures</command>
-    <result xml:space="preserve">yourself: 
-gun: lemat-revolver.jpg
-knife: 
-unlimited amount of money: 
-long bar: 
-menu: 
-pictures: custer.jpg
-bull&apos;s horns: 
-rickety chairs and tables: 
-wall: 
-barman: 
-Dodge Town: 
-Great Western Cattle Trail: 
-bank in Abilene: 
-steak: steak.jpg
-fork: 
-spoon: 
-dinner: 
-handlebar moustache: 
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="6">YES</temporary>
-  </item>
-  <item nodeId="node-0x1d198a0">
-    <command xml:space="preserve">ask barman about dinner</command>
-    <result xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
-
-&quot;A good afternoon to you as well, sir. How may I help you? &quot;
-
-&quot;I&apos;d like some food,&quot; you say.  
-
-&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
-
-&gt;</result>
-    <commentary xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
-
-&quot;A good afternoon to you as well, sir. How may I help you? &quot;
-
-&quot;I&apos;d like some food,&quot; you say.  
-
-&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="46">NO</temporary>
-    <children>
-      <child nodeId="node-0x1d19830" />
-    </children>
-  </item>
-  <item nodeId="node-0x1d19830">
-    <command xml:space="preserve">x menu</command>
-    <result xml:space="preserve">&quot;Today: steak,&quot; someone has written. Catchy and to the point.
-
-&gt;</result>
-    <commentary xml:space="preserve">&quot;Today: steak,&quot; someone has written. Catchy and to the point.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="46">NO</temporary>
-    <children>
-      <child nodeId="node-0x1d197c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1d197c0">
-    <command xml:space="preserve">ask barman about steak</command>
-    <result xml:space="preserve">&quot;One steak please,&quot; you ask. 
-
-&quot;STEAK!,&quot; the barman shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. 
-
- The barman slams the steak on a plate. &quot;Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.&quot;
-
-The barman hands you a steak.
-
-&gt;</result>
-    <commentary xml:space="preserve">&quot;One steak please,&quot; you ask. 
-
-&quot;STEAK!,&quot; the barman shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. 
-
- The barman slams the steak on a plate. &quot;Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.&quot;
-
-The barman hands you a steak.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="46">NO</temporary>
-    <children>
-      <child nodeId="node-0x1d19690" />
-    </children>
-  </item>
-  <item nodeId="node-0x1d19690">
-    <command xml:space="preserve">eat steak</command>
-    <result xml:space="preserve">You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
-
-&gt;</result>
-    <commentary xml:space="preserve">You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="46">NO</temporary>
-    <children>
-      <child nodeId="node-0x1df87f0" />
-    </children>
-  </item>
-  <item nodeId="node-0x1df87f0">
-    <command xml:space="preserve">ask barman about fork</command>
-    <result xml:space="preserve">I&apos;d like a fork to eat this,&quot; you suggest.
-
-&quot;A fork?&quot;, the barman responds. If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.
-
-&gt;</result>
-    <commentary xml:space="preserve">I&apos;d like a fork to eat this,&quot; you suggest.
-
-&quot;A fork?&quot;, the barman responds. If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="45">NO</temporary>
   </item>
 </Skein>
