@@ -8,3 +8,6 @@ manifest.plist
 # IntelliJ project files
 .idea
 *.iml
+
+# VI
+*.swp
