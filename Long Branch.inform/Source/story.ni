@@ -12,9 +12,11 @@ Release along with
 	the "Vorple" interpreter,
 	a file of "Custom CSS" called "vorple.custom.css",
 	a file of "Custom JavaScript" called "vorple.custom.js",
-	a file of "Saloon" called "saloon.jpg", 
-	a file of "Gun" called "lemat-revolver.jpg"
-	.
+	a file of "Background" called "media/img/leather_1.png",
+	a file of "Saloon" called "media/img/saloon.jpg", 
+	a file of "Gun" called "media/img/lemat-revolver.jpg",
+	a file of "General Custer" called "media/img/custer.jpg",
+	a file of "Steak" called "media/img/steak.jpg".
 	
 Use no scoring. 
 
@@ -26,7 +28,6 @@ Chapter 1 - References
 Include Epistemology by Eric Eve. 
 Include Vorple Core by The Vorple Project.
 Include Multimedia by The Vorple Project. 
-
 
 Chapter 2 - Dialogue
 
@@ -130,6 +131,13 @@ Instead of dropping the unlimited amount of money:
 Chapter 3 - Getting Dinner
 
 The steak is an unfamiliar edible thing. 
+The description of the steak is "A lovely steak.".
+Before dropping the steak, say "Why would you want to drop such a lovely steak?" instead.
+The associated image of the steak is "steak.jpg".
+
+
+
+
 The fork is an unfamiliar portable thing.
 The spoon is a familiar subject. 
 The hardware store is unmentioned. 
@@ -141,8 +149,6 @@ Obtaining Dinner ends when the hardware store is mentioned.
 Before going outside from the saloon during Obtaining Dinner: say "Not without your dinner." instead. 
 
 The dinner is a subject. Understand "food" as dinner. 
-
-Before dropping the steak, say "Why would you want to drop such a lovely steak?" instead.
 
 After eating the steak, end the story finally saying "That was a good steak."
 Before eating the steak:
@@ -161,9 +167,9 @@ Chapter 1 – Dodge City
 Section 1 – The saloon
 
 The Long Branch Saloon is a building. Understand "saloon" as the Long Branch Saloon. 
-"The saloon is dominated by a [long bar] to the right. Behind the bar, a few [paintings] try to liven up the place, accompanied by the obligatory pair of [bull's horns].  
+"The saloon is dominated by a [long bar] to the right. Behind the bar, a few [pictures] try to liven up the place, accompanied by the obligatory pair of [bull's horns].  
 
-At the back of the saloon a few [furniture] have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few [paintings]. Below the [paintings] you can see today's [menu]. "
+At the back of the saloon a few [furniture] have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few [pictures]. Below the [pictures] you can see today's [menu]. "
 
 The associated image of the saloon is "saloon.jpg";	
 
@@ -175,7 +181,11 @@ After examining the menu:
 	now the steak is familiar; 
 	now the steak is notable.  
 
-Some paintings are scenery in the saloon. Understand "painting" as paintings. The description of the paintings is "It's not that the paintings are ugly, but they manage to hurt the eye nevertheless." Instead of taking the paintings, say "They are very ugly. You really don't want them."
+Some pictures are scenery in the saloon. Understand "photo" or "photos" or "photograph" or "photographs" as pictures. 
+The description of the pictures is "You take a close look at one of the pictures. It seems to be a photograph of general Custer." 
+Instead of taking the pictures, say "You never met general Custer. Why would you want a picture of him?"
+The associated image of some pictures is "custer.jpg".
+
 
 The bull's horns are scenery in the saloon. Understand "bull/horn/horns" as the bull's horns. Instead of taking the bull's horns, say "Removing saloon property might get you shot.". 
 
@@ -247,20 +257,30 @@ Before printing the name of a room when Vorple is available:
 Before examining a thing when Vorple is available:
 	if the number of characters in the associated image > 0:
 		display image "[associated image]" in an element with class "item centered";
+		
+
 
 Part 6 – Extensions
 
 Chapter 1 - Debugging - Not For Release
 
-Understand "check conversation" as checking the conversations. Checking the conversations is an action applying to nothing. 
+Understand "xcheck conversation" as xchecking the conversations. Xchecking the conversations is an action applying to nothing. 
 
-Carry out checking the conversations:
+Carry out xchecking the conversations:
 	repeat with p running through the list of persons:
 		if p is yourself, next;
 		say "[p]: (knowledge on [the number of rows in the topic list of p] items)[line break]";
 		repeat with t running through the list of things:
 			if t is not an item listed in the topic list of p:
 				say "   [t] - not implemented[line break]";
+				
+
+
+Understand "xcheck pictures" as xchecking the images. Xchecking the images is an action applying to nothing.
+
+Carry out xchecking the images:
+	repeat with p running through the list of things:
+		say "[p]: [associated image of p][line break]"
 
 
 Chapter 2 - Tutorial Mode by Emily Short
@@ -350,7 +370,7 @@ An instructional rule (this is the teach examining rule):
 	if the teach examining rule is listed in the completed instruction list, make no decision;
 	if the player can see a previously-mentioned non-player thing (called target):
 		let N be indexed text;
-		let N be "[paintings]";
+		let N be "[pictures]";
 		say "[italic type]Individual objects have descriptions, too. You can find out more by examining them, as in EXAMINE [N in upper case].[roman type][paragraph break]";
 		now the expected command is "examine [N]";
 		now the held rule is the teach examining rule;

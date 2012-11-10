@@ -1,27 +1,12 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x2057300" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x1df85d0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x2057300" />
-  <item nodeId="node-0x2057300">
+  <activeNode nodeId="node-0x1df87f0" />
+  <item nodeId="node-0x1df85d0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
-
-The player has the default description.
-Zimmermann&apos;s Hardware Store has no description.
-Thoroughfare has no description.
-Hoover&apos;s Liquor and Cigar store has no description.
-bull&apos;s horns has no description.
-rickety chairs and tables has no description.
-wall has no description.
-Dodge Town has no description.
-Great Western Cattle Trail has no description.
-bank in Abilene has no description.
-steak has no description.
-fork has no description.
-spoon has no description.
-dinner has no description.
 
 
 
@@ -35,12 +20,12 @@ Travelers on the road have suggested dinner in the Long Branch Saloon.
  
 Dinner at the Long Branch Saloon
 An adventure on the American Frontier by Publysher
-Release 1 / Serial number 121109 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 121110 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Long Branch Saloon
-The saloon is dominated by a long bar to the right. Behind the bar, a few paintings try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
+The saloon is dominated by a long bar to the right. Behind the bar, a few pictures try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
 
-At the back of the saloon a few rickety chairs and tables have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few paintings. Below the paintings you can see today&apos;s menu. 
+At the back of the saloon a few rickety chairs and tables have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few pictures. Below the pictures you can see today&apos;s menu. 
 
 You can see a barman here.
 
@@ -50,20 +35,7 @@ You can review your surroundings at any time by typing LOOK. Try it -- type LOOK
     <commentary xml:space="preserve">
 
 
-The player has the default description.
-Zimmermann&apos;s Hardware Store has no description.
-Thoroughfare has no description.
-Hoover&apos;s Liquor and Cigar store has no description.
-bull&apos;s horns has no description.
-rickety chairs and tables has no description.
-wall has no description.
-Dodge Town has no description.
-Great Western Cattle Trail has no description.
-bank in Abilene has no description.
-steak has no description.
-fork has no description.
-spoon has no description.
-dinner has no description.
+
 
 
 
@@ -76,12 +48,12 @@ Travelers on the road have suggested dinner in the Long Branch Saloon.
  
 Dinner at the Long Branch Saloon
 An adventure on the American Frontier by Publysher
-Release 1 / Serial number 121108 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 121110 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Long Branch Saloon
-The saloon is dominated by a long bar to the right. Behind the bar, a few paintings try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
+The saloon is dominated by a long bar to the right. Behind the bar, a few pictures try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
 
-At the back of the saloon a few rickety chairs and tables have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few paintings. Below the paintings you can see today&apos;s menu. 
+At the back of the saloon a few rickety chairs and tables have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few pictures. Below the pictures you can see today&apos;s menu. 
 
 You can see a barman here.
 
@@ -90,52 +62,52 @@ You can review your surroundings at any time by typing LOOK. Try it -- type LOOK
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="71">NO</temporary>
+    <temporary score="46">NO</temporary>
     <children>
-      <child nodeId="node-0x2070f50" />
-      <child nodeId="node-0x2057660" />
+      <child nodeId="node-0x1df88a0" />
+      <child nodeId="node-0x1df84c0" />
     </children>
   </item>
-  <item nodeId="node-0x2057660">
+  <item nodeId="node-0x1df84c0">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Excellent -- LOOK will print a description of your environment, like so:
 
 Long Branch Saloon
-The saloon is dominated by a long bar to the right. Behind the bar, a few paintings try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
+The saloon is dominated by a long bar to the right. Behind the bar, a few pictures try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
 
-At the back of the saloon a few rickety chairs and tables have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few paintings. Below the paintings you can see today&apos;s menu. 
+At the back of the saloon a few rickety chairs and tables have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few pictures. Below the pictures you can see today&apos;s menu. 
 
 You can see a barman here.
 
-Individual objects have descriptions, too. You can find out more by examining them, as in EXAMINE PAINTINGS.
+Individual objects have descriptions, too. You can find out more by examining them, as in EXAMINE PICTURES.
 
 &gt;</result>
     <annotation xml:space="preserve">Unit Tests</annotation>
     <commentary xml:space="preserve">Excellent -- LOOK will print a description of your environment, like so:
 
 Long Branch Saloon
-The saloon is dominated by a long bar to the right. Behind the bar, a few paintings try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
+The saloon is dominated by a long bar to the right. Behind the bar, a few pictures try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
 
-At the back of the saloon a few rickety chairs and tables have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few paintings. Below the paintings you can see today&apos;s menu. 
+At the back of the saloon a few rickety chairs and tables have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few pictures. Below the pictures you can see today&apos;s menu. 
 
 You can see a barman here.
 
-Individual objects have descriptions, too. You can find out more by examining them, as in EXAMINE PAINTINGS.
+Individual objects have descriptions, too. You can find out more by examining them, as in EXAMINE PICTURES.
 
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="65">NO</temporary>
+    <temporary score="40">NO</temporary>
     <children>
-      <child nodeId="node-0x2070f00" />
-      <child nodeId="node-0x20576b0" />
+      <child nodeId="node-0x1df8850" />
+      <child nodeId="node-0x1df8620" />
     </children>
   </item>
-  <item nodeId="node-0x20576b0">
-    <command xml:space="preserve">examine paintings</command>
+  <item nodeId="node-0x1df8620">
+    <command xml:space="preserve">examine pictures</command>
     <result xml:space="preserve">Very good. Since you&apos;re likely to examine things frequently, you can also abbreviate this command as X, as in X the menu.
 
-It&apos;s not that the paintings are ugly, but they manage to hurt the eye nevertheless.
+You take a close look at one of the pictures. It seems to be a photograph of general Custer.
 
 Now, it turns out that you&apos;re holding something. To find out what, try typing INVENTORY.
 
@@ -143,19 +115,19 @@ Now, it turns out that you&apos;re holding something. To find out what, try typi
     <annotation xml:space="preserve">Tutorial mode</annotation>
     <commentary xml:space="preserve">Very good. Since you&apos;re likely to examine things frequently, you can also abbreviate this command as X, as in X the menu.
 
-It&apos;s not that the paintings are ugly, but they manage to hurt the eye nevertheless.
+You take a close look at one of the pictures. It seems to be a photograph of general Custer.
 
 Now, it turns out that you&apos;re holding something. To find out what, try typing INVENTORY.
 
 &gt;</commentary>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="65">NO</temporary>
+    <changed>YES</changed>
+    <temporary score="40">NO</temporary>
     <children>
-      <child nodeId="node-0x2057350" />
+      <child nodeId="node-0x1df8670" />
     </children>
   </item>
-  <item nodeId="node-0x2057350">
+  <item nodeId="node-0x1df8670">
     <command xml:space="preserve">inventory</command>
     <result xml:space="preserve">Right! In the future, you can also shorten this command to INV or just I. As you see, it will print out a description of what you&apos;ve got:
 
@@ -179,12 +151,12 @@ If you want to get rid of something that you&apos;re holding you can always drop
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="65">NO</temporary>
+    <temporary score="40">NO</temporary>
     <children>
-      <child nodeId="node-0x20573a0" />
+      <child nodeId="node-0x1df86c0" />
     </children>
   </item>
-  <item nodeId="node-0x20573a0">
+  <item nodeId="node-0x1df86c0">
     <command xml:space="preserve">drop the gun</command>
     <result xml:space="preserve">Dropping things will move them into your environment, like this:
 
@@ -202,12 +174,12 @@ You can pick things up when you see them, like this: TAKE GUN.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="65">NO</temporary>
+    <temporary score="40">NO</temporary>
     <children>
-      <child nodeId="node-0x20573f0" />
+      <child nodeId="node-0x1df8710" />
     </children>
   </item>
-  <item nodeId="node-0x20573f0">
+  <item nodeId="node-0x1df8710">
     <command xml:space="preserve">take gun</command>
     <result xml:space="preserve">Well done. Now you&apos;ll get a message to tell you whether you succeeded in picking up something:
 
@@ -225,12 +197,12 @@ You can also converse with other people, like this: ASK BARMAN ABOUT DINNER.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="65">NO</temporary>
+    <temporary score="40">NO</temporary>
     <children>
-      <child nodeId="node-0x2057440" />
+      <child nodeId="node-0x1df8760" />
     </children>
   </item>
-  <item nodeId="node-0x2057440">
+  <item nodeId="node-0x1df8760">
     <command xml:space="preserve">ask barman about dinner</command>
     <result xml:space="preserve">Well spoken. If you asked about something sensible, you will get a reply.
 
@@ -268,9 +240,9 @@ You&apos;re on your own now.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="64">NO</temporary>
+    <temporary score="39">NO</temporary>
   </item>
-  <item nodeId="node-0x2070f00">
+  <item nodeId="node-0x1df8850">
     <command xml:space="preserve">tutorial mode off</command>
     <result xml:space="preserve">Tutorial mode is now off.
 
@@ -280,7 +252,7 @@ You&apos;re on your own now.
     <changed>NO</changed>
     <temporary score="144">NO</temporary>
   </item>
-  <item nodeId="node-0x2070f50">
+  <item nodeId="node-0x1df88a0">
     <command xml:space="preserve">tutorial mode off</command>
     <result xml:space="preserve">Tutorial mode is now off.
 
@@ -291,12 +263,40 @@ You&apos;re on your own now.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="71">NO</temporary>
+    <temporary score="46">NO</temporary>
     <children>
-      <child nodeId="node-0x2070fa0" />
+      <child nodeId="node-0x1d198a0" />
+      <child nodeId="node-0x124190a0" />
     </children>
   </item>
-  <item nodeId="node-0x2070fa0">
+  <item nodeId="node-0x124190a0">
+    <command xml:space="preserve">check pictures</command>
+    <result xml:space="preserve">yourself: 
+gun: lemat-revolver.jpg
+knife: 
+unlimited amount of money: 
+long bar: 
+menu: 
+pictures: custer.jpg
+bull&apos;s horns: 
+rickety chairs and tables: 
+wall: 
+barman: 
+Dodge Town: 
+Great Western Cattle Trail: 
+bank in Abilene: 
+steak: steak.jpg
+fork: 
+spoon: 
+dinner: 
+handlebar moustache: 
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="6">YES</temporary>
+  </item>
+  <item nodeId="node-0x1d198a0">
     <command xml:space="preserve">ask barman about dinner</command>
     <result xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
 
@@ -318,12 +318,12 @@ You&apos;re on your own now.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="71">NO</temporary>
+    <temporary score="46">NO</temporary>
     <children>
-      <child nodeId="node-0x2070ff0" />
+      <child nodeId="node-0x1d19830" />
     </children>
   </item>
-  <item nodeId="node-0x2070ff0">
+  <item nodeId="node-0x1d19830">
     <command xml:space="preserve">x menu</command>
     <result xml:space="preserve">&quot;Today: steak,&quot; someone has written. Catchy and to the point.
 
@@ -333,12 +333,12 @@ You&apos;re on your own now.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="71">NO</temporary>
+    <temporary score="46">NO</temporary>
     <children>
-      <child nodeId="node-0x2071060" />
+      <child nodeId="node-0x1d197c0" />
     </children>
   </item>
-  <item nodeId="node-0x2071060">
+  <item nodeId="node-0x1d197c0">
     <command xml:space="preserve">ask barman about steak</command>
     <result xml:space="preserve">&quot;One steak please,&quot; you ask. 
 
@@ -360,12 +360,12 @@ The barman hands you a steak.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="71">NO</temporary>
+    <temporary score="46">NO</temporary>
     <children>
-      <child nodeId="node-0x2071190" />
+      <child nodeId="node-0x1d19690" />
     </children>
   </item>
-  <item nodeId="node-0x2071190">
+  <item nodeId="node-0x1d19690">
     <command xml:space="preserve">eat steak</command>
     <result xml:space="preserve">You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
 
@@ -375,12 +375,12 @@ The barman hands you a steak.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="71">NO</temporary>
+    <temporary score="46">NO</temporary>
     <children>
-      <child nodeId="node-0x20711e0" />
+      <child nodeId="node-0x1df87f0" />
     </children>
   </item>
-  <item nodeId="node-0x20711e0">
+  <item nodeId="node-0x1df87f0">
     <command xml:space="preserve">ask barman about fork</command>
     <result xml:space="preserve">I&apos;d like a fork to eat this,&quot; you suggest.
 
@@ -393,7 +393,7 @@ The barman hands you a steak.
 
 &gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="70">NO</temporary>
+    <changed>NO</changed>
+    <temporary score="45">NO</temporary>
   </item>
 </Skein>
