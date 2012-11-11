@@ -12,11 +12,15 @@ Release along with
 	the "Vorple" interpreter,
 	a file of "Custom CSS" called "vorple.custom.css",
 	a file of "Custom JavaScript" called "vorple.custom.js",
-	a file of "Background" called "media/img/leather_1.png",
-	a file of "Saloon" called "media/img/saloon.jpg", 
-	a file of "Gun" called "media/img/lemat-revolver.jpg",
-	a file of "General Custer" called "media/img/custer.jpg",
-	a file of "Steak" called "media/img/steak.jpg".
+	a file of "The Long Branch Saloon" called "media/img/saloon.jpg", 
+	a file of "Dodge Town" called "media/img/thoroughfare.jpg",
+	a file of "The barman" called "media/img/barman.jpg",
+	a file of "Your gun" called "media/img/lemat-revolver.jpg",
+	a file of "Your knife" called "media/img/knife.jpg",
+	a file of "Your money" called "media/img/money.jpg",
+	a file of "A pair of bull's horns" called "media/img/bullshorns.jpg",
+	a file of "A picture of general Custer" called "media/img/custer.jpg",
+	a file of "A steak" called "media/img/steak.jpg".
 	
 Use no scoring. 
 
@@ -118,13 +122,15 @@ Travelers on the road have suggested dinner in the Long Branch Saloon. [paragrap
 The player carries a gun, a knife and an unlimited amount of money. 
 
 The knife is a weapon. 
-The description of the knife is "Your trusted Bowie knife. Outlawed in more states than you yourself, this knife has been your trusted ally for years. "
+The description of the knife is "Your trusted Bowie knife. Outlawed in more states than you yourself, this knife has been your trusted ally for years."
+The associated image of the knife is "knife.jpg".
 
 The gun is a weapon. 
 The description of the gun is "This is a rare 10-shot LeMat revolver."
 The associated image of the gun is "lemat-revolver.jpg".
 
 Understand "money" as the unlimited amount of money. The description of the unlimited amount of money is "A huge pile of hard-earned cash. Hard-earned by other people, that is."
+The associated image of the unlimited amount of money is "money.jpg".
 
 Instead of dropping the unlimited amount of money:
 	say "You worked hard to earn this money. Dropping it seems kind of pointless."
@@ -189,6 +195,7 @@ The associated image of some pictures is "custer.jpg".
 
 
 The bull's horns are scenery in the saloon. Understand "bull/horn/horns" as the bull's horns. Instead of taking the bull's horns, say "Removing saloon property might get you shot.". 
+The associated image of the bull's horns is "bullshorns.jpg".
 
 The furniture is scenery in the saloon. The printed name of the furniture is "rickety chairs and tables". Understand "chair/chairs/table/tables" as furniture. 
 
@@ -201,6 +208,8 @@ The Thoroughfare is outside from the saloon. The description of the Thoroughfare
 
 Right now, you are standing in front of the Long Branch Saloon.
 "
+
+The associated image of the thoroughfare is "thoroughfare.jpg".
 
 
 Section 3 - The hardware store
@@ -216,9 +225,10 @@ Part 4 – The Cast
 
 Chapter 1 - The Barman
 
-The barman is a man. The barman is in the saloon. The description of the barman is "This guy looks like he has been standing behind the bar for at least three days straight without any sleep. His [handlebar moustache] is yellow with nicotine stains."
+The barman is a man. The barman is in the saloon. The description of the barman is "This guy looks like he has been standing behind the bar for at least three days straight without any sleep. His [moustache] is yellow with nicotine stains."
+The associated image of the barman is "barman.jpg". 
 
-The handlebar moustache is part of the barman. The description of the handlebar moustache is "Years of smoking has turned this moustache slightly yellow."
+The moustache is part of the barman. The description of the moustache is "Years of smoking has turned this moustache slightly yellow."
 
 The topic list of the barman is the Table of Barman Topics. 
 

@@ -5,9 +5,9 @@ Metadata.iFiction
 Release.blurb
 manifest.plist
 
-# IntelliJ project files
+# Just ignore this
 .idea
 *.iml
-
-# VI
 *.swp
+.DS_Store
+
