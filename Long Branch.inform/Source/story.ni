@@ -13,6 +13,8 @@ Release along with
 	a file of "Custom CSS" called "vorple.custom.css",
 	a file of "Custom JavaScript" called "vorple.custom.js",
 	a file of "The Long Branch Saloon" called "media/img/saloon.jpg", 
+	a file of "The Hardware Store" called "media/img/hardware-store-front.jpg",
+	a file of "The Liquor Store" called "media/img/liquor-store-front.jpg",
 	a file of "Dodge Town" called "media/img/thoroughfare.jpg",
 	a file of "The barman" called "media/img/barman.jpg",
 	a file of "Your gun" called "media/img/lemat-revolver.jpg",
@@ -56,6 +58,9 @@ Carry out interrogating someone about something:
 	otherwise:
 		say "[The current interlocutor] shakes [if the current interlocutor is male]his[otherwise if the current interlocutor is female]her[otherwise]its[end if] head. 'I don't know anything about that.'";
 
+Instead of asking someone (called the target) about "himself":
+	try interrogating the target about the target. 
+
 
 Table of Default Topics 
 item	reply
@@ -85,6 +90,24 @@ Report taking a weapon:
 Chapter 5 - Buildings
 
 A building is a kind of room. 
+
+A building has text called the front description. The front description of a building is usually "You carefully examine the building." 
+
+Understand "examine [any adjacent building]" as examining. 
+Instead of examining a building (called the target):
+	let txt be text;
+	let txt be the front description of the target;
+	say "[txt][paragraph break]";
+	
+
+Understand "enter [any adjacent building]" as entering. 
+Understand "get in/into [any adjacent building]" as entering. 
+Understand "go into/in/inside [any adjacent building]" as entering.
+Understand "go [any adjacent building]" as entering.
+
+Instead of entering a building (called the target):
+	try going inside. 
+
 
 Chapter 6 - Notable 
 
@@ -126,7 +149,7 @@ The description of the knife is "Your trusted Bowie knife. Outlawed in more stat
 The associated image of the knife is "knife.jpg".
 
 The gun is a weapon. 
-The description of the gun is "This is a rare 10-shot LeMat revolver."
+The description of the gun is "This is a rare 10-shot LeMat revolver. The LeMat was a fearsome weapon during the Civil War, wielded by the Confederates. You know, because you were told by the former owner before you stole it."
 The associated image of the gun is "lemat-revolver.jpg".
 
 Understand "money" as the unlimited amount of money. The description of the unlimited amount of money is "A huge pile of hard-earned cash. Hard-earned by other people, that is."
@@ -151,7 +174,7 @@ Obtaining Dinner is scene.
 Obtaining Dinner begins when play begins. 
 Obtaining Dinner ends when the hardware store is mentioned. 
 
-Before going outside from the saloon during Obtaining Dinner: say "Not without your dinner." instead. 
+Before going outside from the Long Branch Saloon during Obtaining Dinner: say "Not without your dinner." instead. 
 
 The dinner is a subject. Understand "food" as dinner. 
 
@@ -173,52 +196,90 @@ Chapter 1 – Dodge City
 
 Section 1 – The saloon
 
-The Long Branch Saloon is a building. Understand "saloon" as the Long Branch Saloon. 
+The Long Branch Saloon is a building. 
 "The saloon is dominated by a [long bar] to the right. Behind the bar, a few [pictures] try to liven up the place, accompanied by the obligatory pair of [bull's horns].  
 
 At the back of the saloon a few [furniture] have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few [pictures]. Below the [pictures] you can see today's [menu]. "
 
-The associated image of the saloon is "saloon.jpg";	
+The associated image of the Long Branch Saloon is "saloon.jpg";	
 
-The long bar is scenery in the saloon. The description of the bar is "Yes, this is a bar." 
+The long bar is scenery in the Long Branch Saloon. 
 
-The menu is scenery in the saloon. The description of the menu is "'Today: [steak],' someone has written. Catchy and to the point."
+The menu is scenery in the Long Branch Saloon. The description of the menu is "'Today: [steak],' someone has written. Catchy and to the point."
 Instead of taking the menu, say "While the menu is certainly a feast for the eye, others might want to read this as well."
 After examining the menu:
 	now the steak is familiar; 
 	now the steak is notable.  
 
-Some pictures are scenery in the saloon. Understand "photo" or "photos" or "photograph" or "photographs" as pictures. 
+Some pictures are scenery in the Long Branch Saloon. Understand "photo" or "photos" or "photograph" or "photographs" as pictures. 
 The description of the pictures is "You take a close look at one of the pictures. It seems to be a photograph of general Custer." 
 Instead of taking the pictures, say "You never met general Custer. Why would you want a picture of him?"
 The associated image of some pictures is "custer.jpg".
 
 
-The bull's horns are scenery in the saloon. Understand "bull/horn/horns" as the bull's horns. Instead of taking the bull's horns, say "Removing saloon property might get you shot.". 
+The bull's horns are scenery in the Long Branch Saloon. Understand "bulls horns/bull/horn/horns" as the bull's horns. Instead of taking the bull's horns, say "Removing saloon property might get you shot.". 
 The associated image of the bull's horns is "bullshorns.jpg".
 
-The furniture is scenery in the saloon. The printed name of the furniture is "rickety chairs and tables". Understand "chair/chairs/table/tables" as furniture. 
+The furniture is scenery in the Long Branch Saloon. The printed name of the furniture is "rickety chairs and tables". Understand "chair/chairs/table/tables" as furniture. 
 
-The wall is scenery in the saloon. 
+The wall is scenery in the Long Branch Saloon. 
 
 
 Section 2 – The thoroughfare
 
-The Thoroughfare is outside from the saloon. The description of the Thoroughfare is "You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west. 
+The Central Thoroughfare is outside from the Long Branch Saloon. The description of the Central Thoroughfare is "You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west. 
 
-Right now, you are standing in front of the Long Branch Saloon.
-"
+Right now, you are standing in front of the Long Branch Saloon."
 
-The associated image of the thoroughfare is "thoroughfare.jpg".
+The printed name of the Central Thoroughfare is "The Thoroughfare". 
+The associated image of the central thoroughfare is "thoroughfare.jpg".
+
+The front description of the saloon is "Like almost every building here, the saloon is made of wood. A large [veranda] provides shelter for customers that would rather sit outside. When you arrived here, you tied your [horse] to one of the [bars] in front of the veranda." 
+
+The veranda is scenery in the Central Thoroughfare. Some bars are scenery in the Central Thoroughfare. 
+
+The horse is in the Central Thoroughfare. The horse is an animal. The description of the horse is "Your horse (or technically: somebody else's horse) seems to be tired of the long ride from Abilene. You tied it down in front of the saloon's veranda so it could rest, eat and drink."
+
+Understand "climb [horse]" as entering. Understand "climb on [horse]" as entering. Understand "get on [horse]" as entering. 
+Instead of entering the horse: say "Your horse is very tired. Going for a ride would not improve its condition."
+
+
+The Eastern Thoroughfare is east from the Central Thoroughfare. The description of the Eastern Thoroughfare is "You are standing in front of [the liquor store]."
+The associated image of the eastern thoroughfare is "liquor-store-front.jpg". 
+The printed name of the Eastern Thoroughfare is "The Thoroughfare". 
+
+
+The Western Thoroughfare is west from the Central Thoroughfare. The description of the Western Thoroughfare is "The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill's Cemetary.
+
+You are standing in front of [the hardware store]; it seems to be closed though." 
+The printed name of the Western Thoroughfare is "The Thoroughfare".
+The associated image of the western thoroughfare is "hardware-store-front.jpg".
+
+The front description of the hardware store is "The [shutters] in front of [the hardware store] are closed. The [entrance] is closed is as well. 
+
+All in all, you get the feeling that the hardware store might not be open for business."
+
+The entrance is scenery in the western thoroughfare. The description of the entrance is "It's closed." Understand "door" as the entrance. The printed name of the entrance is "door". 
+
+Instead of opening the entrance:
+	say "It's locked. Normally, this wouldn't pose a problem for you, but there are too many passers-by."
+	
+Instead of unlocking the entrance with something (called the opener):
+	say "Great idea! You try to insert [the opener] into the lock, but strangely enough it doesn't seem to work."
+
+The sign is a thing. The sign is on the entrance. The description of the sign is "It's a piece of cardboard. On the cardboard, someone has carefully lettered the word 'Closed'." 
+The shutters are scenery in the western thoroughfare. The description of the shutters is "They are closed." Understand "window/windows/shutter" as the shutters. 
 
 
 Section 3 - The hardware store
 
-The Hardware Store is a building. The printed name of the hardware store is "Zimmermann's Hardware Store". The hardware store is proper-named. 
+The Hardware Store is a building. The hardware store is inside from the western thoroughfare. The printed name of the hardware store is "Zimmermann's Hardware Store". The hardware store is proper-named. 
+Instead of going to the hardware store: say "It's closed. You can't get in." 
+
 
 Section 4 - The liquor store
 
-The Liquor Store is a building. The printed name of the liquor store is "Hoover's Liquor and Cigar store". Understand "hoover's" as the liquor store. Understand "cigar store" as the liquor store. The liquor store is proper-named. 
+The Liquor Store is a building. The liquor store is inside from the eastern thoroughfare. The printed name of the liquor store is "Hoover's Liquor and Cigar store". Understand "hoover's / cigar store / hoover/ hoovers" as the liquor store. The liquor store is proper-named. 
 
 
 Part 4 – The Cast
@@ -236,9 +297,6 @@ The default greeting of the barman is "You approach the barman: 'Good afternoon'
 
 'A good afternoon to you as well, sir. How may I help you? '"
 
-[After interrogating the barman about an item listed in the Table of Barman Topics:
-	say "[reply entry][paragraph break]".]
-
 Table of Barman Topics
 item    	reply
 dinner	"'I'd like some food,' you say.  [paragraph break][if the player carries the steak]'I was under the impression you were already served a beautiful steak,' the barman answers. He does not seem to be inclined to give you another steak.[otherwise]'But of course,' [the barman] replies, '[one of]such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?[or]Have you made your choice after carefully examining our menu?[stopping]'"
@@ -247,9 +305,27 @@ menu	"'Can you tell me more about the menu?' you ask. [paragraph break]
 steak	"'One steak please,' you ask. [paragraph break][if the player does not have the steak]'STEAK!,' [the barman] shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. [paragraph break] [The barman] slams the steak on a plate. 'Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.'[paragraph break]The barman hands you a steak.[otherwise]'I'm afraid I've already given you the last steak available.'"
 spoon	"[if the player has the steak]It's a steak, not a bowl of soup. There is no need to ask [the barman] for a spoon.[otherwise]Why would you want to ask the barman about a spoon?"
 fork	"I'd like a fork to eat this,' you suggest.[paragraph break]'A fork?', the barman responds. [one of]If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.[or]'If I recall correctly, I have already suggested you look elsewhere. Just go outside and then go to the hardware store.'[stopping]"
+barman	"'So, who are you exactly?', you ask. [paragraph break]'I'm the barman', he answers. 'So if you need anything to eat, just ask me.'"
 
 After interrogating the barman about the steak, move the steak to the player.
 After interrogating the barman about the fork, now the hardware store is familiar.  
+
+
+Chapter 2 - Mister Zimmermann
+
+Mr Zimmermann is a man. Mr Zimmermann is in the western thoroughfare. The printed name of Mr Zimmermann is "a desolate looking man". Understand "man" as Mr Zimmermann. Understand "desolate looking man" as Mr Zimmermann. The description of Mr Zimmermann is "It seems as if he can burst into tears at any moment."
+
+The topic list of Mr Zimmermann is the Table of Mr Zimmermann Topics. 
+
+
+Table of Mr Zimmermann Topics
+item	reply
+Mr Zimmermann	"[one of]'And who might you be?', you ask.[or]'I'm terribly sorry, but I forgot your name', you say.[stopping][paragraph break]'My name is Mr. Zimmermann, and I'm the tragic owner of this once-thriving hardware store,' he answers."
+
+After interrogating Mr Zimmermann about Mr Zimmermann:
+	now the printed name of Mr Zimmermann is "Mr. Zimmermann";
+	now Mr Zimmermann is proper-named;
+
 
 Part 5 - Vorple
 
