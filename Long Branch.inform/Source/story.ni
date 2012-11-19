@@ -43,10 +43,25 @@ A person has a text called the default greeting.
 
 The current interlocutor is a person that varies. 
 
-Understand "ask [someone] about [any thing]" as interrogating it about. Interrogating it about is an action applying to two visible things.
+Understand "ask [someone] about/for [any thing]" as interrogating it about. Interrogating it about is an action applying to two objects.
+Understand "tell [someone] about [any thing]" as interrogating it about. 
+Understand "ask [someone] about [any building]" as interrogating it about. 
 
 Check interrogating someone about something (this is the Never ask about unknown subjects rule):
 	if the second noun is unknown, say "You don't what to say about [the second noun]." instead. 
+	
+
+Carry out interrogating someone about a building (this is the Ask about buildings rule):
+	if the current interlocutor is not the noun:
+		say "[the default greeting of the noun][paragraph break]";	
+	now the current interlocutor is the noun; 
+	let the current list be the topic list of the noun;
+	if the second noun is an item listed in the current list:
+		say "[reply entry][paragraph break]";
+	otherwise:
+		let pronoun be "[if the current interlocutor is male]he[otherwise if the current interlocutor is female]she[otherwise]it[end if]";
+		say "You ask [the current interlocutor] if [pronoun] can tell you anything about [the second noun], but [pronoun] suggests you go [best route from the location to the second noun] to see for yourself."
+	
 
 Carry out interrogating someone about something:
 	if the current interlocutor is not the noun:
@@ -56,11 +71,13 @@ Carry out interrogating someone about something:
 	if the second noun is an item listed in the current list:
 		say "[reply entry][paragraph break]";
 	otherwise:
-		say "[The current interlocutor] shakes [if the current interlocutor is male]his[otherwise if the current interlocutor is female]her[otherwise]its[end if] head. 'I don't know anything about that.'";
+		say "You start talking about [the second noun], but [the current interlocutor] shakes [if the current interlocutor is male]his[otherwise if the current interlocutor is female]her[otherwise]its[end if] head. [one of]'I don't know anything about that.'[or]'I'm not sure what I could tell you about that.'[at random]";
 
-Instead of asking someone (called the target) about "himself":
+Himself is a subject. Understand "name" or "his name" or "her name" or "herself" or "itself" as himself. 
+
+Instead of interrogating someone (called the target) about himself:
 	try interrogating the target about the target. 
-
+	
 
 Table of Default Topics 
 item	reply
@@ -94,7 +111,7 @@ A building is a kind of room.
 A building has text called the front description. The front description of a building is usually "You carefully examine the building." 
 
 Understand "examine [any adjacent building]" as examining. 
-Instead of examining a building (called the target):
+After examining a building (called the target) (this is the examine buildlings rule):
 	let txt be text;
 	let txt be the front description of the target;
 	say "[txt][paragraph break]";
@@ -161,6 +178,10 @@ Instead of dropping the unlimited amount of money:
 
 Chapter 3 - Getting Dinner
 
+Obtaining Dinner is scene. 
+Obtaining Dinner begins when play begins. 
+Obtaining Dinner ends when the hardware store is mentioned. 
+
 The steak is an unfamiliar edible thing. 
 The description of the steak is "A lovely steak.".
 Before dropping the steak, say "Why would you want to drop such a lovely steak?" instead.
@@ -169,10 +190,6 @@ The associated image of the steak is "steak.jpg".
 The fork is an unfamiliar portable thing.
 The spoon is a familiar subject. 
 The hardware store is unmentioned. 
-
-Obtaining Dinner is scene. 
-Obtaining Dinner begins when play begins. 
-Obtaining Dinner ends when the hardware store is mentioned. 
 
 Before going outside from the Long Branch Saloon during Obtaining Dinner: say "Not without your dinner." instead. 
 
@@ -189,6 +206,18 @@ After interrogating the barman about the fork:
 
 
 Test part1 with "go outside / ask barman about dinner / ask barman about menu / x menu / ask barman about steak / ask barman about steak / drop steak / eat steak / ask barman about fork / go outside". 
+
+Chapter 4 - Discovering the Quest
+
+Discovering the Quest is a scene. 
+Discovering the Quest begins when Obtaining Dinner ends.
+Discovering the Quest ends when the infestation of bunnies is known.
+
+The quest is an unfamiliar subject. 
+
+The infestation of bunnies is an unfamiliar subject. Understand "infestation/bunnies/rabbits" as the infestation of bunnies. 
+
+
 
 Part 3 - The Setting
 
@@ -225,7 +254,7 @@ The furniture is scenery in the Long Branch Saloon. The printed name of the furn
 The wall is scenery in the Long Branch Saloon. 
 
 
-Section 2 – The thoroughfare
+Section 2 – The thoroughfare, in front of the saloon
 
 The Central Thoroughfare is outside from the Long Branch Saloon. The description of the Central Thoroughfare is "You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west. 
 
@@ -241,17 +270,19 @@ The veranda is scenery in the Central Thoroughfare. Some bars are scenery in the
 The horse is in the Central Thoroughfare. The horse is an animal. The description of the horse is "Your horse (or technically: somebody else's horse) seems to be tired of the long ride from Abilene. You tied it down in front of the saloon's veranda so it could rest, eat and drink."
 
 Understand "climb [horse]" as entering. Understand "climb on [horse]" as entering. Understand "get on [horse]" as entering. 
-Instead of entering the horse: say "Your horse is very tired. Going for a ride would not improve its condition."
+Instead of entering the horse: say "Your horse is very tired. Going for a ride would not improve its condition. Besides, you are to get some dinner."
 
+Section 3 - The thoroughfare, in front of the liquor store
 
 The Eastern Thoroughfare is east from the Central Thoroughfare. The description of the Eastern Thoroughfare is "You are standing in front of [the liquor store]."
 The associated image of the eastern thoroughfare is "liquor-store-front.jpg". 
 The printed name of the Eastern Thoroughfare is "The Thoroughfare". 
 
+Section 4 - The thoroughfare, in front of the hardware store
 
 The Western Thoroughfare is west from the Central Thoroughfare. The description of the Western Thoroughfare is "The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill's Cemetary.
 
-You are standing in front of [the hardware store]; it seems to be closed though." 
+You are standing in front of [the hardware store]; it seems to be closed though. [A Mr Zimmermann] is standing next to the entrance." 
 The printed name of the Western Thoroughfare is "The Thoroughfare".
 The associated image of the western thoroughfare is "hardware-store-front.jpg".
 
@@ -267,17 +298,22 @@ Instead of opening the entrance:
 Instead of unlocking the entrance with something (called the opener):
 	say "Great idea! You try to insert [the opener] into the lock, but strangely enough it doesn't seem to work."
 
-The sign is a thing. The sign is on the entrance. The description of the sign is "It's a piece of cardboard. On the cardboard, someone has carefully lettered the word 'Closed'." 
+The sign is a thing. The sign is on the entrance. The description of the sign is "It's a piece of cardboard. On the cardboard, someone has carefully lettered the word 'Closed'."  Understand "cardboard" as the sign. 
+
 The shutters are scenery in the western thoroughfare. The description of the shutters is "They are closed." Understand "window/windows/shutter" as the shutters. 
 
+Mr Zimmermann is scenery in the western thoroughfare. 
 
-Section 3 - The hardware store
+
+Section 5 - The hardware store
 
 The Hardware Store is a building. The hardware store is inside from the western thoroughfare. The printed name of the hardware store is "Zimmermann's Hardware Store". The hardware store is proper-named. 
 Instead of going to the hardware store: say "It's closed. You can't get in." 
 
+Understand "store" or "shop" or "hardware" as the hardware store. 
 
-Section 4 - The liquor store
+
+Section 6 - The liquor store
 
 The Liquor Store is a building. The liquor store is inside from the eastern thoroughfare. The printed name of the liquor store is "Hoover's Liquor and Cigar store". Understand "hoover's / cigar store / hoover/ hoovers" as the liquor store. The liquor store is proper-named. 
 
@@ -306,6 +342,7 @@ steak	"'One steak please,' you ask. [paragraph break][if the player does not hav
 spoon	"[if the player has the steak]It's a steak, not a bowl of soup. There is no need to ask [the barman] for a spoon.[otherwise]Why would you want to ask the barman about a spoon?"
 fork	"I'd like a fork to eat this,' you suggest.[paragraph break]'A fork?', the barman responds. [one of]If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.[or]'If I recall correctly, I have already suggested you look elsewhere. Just go outside and then go to the hardware store.'[stopping]"
 barman	"'So, who are you exactly?', you ask. [paragraph break]'I'm the barman', he answers. 'So if you need anything to eat, just ask me.'"
+Long Branch Saloon	"'It's a nice saloon you've got here,' you remark.[paragraph break]'Well sir, would that it were mine, but it ain't. I was here when mr. Original Owner built it not four years ago and I've been manning this bar ever since, but it ain't mine.'"
 
 After interrogating the barman about the steak, move the steak to the player.
 After interrogating the barman about the fork, now the hardware store is familiar.  
@@ -313,18 +350,30 @@ After interrogating the barman about the fork, now the hardware store is familia
 
 Chapter 2 - Mister Zimmermann
 
-Mr Zimmermann is a man. Mr Zimmermann is in the western thoroughfare. The printed name of Mr Zimmermann is "a desolate looking man". Understand "man" as Mr Zimmermann. Understand "desolate looking man" as Mr Zimmermann. The description of Mr Zimmermann is "It seems as if he can burst into tears at any moment."
+Mr Zimmermann is a man. Mr Zimmermann is in the western thoroughfare. The printed name of Mr Zimmermann is "desolate looking man". Mr Zimmermann is improper-named. Understand "man" as Mr Zimmermann. Understand "desolate looking man" as Mr Zimmermann. The description of Mr Zimmermann is "He looks like he can burst into tears at any moment."
 
+The default greeting of Mr Zimmermann is "You approach [the Mr Zimmermann]."
 The topic list of Mr Zimmermann is the Table of Mr Zimmermann Topics. 
 
+Understand "desolation" or "being desolate" as Mr Zimmermann. 
 
 Table of Mr Zimmermann Topics
 item	reply
 Mr Zimmermann	"[one of]'And who might you be?', you ask.[or]'I'm terribly sorry, but I forgot your name', you say.[stopping][paragraph break]'My name is Mr. Zimmermann, and I'm the tragic owner of this once-thriving hardware store,' he answers."
+hardware store 	"[one of]You carefully broach the subject of the hardware store. [The Mr Zimmermann] takes deep breath, composes himself, and starts to talk. [paragraph break]'[if Mr Zimmermann is not familiar]Let me introduce myself; my name is Mr. Zimmermann. [end if]The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. [paragraph break]But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.[paragraph break]And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business.'[or]You carefully listen to [the Mr Zimmermann] talking about his woes, but the gist stays the same: the store is closed due to an infestation of bunnies.[stopping]"
+entrance	"'What's up with the door?', you ask.[paragraph break][if the infestation is known]'It's a door, ' [the Mr Zimmermann] responds, 'I've bolted it shut when I discovered the bunnies. Now no-one can go in or out.'[otherwise]'It's closed, just like my beautiful store,' [the Mr Zimmermann] answers while trying to keep his voice steady." 
+fork	"[one of]'Can you sell me a fork?', you ask. 'I'd like to eat this steak, you see.'[paragraph break]'I would, if I could,' [the Mr Zimmermann] answers. 'But as you can see, the shop is closed.'[or]'Do you know of another place where I could get a fork?'[paragraph break]'Unfortunately not,' [the Mr Zimmermann] replies. 'This is the only hardware store in town.'[cycling]"
 
 After interrogating Mr Zimmermann about Mr Zimmermann:
 	now the printed name of Mr Zimmermann is "Mr. Zimmermann";
 	now Mr Zimmermann is proper-named;
+	now Mr Zimmermann is familiar; 
+	
+After interrogating Mr Zimmermann about hardware store:
+	now the printed name of Mr Zimmermann is "Mr. Zimmermann";
+	now Mr Zimmermann is proper-named;
+	now Mr Zimmermann is familiar; 
+	now the infestation of bunnies is familiar. 
 
 
 Part 5 - Vorple
