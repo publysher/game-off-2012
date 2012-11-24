@@ -111,10 +111,12 @@ A building is a kind of room.
 A building has text called the front description. The front description of a building is usually "You carefully examine the building." 
 
 Understand "examine [any adjacent building]" as examining. 
-After examining a building (called the target) (this is the examine buildlings rule):
+Instead of examining a building (called the target) (this is the examine buildings rule):
 	let txt be text;
 	let txt be the front description of the target;
 	say "[txt][paragraph break]";
+	
+The examine buildings rule is listed before the examine undescribed things rule in the carry out examining rules. 
 	
 
 Understand "enter [any adjacent building]" as entering. 
@@ -215,7 +217,7 @@ Discovering the Quest ends when the infestation of bunnies is known.
 
 The quest is an unfamiliar subject. 
 
-The infestation of bunnies is an unfamiliar subject. Understand "infestation/bunnies/rabbits" as the infestation of bunnies. 
+The infestation of bunnies is an unfamiliar subject. Understand "infestation/bunnies/rabbits/bunny/rabbit" as the infestation of bunnies. 
 
 
 
@@ -360,9 +362,13 @@ Understand "desolation" or "being desolate" as Mr Zimmermann.
 Table of Mr Zimmermann Topics
 item	reply
 Mr Zimmermann	"[one of]'And who might you be?', you ask.[or]'I'm terribly sorry, but I forgot your name', you say.[stopping][paragraph break]'My name is Mr. Zimmermann, and I'm the tragic owner of this once-thriving hardware store,' he answers."
-hardware store 	"[one of]You carefully broach the subject of the hardware store. [The Mr Zimmermann] takes deep breath, composes himself, and starts to talk. [paragraph break]'[if Mr Zimmermann is not familiar]Let me introduce myself; my name is Mr. Zimmermann. [end if]The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. [paragraph break]But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.[paragraph break]And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business.'[or]You carefully listen to [the Mr Zimmermann] talking about his woes, but the gist stays the same: the store is closed due to an infestation of bunnies.[stopping]"
+hardware store 	"[one of]You carefully broach the subject of the hardware store. [The Mr Zimmermann] takes a deep breath, composes himself, and starts to talk. [paragraph break]'[if Mr Zimmermann is not familiar]Let me introduce myself; my name is Mr. Zimmermann. [end if]The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. [paragraph break]But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.[paragraph break]And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business.'[or]You carefully listen to [the Mr Zimmermann] talking about his woes, but the gist stays the same: the store is closed due to an infestation of bunnies.[stopping]"
 entrance	"'What's up with the door?', you ask.[paragraph break][if the infestation is known]'It's a door, ' [the Mr Zimmermann] responds, 'I've bolted it shut when I discovered the bunnies. Now no-one can go in or out.'[otherwise]'It's closed, just like my beautiful store,' [the Mr Zimmermann] answers while trying to keep his voice steady." 
 fork	"[one of]'Can you sell me a fork?', you ask. 'I'd like to eat this steak, you see.'[paragraph break]'I would, if I could,' [the Mr Zimmermann] answers. 'But as you can see, the shop is closed.'[or]'Do you know of another place where I could get a fork?'[paragraph break]'Unfortunately not,' [the Mr Zimmermann] replies. 'This is the only hardware store in town.'[cycling]"
+the infestation of bunnies	"'I see,' you say to [the Mr Zimmermann], 'you have a mysterious infestation of bunnies, preventing me from getting a fork and thereby preventing me from getting dinner. Do you have any idea what might stop this infestation?'[paragraph break]"
+
+Instead of interrogating Mr Zimmermann about the sign:
+	try interrogating Mr Zimmermann about the store.
 
 After interrogating Mr Zimmermann about Mr Zimmermann:
 	now the printed name of Mr Zimmermann is "Mr. Zimmermann";
@@ -374,6 +380,8 @@ After interrogating Mr Zimmermann about hardware store:
 	now Mr Zimmermann is proper-named;
 	now Mr Zimmermann is familiar; 
 	now the infestation of bunnies is familiar. 
+	
+Does the player mean interrogating Mr Zimmermann about the Liquor Store: it is very unlikely. 
 
 
 Part 5 - Vorple

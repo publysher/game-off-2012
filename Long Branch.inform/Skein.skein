@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x5865e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x5a3b30" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x5865e0" />
-  <item nodeId="node-0x5865e0">
+  <activeNode nodeId="node-0x174d92e0" />
+  <item nodeId="node-0x5a3b30">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -20,7 +20,7 @@ Travelers on the road have suggested dinner in the Long Branch Saloon.
  
 Dinner at the Long Branch Saloon
 An adventure on the American Frontier by Publysher
-Release 1 / Serial number 121115 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 121120 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Long Branch Saloon
 The saloon is dominated by a long bar to the right. Behind the bar, a few pictures try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
@@ -46,7 +46,7 @@ Travelers on the road have suggested dinner in the Long Branch Saloon.
  
 Dinner at the Long Branch Saloon
 An adventure on the American Frontier by Publysher
-Release 1 / Serial number 121111 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
+Release 1 / Serial number 121120 / Inform 7 build 6G60 (I6/v6.32 lib 6/12N) SD
 
 Long Branch Saloon
 The saloon is dominated by a long bar to the right. Behind the bar, a few pictures try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
@@ -58,22 +58,15 @@ You can see a barman here.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="230">NO</temporary>
+    <temporary score="576">NO</temporary>
     <children>
-      <child nodeId="node-0x5f5400" />
-      <child nodeId="node-0x5f5550" />
-      <child nodeId="node-0x5f4c90" />
-      <child nodeId="node-0x5f5630" />
-      <child nodeId="node-0x586550" />
-      <child nodeId="node-0x5f49e0" />
-      <child nodeId="node-0x5f4d70" />
-      <child nodeId="node-0x5f4e50" />
-      <child nodeId="node-0x5f4890" />
-      <child nodeId="node-0x5f50f0" />
-      <child nodeId="node-0x5f4820" />
+      <child nodeId="node-0x5a5b70" />
+      <child nodeId="node-0x5a4820" />
+      <child nodeId="node-0x5a40c0" />
+      <child nodeId="node-0x5a3b90" />
     </children>
   </item>
-  <item nodeId="node-0x5f4820">
+  <item nodeId="node-0x5a3b90">
     <command xml:space="preserve">test all</command>
     <result xml:space="preserve">(Testing.)
 
@@ -127,10 +120,12 @@ I&apos;d like a fork to eat this,&quot; you suggest.
 
 &gt;[11] go outside
 
-Thoroughfare
+The Thoroughfare
 You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west.
 
-Right now, you are standing in front of the Long Branch Saloon. 
+Right now, you are standing in front of the Long Branch Saloon.
+
+You can see a horse here.
 
 &gt;</result>
     <commentary xml:space="preserve">(Testing.)
@@ -185,93 +180,6 @@ I&apos;d like a fork to eat this,&quot; you suggest.
 
 &gt;[11] go outside
 
-Thoroughfare
-You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west.
-
-Right now, you are standing in front of the Long Branch Saloon. 
-
-&gt;</commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="50">NO</temporary>
-  </item>
-  <item nodeId="node-0x5f50f0">
-    <command xml:space="preserve">ask barman about cigar store</command>
-    <result xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
-
-&quot;A good afternoon to you as well, sir. How may I help you? &quot;
-
-You ask the barman if he can tell you anything about Hoover&apos;s Liquor and Cigar store, but the barman suggests you go outside to see for yourself.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="192">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f5160" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f5160">
-    <command xml:space="preserve">ask barman about saloon</command>
-    <result xml:space="preserve">&quot;It&apos;s a nice saloon you&apos;ve got here,&quot; you remark.
-
-&quot;Well sir, would that it were mine, but it ain&apos;t. I was here when mr. Original Owner built it not four years ago and I&apos;ve been manning this bar ever since, but it ain&apos;t mine.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="182">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f51d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f51d0">
-    <command xml:space="preserve">test part1</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] go outside
-Not without your dinner.
-
-&gt;[2] ask barman about dinner
-&quot;I&apos;d like some food,&quot; you say.  
-
-&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
-
-&gt;[3] ask barman about menu
-&quot;Can you tell me more about the menu?&quot; you ask. 
-
- &quot;Considering the multitude of choices presented on our menu, I&apos;d suggest you examine the menu yourself.&quot;
-
-&gt;[4] x menu
-&quot;Today: steak,&quot; someone has written. Catchy and to the point.
-
-&gt;[5] ask barman about steak
-&quot;One steak please,&quot; you ask. 
-
-&quot;STEAK!,&quot; the barman shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. 
-
- The barman slams the steak on a plate. &quot;Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.&quot;
-
-The barman hands you a steak.
-
-&gt;[6] ask barman about steak
-&quot;One steak please,&quot; you ask. 
-
-&quot;I&apos;m afraid I&apos;ve already given you the last steak available.&quot;
-
-&gt;[7] drop steak
-Why would you want to drop such a lovely steak?
-
-&gt;[8] eat steak
-You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
-
-&gt;[9] ask barman about fork
-I&apos;d like a fork to eat this,&quot; you suggest.
-
-&quot;A fork?&quot;, the barman responds. If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.
-
-&gt;[10] go outside
-
 The Thoroughfare
 You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west.
 
@@ -279,62 +187,12 @@ Right now, you are standing in front of the Long Branch Saloon.
 
 You can see a horse here.
 
-&gt;</result>
+&gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="182">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f5240" />
-    </children>
+    <changed>NO</changed>
+    <temporary score="485">NO</temporary>
   </item>
-  <item nodeId="node-0x5f5240">
-    <command xml:space="preserve"></command>
-    <result xml:space="preserve">I beg your pardon?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="182">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f52b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f52b0">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">
-The Thoroughfare
-The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill&apos;s Cemetary.
-
-You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be closed though. A desolate looking man is standing next to the entrance.
-
-On the door is a sign.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="182">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f4970" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4970">
-    <command xml:space="preserve">ask man about shop</command>
-    <result xml:space="preserve">You approach the desolate looking man.
-
-You carefully broach the subject of the hardware store. The desolate looking man takes deep breath, composes himself, and starts to talk. 
-
-&quot;The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. 
-
-But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.
-
-And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="181">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f4890">
+  <item nodeId="node-0x5a40c0">
     <command xml:space="preserve">tutorial mode on</command>
     <result xml:space="preserve">Tutorial mode is now on.
 
@@ -349,12 +207,12 @@ You can review your surroundings at any time by typing LOOK. Try it -- type LOOK
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="49">NO</temporary>
+    <temporary score="493">NO</temporary>
     <children>
-      <child nodeId="node-0x5f4900" />
+      <child nodeId="node-0x5a4110" />
     </children>
   </item>
-  <item nodeId="node-0x5f4900">
+  <item nodeId="node-0x5a4110">
     <command xml:space="preserve">look</command>
     <result xml:space="preserve">Excellent -- LOOK will print a description of your environment, like so:
 
@@ -382,12 +240,12 @@ Individual objects have descriptions, too. You can find out more by examining th
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="49">NO</temporary>
+    <temporary score="493">NO</temporary>
     <children>
-      <child nodeId="node-0x5f4320" />
+      <child nodeId="node-0x5a4180" />
     </children>
   </item>
-  <item nodeId="node-0x5f4320">
+  <item nodeId="node-0x5a4180">
     <command xml:space="preserve">examine pictures</command>
     <result xml:space="preserve">Very good. Since you&apos;re likely to examine things frequently, you can also abbreviate this command as X, as in X the menu.
 
@@ -405,12 +263,12 @@ Now, it turns out that you&apos;re holding something. To find out what, try typi
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="49">NO</temporary>
+    <temporary score="493">NO</temporary>
     <children>
-      <child nodeId="node-0x5f4390" />
+      <child nodeId="node-0x5a41f0" />
     </children>
   </item>
-  <item nodeId="node-0x5f4390">
+  <item nodeId="node-0x5a41f0">
     <command xml:space="preserve">inventory</command>
     <result xml:space="preserve">Right! In the future, you can also shorten this command to INV or just I. As you see, it will print out a description of what you&apos;ve got:
 
@@ -434,12 +292,12 @@ If you want to get rid of something that you&apos;re holding you can always drop
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="49">NO</temporary>
+    <temporary score="493">NO</temporary>
     <children>
-      <child nodeId="node-0x5f4400" />
+      <child nodeId="node-0x5a4320" />
     </children>
   </item>
-  <item nodeId="node-0x5f4400">
+  <item nodeId="node-0x5a4320">
     <command xml:space="preserve">drop the gun</command>
     <result xml:space="preserve">Dropping things will move them into your environment, like this:
 
@@ -457,12 +315,12 @@ You can pick things up when you see them, like this: TAKE GUN.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="49">NO</temporary>
+    <temporary score="493">NO</temporary>
     <children>
-      <child nodeId="node-0x5f4bb0" />
+      <child nodeId="node-0x5a4010" />
     </children>
   </item>
-  <item nodeId="node-0x5f4bb0">
+  <item nodeId="node-0x5a4010">
     <command xml:space="preserve">take gun</command>
     <result xml:space="preserve">Well done. Now you&apos;ll get a message to tell you whether you succeeded in picking up something:
 
@@ -480,12 +338,12 @@ You can also converse with other people, like this: ASK BARMAN ABOUT DINNER.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="49">NO</temporary>
+    <temporary score="493">NO</temporary>
     <children>
-      <child nodeId="node-0x5f4c20" />
+      <child nodeId="node-0x5a4390" />
     </children>
   </item>
-  <item nodeId="node-0x5f4c20">
+  <item nodeId="node-0x5a4390">
     <command xml:space="preserve">ask barman about dinner</command>
     <result xml:space="preserve">Well spoken. If you asked about something sensible, you will get a reply.
 
@@ -523,173 +381,9 @@ You&apos;re on your own now.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="48">NO</temporary>
+    <temporary score="492">NO</temporary>
   </item>
-  <item nodeId="node-0x5f4e50">
-    <command xml:space="preserve">ask barman about hardware store</command>
-    <result xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
-
-&quot;A good afternoon to you as well, sir. How may I help you? &quot;
-
-You ask the barman if he can tell you anything about Zimmermann&apos;s Hardware Store, but he suggests you go outside to see for yourself.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="199">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f4ec0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4ec0">
-    <command xml:space="preserve">test part1</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] go outside
-Not without your dinner.
-
-&gt;[2] ask barman about dinner
-&quot;I&apos;d like some food,&quot; you say.  
-
-&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
-
-&gt;[3] ask barman about menu
-&quot;Can you tell me more about the menu?&quot; you ask. 
-
- &quot;Considering the multitude of choices presented on our menu, I&apos;d suggest you examine the menu yourself.&quot;
-
-&gt;[4] x menu
-&quot;Today: steak,&quot; someone has written. Catchy and to the point.
-
-&gt;[5] ask barman about steak
-&quot;One steak please,&quot; you ask. 
-
-&quot;STEAK!,&quot; the barman shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. 
-
- The barman slams the steak on a plate. &quot;Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.&quot;
-
-The barman hands you a steak.
-
-&gt;[6] ask barman about steak
-&quot;One steak please,&quot; you ask. 
-
-&quot;I&apos;m afraid I&apos;ve already given you the last steak available.&quot;
-
-&gt;[7] drop steak
-Why would you want to drop such a lovely steak?
-
-&gt;[8] eat steak
-You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
-
-&gt;[9] ask barman about fork
-I&apos;d like a fork to eat this,&quot; you suggest.
-
-&quot;A fork?&quot;, the barman responds. If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.
-
-&gt;[10] go outside
-
-The Thoroughfare
-You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west.
-
-Right now, you are standing in front of the Long Branch Saloon.
-
-You can see a horse here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="199">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f4f30" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4f30">
-    <command xml:space="preserve">go west</command>
-    <result xml:space="preserve">
-The Thoroughfare
-The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill&apos;s Cemetary.
-
-You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be closed though. A desolate looking man is standing next to the entrance.
-
-On the door is a sign.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="199">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f4fa0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4fa0">
-    <command xml:space="preserve">ask man about store</command>
-    <result xml:space="preserve">Which do you mean, Zimmermann&apos;s Hardware Store or Hoover&apos;s Liquor and Cigar store?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="199">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f5010" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f5010">
-    <command xml:space="preserve">ask man about hardware store</command>
-    <result xml:space="preserve">You approach the desolate looking man.
-
-You carefully broach the subject of the hardware store. The desolate looking man takes deep breath, composes himself, and starts to talk. 
-
-&quot;Let me introduce myself; my name is Mr. Zimmermann. The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. 
-
-But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.
-
-And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="199">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f5080" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f5080">
-    <command xml:space="preserve">ask man about hardware store</command>
-    <result xml:space="preserve">You carefully broach the subject of the hardware store. Mr. Zimmermann takes deep breath, composes himself, and starts to talk. 
-
-&quot;The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. 
-
-But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.
-
-And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="198">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f4d70">
-    <command xml:space="preserve">ask barman about rabbits</command>
-    <result xml:space="preserve">There is no reply.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="221">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f4de0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4de0">
-    <command xml:space="preserve">ask barman about infestation</command>
-    <result xml:space="preserve">You don&apos;t what to say about the infestation.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="220">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f49e0">
+  <item nodeId="node-0x5a4820">
     <command xml:space="preserve">ask barman about dinner</command>
     <result xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
 
@@ -712,12 +406,116 @@ And with me being as allergic to bunnies as a priest is to sin, I had no other o
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="40">NO</temporary>
+    <temporary score="576">NO</temporary>
     <children>
-      <child nodeId="node-0x5f4a50" />
+      <child nodeId="node-0x5a4890" />
+      <child nodeId="node-0x289fb40" />
     </children>
   </item>
-  <item nodeId="node-0x5f4a50">
+  <item nodeId="node-0x289fb40">
+    <command xml:space="preserve">ask barman about dinner</command>
+    <result xml:space="preserve">&quot;I&apos;d like some food,&quot; you say.  
+
+&quot;But of course,&quot; the barman replies, &quot;Have you made your choice after carefully examining our menu?&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve">&quot;I&apos;d like some food,&quot; you say.  
+
+&quot;But of course,&quot; the barman replies, &quot;Have you made your choice after carefully examining our menu?&quot;
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="500">NO</temporary>
+    <children>
+      <child nodeId="node-0x2816660" />
+    </children>
+  </item>
+  <item nodeId="node-0x2816660">
+    <command xml:space="preserve">ask barman about dinner</command>
+    <result xml:space="preserve">&quot;I&apos;d like some food,&quot; you say.  
+
+&quot;But of course,&quot; the barman replies, &quot;Have you made your choice after carefully examining our menu?&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve">&quot;I&apos;d like some food,&quot; you say.  
+
+&quot;But of course,&quot; the barman replies, &quot;Have you made your choice after carefully examining our menu?&quot;
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="500">NO</temporary>
+    <children>
+      <child nodeId="node-0x17527670" />
+    </children>
+  </item>
+  <item nodeId="node-0x17527670">
+    <command xml:space="preserve">ask barman about menu</command>
+    <result xml:space="preserve">&quot;Can you tell me more about the menu?&quot; you ask. 
+
+ &quot;Considering the multitude of choices presented on our menu, I&apos;d suggest you examine the menu yourself.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve">&quot;Can you tell me more about the menu?&quot; you ask. 
+
+ &quot;Considering the multitude of choices presented on our menu, I&apos;d suggest you examine the menu yourself.&quot;
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="500">NO</temporary>
+    <children>
+      <child nodeId="node-0x288bc90" />
+    </children>
+  </item>
+  <item nodeId="node-0x288bc90">
+    <command xml:space="preserve">ask barman about steak</command>
+    <result xml:space="preserve">You don&apos;t what to say about the steak.
+
+&gt;</result>
+    <commentary xml:space="preserve">You don&apos;t what to say about the steak.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="500">NO</temporary>
+    <children>
+      <child nodeId="node-0x5370f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x5370f0">
+    <command xml:space="preserve">ask barman about fork</command>
+    <result xml:space="preserve">You don&apos;t what to say about the fork.
+
+&gt;</result>
+    <commentary xml:space="preserve">You don&apos;t what to say about the fork.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="500">NO</temporary>
+    <children>
+      <child nodeId="node-0x174780e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x174780e0">
+    <command xml:space="preserve">ask barman about saloon</command>
+    <result xml:space="preserve">&quot;It&apos;s a nice saloon you&apos;ve got here,&quot; you remark.
+
+&quot;Well sir, would that it were mine, but it ain&apos;t. I was here when mr. Original Owner built it not four years ago and I&apos;ve been manning this bar ever since, but it ain&apos;t mine.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve">&quot;It&apos;s a nice saloon you&apos;ve got here,&quot; you remark.
+
+&quot;Well sir, would that it were mine, but it ain&apos;t. I was here when mr. Original Owner built it not four years ago and I&apos;ve been manning this bar ever since, but it ain&apos;t mine.&quot;
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="499">NO</temporary>
+  </item>
+  <item nodeId="node-0x5a4890">
     <command xml:space="preserve">x menu</command>
     <result xml:space="preserve">&quot;Today: steak,&quot; someone has written. Catchy and to the point.
 
@@ -727,12 +525,12 @@ And with me being as allergic to bunnies as a priest is to sin, I had no other o
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="65">NO</temporary>
+    <temporary score="576">NO</temporary>
     <children>
-      <child nodeId="node-0x5f4ac0" />
+      <child nodeId="node-0x5a4900" />
     </children>
   </item>
-  <item nodeId="node-0x5f4ac0">
+  <item nodeId="node-0x5a4900">
     <command xml:space="preserve">ask barman about steak</command>
     <result xml:space="preserve">&quot;One steak please,&quot; you ask. 
 
@@ -754,12 +552,13 @@ The barman hands you a steak.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="65">NO</temporary>
+    <temporary score="576">NO</temporary>
     <children>
-      <child nodeId="node-0x5f4b30" />
+      <child nodeId="node-0x174d92e0" />
+      <child nodeId="node-0x5a4970" />
     </children>
   </item>
-  <item nodeId="node-0x5f4b30">
+  <item nodeId="node-0x5a4970">
     <command xml:space="preserve">eat steak</command>
     <result xml:space="preserve">You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
 
@@ -769,12 +568,12 @@ The barman hands you a steak.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="65">NO</temporary>
+    <temporary score="572">NO</temporary>
     <children>
-      <child nodeId="node-0x5f5320" />
+      <child nodeId="node-0x5a49e0" />
     </children>
   </item>
-  <item nodeId="node-0x5f5320">
+  <item nodeId="node-0x5a49e0">
     <command xml:space="preserve">ask barman about fork</command>
     <result xml:space="preserve">I&apos;d like a fork to eat this,&quot; you suggest.
 
@@ -788,75 +587,77 @@ The barman hands you a steak.
 &gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="65">NO</temporary>
+    <temporary score="572">NO</temporary>
     <children>
-      <child nodeId="node-0x5f5390" />
+      <child nodeId="node-0x2a2680" />
+      <child nodeId="node-0x5a4a50" />
+      <child nodeId="node-0x28c6e20" />
     </children>
   </item>
-  <item nodeId="node-0x5f5390">
-    <command xml:space="preserve">go outside</command>
-    <result xml:space="preserve">
-Thoroughfare
-You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west.
-
-Right now, you are standing in front of the Long Branch Saloon. 
+  <item nodeId="node-0x28c6e20">
+    <command xml:space="preserve">ask barman about store</command>
+    <result xml:space="preserve">Which do you mean, Zimmermann&apos;s Hardware Store or Hoover&apos;s Liquor and Cigar store?
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="64">NO</temporary>
+    <changed>YES</changed>
+    <temporary score="478">YES</temporary>
+    <children>
+      <child nodeId="node-0x1751e4d0" />
+    </children>
   </item>
-  <item nodeId="node-0x586550">
-    <command xml:space="preserve">test part1</command>
-    <result xml:space="preserve">(Testing.)
+  <item nodeId="node-0x1751e4d0">
+    <command xml:space="preserve">zimmermann&apos;s hardware store</command>
+    <result xml:space="preserve">There is no reply.
 
-&gt;[1] go outside
-Not without your dinner.
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="478">YES</temporary>
+    <children>
+      <child nodeId="node-0x1751f770" />
+    </children>
+  </item>
+  <item nodeId="node-0x1751f770">
+    <command xml:space="preserve">showme liquor store</command>
+    <result xml:space="preserve">Hoover&apos;s Liquor and Cigar store - building
+singular-named, proper-named, unnotable; lighted, unvisited
+printed name: &quot;Hoover&apos;s Liquor and Cigar store&quot;
+printed plural name: none
+indefinite article: none
+associated image: none
+description: none
+front description: &quot;You carefully examine the building.&quot;
 
-&gt;[2] ask barman about dinner
-You approach the barman: &quot;Good afternoon&quot;.
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="478">YES</temporary>
+    <children>
+      <child nodeId="node-0x28d0dd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x28d0dd0">
+    <command xml:space="preserve">showme hardware store</command>
+    <result xml:space="preserve">Zimmermann&apos;s Hardware Store - building
+singular-named, proper-named, unnotable; lighted, unvisited
+printed name: &quot;Zimmermann&apos;s Hardware Store&quot;
+printed plural name: none
+indefinite article: none
+associated image: none
+description: none
+front description: &quot;The shutters in front of Zimmermann&apos;s Hardware Store are closed. The door is closed is as well.
 
-&quot;A good afternoon to you as well, sir. How may I help you? &quot;
+All in all, you get the feeling that the hardware store might not be open for business.&quot;
 
-&quot;I&apos;d like some food,&quot; you say.  
-
-&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
-
-&gt;[3] ask barman about menu
-&quot;Can you tell me more about the menu?&quot; you ask. 
-
- &quot;Considering the multitude of choices presented on our menu, I&apos;d suggest you examine the menu yourself.&quot;
-
-&gt;[4] x menu
-&quot;Today: steak,&quot; someone has written. Catchy and to the point.
-
-&gt;[5] ask barman about steak
-&quot;One steak please,&quot; you ask. 
-
-&quot;STEAK!,&quot; the barman shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. 
-
- The barman slams the steak on a plate. &quot;Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.&quot;
-
-The barman hands you a steak.
-
-&gt;[6] ask barman about steak
-&quot;One steak please,&quot; you ask. 
-
-&quot;I&apos;m afraid I&apos;ve already given you the last steak available.&quot;
-
-&gt;[7] drop steak
-Why would you want to drop such a lovely steak?
-
-&gt;[8] eat steak
-You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
-
-&gt;[9] ask barman about fork
-I&apos;d like a fork to eat this,&quot; you suggest.
-
-&quot;A fork?&quot;, the barman responds. If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.
-
-&gt;[10] go outside
-
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="477">YES</temporary>
+  </item>
+  <item nodeId="node-0x5a4a50">
+    <command xml:space="preserve">go outside</command>
+    <result xml:space="preserve">
 The Thoroughfare
 You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west.
 
@@ -865,211 +666,24 @@ Right now, you are standing in front of the Long Branch Saloon.
 You can see a horse here.
 
 &gt;</result>
+    <commentary xml:space="preserve">
+The Thoroughfare
+You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west.
+
+Right now, you are standing in front of the Long Branch Saloon.
+
+You can see a horse here.
+
+&gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="230">YES</temporary>
+    <temporary score="566">NO</temporary>
     <children>
-      <child nodeId="node-0x586b10" />
-      <child nodeId="node-0x5f4110" />
-      <child nodeId="node-0x5f3fb0" />
-      <child nodeId="node-0x586c70" />
+      <child nodeId="node-0x174eb360" />
+      <child nodeId="node-0x2a8120" />
     </children>
   </item>
-  <item nodeId="node-0x586c70">
-    <command xml:space="preserve">o west</command>
-    <result xml:space="preserve">Sorry, that can&apos;t be corrected.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="215">YES</temporary>
-    <children>
-      <child nodeId="node-0x586cc0" />
-    </children>
-  </item>
-  <item nodeId="node-0x586cc0">
-    <command xml:space="preserve">west</command>
-    <result xml:space="preserve">
-The Thoroughfare
-The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill&apos;s Cemetary.
-
-You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be closed though. A desolate looking man is standing next to the entrance.
-
-On the door is a sign.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="215">YES</temporary>
-    <children>
-      <child nodeId="node-0x5869e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5869e0">
-    <command xml:space="preserve">ask man about fork</command>
-    <result xml:space="preserve">You approach the desolate looking man.
-
-&quot;Can you sell me a fork?&quot;, you ask. &quot;I&apos;d like to eat this steak, you see.&quot;
-
-&quot;I would, if I could,&quot; the desolate looking man answers. &quot;But as you can see, the shop is closed.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="215">YES</temporary>
-    <children>
-      <child nodeId="node-0x586a30" />
-    </children>
-  </item>
-  <item nodeId="node-0x586a30">
-    <command xml:space="preserve">ask man about fork</command>
-    <result xml:space="preserve">&quot;Do you know of another place where I could get a fork?&quot;
-
-&quot;Unfortunately not,&quot; the desolate looking man replies. &quot;This is the only hardware store in town.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="215">YES</temporary>
-    <children>
-      <child nodeId="node-0x586a80" />
-    </children>
-  </item>
-  <item nodeId="node-0x586a80">
-    <command xml:space="preserve">ask man about fork</command>
-    <result xml:space="preserve">&quot;Do you know of another place where I could get a fork?&quot;
-
-&quot;Unfortunately not,&quot; the desolate looking man replies. &quot;This is the only hardware store in town.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="214">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f3fb0">
-    <command xml:space="preserve">west</command>
-    <result xml:space="preserve">
-The Thoroughfare
-The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill&apos;s Cemetary.
-
-You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be closed though. A desolate looking man is standing next to the entrance.
-
-On the door is a sign.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="219">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f46d0" />
-      <child nodeId="node-0x5f45f0" />
-      <child nodeId="node-0x5f44a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f44a0">
-    <command xml:space="preserve">ask man about store</command>
-    <result xml:space="preserve">Which do you mean, Zimmermann&apos;s Hardware Store or Hoover&apos;s Liquor and Cigar store?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="204">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f4510" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4510">
-    <command xml:space="preserve">ask man about hardware store</command>
-    <result xml:space="preserve">You approach the desolate looking man.
-
-You carefully broach the subject of the hardware store. The desolate looking man takes deep breath, composes himself, and starts to talk. 
-
-&quot;Let me introduce myself; my name is Mr. Zimmermann. The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. 
-
-But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.
-
-And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="204">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f4580" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4580">
-    <command xml:space="preserve">ask man about hardware store</command>
-    <result xml:space="preserve">You carefully listen to Mr. Zimmermann talking about his woes, but the gist stays the same: the store is closed due to an infestation of bunnies.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="203">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f45f0">
-    <command xml:space="preserve">ask about door</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="219">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f4660" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4660">
-    <command xml:space="preserve">ask man about sign</command>
-    <result xml:space="preserve">You approach the desolate looking man.
-
-You start talking about the sign, but the desolate looking man shakes his head. &quot;I don&apos;t know anything about that.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="218">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f46d0">
-    <command xml:space="preserve">ask man about fork</command>
-    <result xml:space="preserve">You approach the desolate looking man.
-
-&quot;Can you sell me a fork?&quot;, you ask. &quot;I&apos;d like to eat this steak, you see.&quot;
-
-&quot;I would, if I could,&quot; the desolate looking man answers. &quot;But as you can see, the shop is closed.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="209">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f4740" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4740">
-    <command xml:space="preserve">ask about fork</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="209">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f47b0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f47b0">
-    <command xml:space="preserve">ask man about fork</command>
-    <result xml:space="preserve">&quot;Do you anyplace else where I could get a fork?&quot;
-
-&quot;Unfortunately not,&quot; the desolate looking man replies. &quot;This is the only hardware store in town.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="208">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f4110">
+  <item nodeId="node-0x2a8120">
     <command xml:space="preserve">go west</command>
     <result xml:space="preserve">
 The Thoroughfare
@@ -1080,115 +694,7 @@ You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be cl
 On the door is a sign.
 
 &gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="192">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f42b0" />
-      <child nodeId="node-0x5f4160" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4160">
-    <command xml:space="preserve">showme mr zimmermann</command>
-    <result xml:space="preserve">desolate looking man - man
-location: in the The Thoroughfare
-singular-named, improper-named, unnotable; unlit, inedible, fixed in place, scenery, seen, unfamiliar, previously-mentioned; male
-printed name: &quot;desolate looking man&quot;
-printed plural name: &quot;men&quot;
-indefinite article: none
-associated image: none
-description: &quot;He looks like he can burst into tears at any moment.&quot;
-initial appearance: none
-carrying capacity: 100
-topic list: Table of Mr Zimmermann Topics
-default greeting: &quot;You approach the desolate looking man.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="187">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f41d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f41d0">
-    <command xml:space="preserve">ask man about shop</command>
-    <result xml:space="preserve">You approach the desolate looking man.
-
-You carefully broach the subject of the hardware store. The desolate looking man takes deep breath, composes himself, and starts to talk. 
-
-&quot;The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. 
-
-But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.
-
-And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="187">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f4240" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4240">
-    <command xml:space="preserve">showme man</command>
-    <result xml:space="preserve">desolate looking man - man
-location: in the The Thoroughfare
-singular-named, improper-named, unnotable; unlit, inedible, fixed in place, scenery, seen, unfamiliar, previously-mentioned; male
-printed name: &quot;desolate looking man&quot;
-printed plural name: &quot;men&quot;
-indefinite article: none
-associated image: none
-description: &quot;He looks like he can burst into tears at any moment.&quot;
-initial appearance: none
-carrying capacity: 100
-topic list: Table of Mr Zimmermann Topics
-default greeting: &quot;You approach the desolate looking man.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="186">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f42b0">
-    <command xml:space="preserve">ask man about store</command>
-    <result xml:space="preserve">Which do you mean, Zimmermann&apos;s Hardware Store or Hoover&apos;s Liquor and Cigar store?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="192">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f3f60" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f3f60">
-    <command xml:space="preserve">ask man about cigar store</command>
-    <result xml:space="preserve">You approach the desolate looking man.
-
-You ask the desolate looking man if he can tell you anything about Hoover&apos;s Liquor and Cigar store, but the desolate looking man suggests you go east to see for yourself.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="191">YES</temporary>
-  </item>
-  <item nodeId="node-0x586b10">
-    <command xml:space="preserve">ask man about infestation</command>
-    <result xml:space="preserve">You can&apos;t see any such thing.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="230">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f3e20" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f3e20">
-    <command xml:space="preserve">west</command>
-    <result xml:space="preserve">
+    <commentary xml:space="preserve">
 The Thoroughfare
 The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill&apos;s Cemetary.
 
@@ -1196,19 +702,23 @@ You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be cl
 
 On the door is a sign.
 
-&gt;</result>
+&gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="230">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="554">NO</temporary>
     <children>
-      <child nodeId="node-0x5f3e70" />
+      <child nodeId="node-0x17428db0" />
+      <child nodeId="node-0x174b19f0" />
+      <child nodeId="node-0x28e7f00" />
+      <child nodeId="node-0x1761bd20" />
     </children>
   </item>
-  <item nodeId="node-0x5f3e70">
-    <command xml:space="preserve">ask man about shop</command>
-    <result xml:space="preserve">You approach the desolate looking man.
+  <item nodeId="node-0x1761bd20">
+    <command xml:space="preserve">ask man about store</command>
+    <result xml:space="preserve">(Zimmermann&apos;s Hardware Store)
+You approach the desolate looking man.
 
-You carefully broach the subject of the hardware store. The desolate looking man takes deep breath, composes himself, and starts to talk. 
+You carefully broach the subject of the hardware store. The desolate looking man takes a deep breath, composes himself, and starts to talk. 
 
 &quot;Let me introduce myself; my name is Mr. Zimmermann. The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. 
 
@@ -1217,35 +727,28 @@ But now the strangest of events had caused me to close the store. You see, my st
 And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business.&quot;
 
 &gt;</result>
+    <commentary xml:space="preserve">(Zimmermann&apos;s Hardware Store)
+You approach the desolate looking man.
+
+You carefully broach the subject of the hardware store. The desolate looking man takes a deep breath, composes himself, and starts to talk. 
+
+&quot;Let me introduce myself; my name is Mr. Zimmermann. The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. 
+
+But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.
+
+And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business.&quot;
+
+&gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="230">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="509">NO</temporary>
     <children>
-      <child nodeId="node-0x5f3ec0" />
+      <child nodeId="node-0x1754a810" />
     </children>
   </item>
-  <item nodeId="node-0x5f3ec0">
-    <command xml:space="preserve">east</command>
-    <result xml:space="preserve">
-The Thoroughfare
-You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west.
-
-Right now, you are standing in front of the Long Branch Saloon.
-
-You can see a horse here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="230">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f3f10" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f3f10">
-    <command xml:space="preserve">west</command>
-    <result xml:space="preserve">
-The Thoroughfare
+  <item nodeId="node-0x1754a810">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">The Thoroughfare
 The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill&apos;s Cemetary.
 
 You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be closed though. Mr. Zimmermann is standing next to the entrance.
@@ -1253,209 +756,426 @@ You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be cl
 On the door is a sign.
 
 &gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="230">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f4020" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4020">
-    <command xml:space="preserve">east</command>
-    <result xml:space="preserve">
-The Thoroughfare
-You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west.
+    <commentary xml:space="preserve">The Thoroughfare
+The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill&apos;s Cemetary.
 
-Right now, you are standing in front of the Long Branch Saloon.
+You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be closed though. Mr. Zimmermann is standing next to the entrance.
 
-You can see a horse here.
+On the door is a sign.
 
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="230">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f4070" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f4070">
-    <command xml:space="preserve">enter saloon</command>
-    <result xml:space="preserve">
-Long Branch Saloon
-The saloon is dominated by a long bar to the right. Behind the bar, a few pictures try to liven up the place, accompanied by the obligatory pair of bull&apos;s horns.
-
-At the back of the saloon a few rickety chairs and tables have been haphazardly put down. Here too, a half-hearted attempt to liven up the place has been made by adding a few pictures. Below the pictures you can see today&apos;s menu. 
-
-You can see a barman here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="230">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f40c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f40c0">
-    <command xml:space="preserve">ask barman about infestation</command>
-    <result xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
-
-&quot;A good afternoon to you as well, sir. How may I help you? &quot;
-
-You start talking about the infestation of bunnies, but the barman shakes his head. &quot;Not sure what I could tell you about that.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="229">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f5630">
-    <command xml:space="preserve">ask barman about saloon</command>
-    <result xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
-
-&quot;A good afternoon to you as well, sir. How may I help you? &quot;
-
-&quot;It&apos;s a nice saloon you&apos;ve got here,&quot; you state.
-
-&quot;Well sir, would that it were mine, but it ain&apos;t. I was here and mr. Original Owner built it and I&apos;ve been manning this bar ever since, but it ain&apos;t mine.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="173">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f56a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f56a0">
-    <command xml:space="preserve">rules</command>
-    <result xml:space="preserve">Rules tracing now switched on. Type &quot;rules off&quot; to switch it off again, or &quot;rules all&quot; to include even rules which do not apply.
-
-&gt;</result>
+&gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="169">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f59b0" />
-      <child nodeId="node-0x5f5710" />
-    </children>
+    <temporary score="508">NO</temporary>
   </item>
-  <item nodeId="node-0x5f5710">
-    <command xml:space="preserve">action</command>
-    <result xml:space="preserve">That&apos;s not a verb I recognise.
+  <item nodeId="node-0x28e7f00">
+    <command xml:space="preserve">x store</command>
+    <result xml:space="preserve">The shutters in front of Zimmermann&apos;s Hardware Store are closed. The door is closed is as well.
+
+All in all, you get the feeling that the hardware store might not be open for business.
 
 &gt;</result>
+    <commentary xml:space="preserve">The shutters in front of Zimmermann&apos;s Hardware Store are closed. The door is closed is as well.
+
+All in all, you get the feeling that the hardware store might not be open for business.
+
+&gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="169">YES</temporary>
+    <temporary score="533">NO</temporary>
     <children>
-      <child nodeId="node-0x5f5780" />
+      <child nodeId="node-0x17706070" />
     </children>
   </item>
-  <item nodeId="node-0x5f5780">
-    <command xml:space="preserve">ask barman about saloon</command>
-    <result xml:space="preserve">&gt;</result>
+  <item nodeId="node-0x17706070">
+    <command xml:space="preserve">x door</command>
+    <result xml:space="preserve">It&apos;s closed.
+
+On the door is a sign.
+
+&gt;</result>
+    <commentary xml:space="preserve">It&apos;s closed.
+
+On the door is a sign.
+
+&gt;</commentary>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="169">YES</temporary>
+    <temporary score="533">NO</temporary>
     <children>
-      <child nodeId="node-0x5f5940" />
-      <child nodeId="node-0x5f57f0" />
+      <child nodeId="node-0x287ab20" />
+      <child nodeId="node-0x284e6d0" />
     </children>
   </item>
-  <item nodeId="node-0x5f57f0">
-    <command xml:space="preserve">rules</command>
-    <result xml:space="preserve">Rules tracing now switched on. Type &quot;rules off&quot; to switch it off again, or &quot;rules all&quot; to include even rules which do not apply.
+  <item nodeId="node-0x284e6d0">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">It&apos;s locked. Normally, this wouldn&apos;t pose a problem for you, but there are too many passers-by.
 
 &gt;</result>
+    <commentary xml:space="preserve">It&apos;s locked. Normally, this wouldn&apos;t pose a problem for you, but there are too many passers-by.
+
+&gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="169">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="520">NO</temporary>
     <children>
-      <child nodeId="node-0x5f5860" />
+      <child nodeId="node-0x28f5bd0" />
     </children>
   </item>
-  <item nodeId="node-0x5f5860">
-    <command xml:space="preserve">actions</command>
-    <result xml:space="preserve">Actions listing on.
+  <item nodeId="node-0x28f5bd0">
+    <command xml:space="preserve">enter store</command>
+    <result xml:space="preserve">The shutters in front of Zimmermann&apos;s Hardware Store are closed. The door is closed is as well.
+
+All in all, you get the feeling that the hardware store might not be open for business.
 
 &gt;</result>
+    <commentary xml:space="preserve">The shutters in front of Zimmermann&apos;s Hardware Store are closed. The door is closed is as well.
+
+All in all, you get the feeling that the hardware store might not be open for business.
+
+&gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="169">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="519">NO</temporary>
+  </item>
+  <item nodeId="node-0x287ab20">
+    <command xml:space="preserve">x shutters</command>
+    <result xml:space="preserve">They are closed.
+
+&gt;</result>
+    <commentary xml:space="preserve">They are closed.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="533">NO</temporary>
     <children>
-      <child nodeId="node-0x5f58d0" />
+      <child nodeId="node-0x17402a80" />
     </children>
   </item>
-  <item nodeId="node-0x5f58d0">
-    <command xml:space="preserve">ask barman about saloon</command>
-    <result xml:space="preserve">[interrogating the barman about the Long Branch Saloon]
-[interrogating the barman about the Long Branch Saloon - succeeded]
+  <item nodeId="node-0x17402a80">
+    <command xml:space="preserve">read sign</command>
+    <result xml:space="preserve">It&apos;s a piece of cardboard. On the cardboard, someone has carefully lettered the word &quot;Closed&quot;.
 
 &gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="168">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f5940">
-    <command xml:space="preserve">actions</command>
-    <result xml:space="preserve">Actions listing on.
+    <commentary xml:space="preserve">It&apos;s a piece of cardboard. On the cardboard, someone has carefully lettered the word &quot;Closed&quot;.
 
-&gt;</result>
+&gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="158">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f59b0">
-    <command xml:space="preserve">actions</command>
-    <result xml:space="preserve">Actions listing on.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="162">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="533">NO</temporary>
     <children>
-      <child nodeId="node-0x5f5a20" />
+      <child nodeId="node-0x174c1070" />
     </children>
   </item>
-  <item nodeId="node-0x5f5a20">
-    <command xml:space="preserve">ask barman about saloon</command>
-    <result xml:space="preserve">[interrogating the barman about the Long Branch Saloon]
-[interrogating the barman about the Long Branch Saloon - succeeded]
+  <item nodeId="node-0x174c1070">
+    <command xml:space="preserve">x sign</command>
+    <result xml:space="preserve">It&apos;s a piece of cardboard. On the cardboard, someone has carefully lettered the word &quot;Closed&quot;.
 
 &gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="161">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f4c90">
-    <command xml:space="preserve">ask barman about store</command>
-    <result xml:space="preserve">Which do you mean, Zimmermann&apos;s Hardware Store or Hoover&apos;s Liquor and Cigar store?
+    <commentary xml:space="preserve">It&apos;s a piece of cardboard. On the cardboard, someone has carefully lettered the word &quot;Closed&quot;.
 
-&gt;</result>
+&gt;</commentary>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="176">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="533">NO</temporary>
     <children>
-      <child nodeId="node-0x5f4d00" />
+      <child nodeId="node-0x177034d0" />
     </children>
   </item>
-  <item nodeId="node-0x5f4d00">
-    <command xml:space="preserve">ask barman about cigar store</command>
-    <result xml:space="preserve">You approach the barman: &quot;Good afternoon&quot;.
+  <item nodeId="node-0x177034d0">
+    <command xml:space="preserve">x man</command>
+    <result xml:space="preserve">He looks like he can burst into tears at any moment.
 
-&quot;A good afternoon to you as well, sir. How may I help you? &quot;
+&gt;</result>
+    <commentary xml:space="preserve">He looks like he can burst into tears at any moment.
 
-You ask the barman if he can tell you anything about Hoover&apos;s Liquor and Cigar store. 
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="532">NO</temporary>
+  </item>
+  <item nodeId="node-0x174b19f0">
+    <command xml:space="preserve">x man</command>
+    <result xml:space="preserve">He looks like he can burst into tears at any moment.
 
-outside.
+&gt;</result>
+    <commentary xml:space="preserve">He looks like he can burst into tears at any moment.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="545">NO</temporary>
+    <children>
+      <child nodeId="node-0x28c6760" />
+    </children>
+  </item>
+  <item nodeId="node-0x28c6760">
+    <command xml:space="preserve">ask man about himself</command>
+    <result xml:space="preserve">You approach the desolate looking man.
+
+&quot;And who might you be?&quot;, you ask.
+
+&quot;My name is Mr. Zimmermann, and I&apos;m the tragic owner of this once-thriving hardware store,&quot; he answers.
+
+&gt;</result>
+    <commentary xml:space="preserve">You approach the desolate looking man.
+
+&quot;And who might you be?&quot;, you ask.
+
+&quot;My name is Mr. Zimmermann, and I&apos;m the tragic owner of this once-thriving hardware store,&quot; he answers.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="545">NO</temporary>
+    <children>
+      <child nodeId="node-0x174440f0" />
+    </children>
+  </item>
+  <item nodeId="node-0x174440f0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">The Thoroughfare
+The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill&apos;s Cemetary.
+
+You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be closed though. Mr. Zimmermann is standing next to the entrance.
+
+On the door is a sign.
+
+&gt;</result>
+    <commentary xml:space="preserve">The Thoroughfare
+The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill&apos;s Cemetary.
+
+You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be closed though. Mr. Zimmermann is standing next to the entrance.
+
+On the door is a sign.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="545">NO</temporary>
+    <children>
+      <child nodeId="node-0x28cd3a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x28cd3a0">
+    <command xml:space="preserve">ask mr zimmermann about store</command>
+    <result xml:space="preserve">(Zimmermann&apos;s Hardware Store)
+You carefully broach the subject of the hardware store. Mr. Zimmermann takes a deep breath, composes himself, and starts to talk. 
+
+&quot;The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. 
+
+But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.
+
+And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve">(Zimmermann&apos;s Hardware Store)
+You carefully broach the subject of the hardware store. Mr. Zimmermann takes a deep breath, composes himself, and starts to talk. 
+
+&quot;The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. 
+
+But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.
+
+And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business.&quot;
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="545">NO</temporary>
+    <children>
+      <child nodeId="node-0x284c20" />
+      <child nodeId="node-0x37c3f10" />
+    </children>
+  </item>
+  <item nodeId="node-0x37c3f10">
+    <command xml:space="preserve">take sign</command>
+    <result xml:space="preserve">Taken.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="175">YES</temporary>
+    <temporary score="467">YES</temporary>
   </item>
-  <item nodeId="node-0x5f5550">
+  <item nodeId="node-0x284c20">
+    <command xml:space="preserve">ask mr zimmermann about store</command>
+    <result xml:space="preserve">(Zimmermann&apos;s Hardware Store)
+You carefully listen to Mr. Zimmermann talking about his woes, but the gist stays the same: the store is closed due to an infestation of bunnies.
+
+&gt;</result>
+    <commentary xml:space="preserve">(Zimmermann&apos;s Hardware Store)
+You carefully listen to Mr. Zimmermann talking about his woes, but the gist stays the same: the store is closed due to an infestation of bunnies.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="544">NO</temporary>
+  </item>
+  <item nodeId="node-0x17428db0">
+    <command xml:space="preserve">ask man about sign</command>
+    <result xml:space="preserve">You approach the desolate looking man.
+
+You carefully broach the subject of the hardware store. The desolate looking man takes a deep breath, composes himself, and starts to talk. 
+
+&quot;Let me introduce myself; my name is Mr. Zimmermann. The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. 
+
+But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.
+
+And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business.&quot;
+
+&gt;</result>
+    <commentary xml:space="preserve">You approach the desolate looking man.
+
+You carefully broach the subject of the hardware store. The desolate looking man takes a deep breath, composes himself, and starts to talk. 
+
+&quot;Let me introduce myself; my name is Mr. Zimmermann. The hardware store you are looking at has been my pride and joy for years; I started this store singlehandedly when Dodge Town was founded four years ago. Since that time, I have supplied the local populace and travelers alike with a multitude of items and goods. 
+
+But now the strangest of events had caused me to close the store. You see, my store has been overrun by bunnies. And when I say overrun, I refer to an infestation of biblical proportions. The little buggers are everywhere: on the floor, in the cupboards, behind the counter, yes even my cellar has not been spared.
+
+And with me being as allergic to bunnies as a priest is to sin, I had no other option but to close down business.&quot;
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="554">NO</temporary>
+    <children>
+      <child nodeId="node-0x174ce840" />
+    </children>
+  </item>
+  <item nodeId="node-0x174ce840">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">The Thoroughfare
+The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill&apos;s Cemetary.
+
+You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be closed though. Mr. Zimmermann is standing next to the entrance.
+
+On the door is a sign.
+
+&gt;</result>
+    <commentary xml:space="preserve">The Thoroughfare
+The western part of the thoroughfare is just as busy as the central part which lies to the east. To the west you can see Boot Hill&apos;s Cemetary.
+
+You are standing in front of Zimmermann&apos;s Hardware Store; it seems to be closed though. Mr. Zimmermann is standing next to the entrance.
+
+On the door is a sign.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="553">NO</temporary>
+  </item>
+  <item nodeId="node-0x174eb360">
+    <command xml:space="preserve">x saloon</command>
+    <result xml:space="preserve">Like almost every building here, the saloon is made of wood. A large veranda provides shelter for customers that would rather sit outside. When you arrived here, you tied your horse to one of the bars in front of the veranda.
+
+&gt;</result>
+    <commentary xml:space="preserve">Like almost every building here, the saloon is made of wood. A large veranda provides shelter for customers that would rather sit outside. When you arrived here, you tied your horse to one of the bars in front of the veranda.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="566">NO</temporary>
+    <children>
+      <child nodeId="node-0x288bae0" />
+    </children>
+  </item>
+  <item nodeId="node-0x288bae0">
+    <command xml:space="preserve">x veranda</command>
+    <result xml:space="preserve">You see nothing special about the veranda.
+
+&gt;</result>
+    <commentary xml:space="preserve">You see nothing special about the veranda.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="566">NO</temporary>
+    <children>
+      <child nodeId="node-0x174192d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x174192d0">
+    <command xml:space="preserve">x bars</command>
+    <result xml:space="preserve">You see nothing special about the bars.
+
+&gt;</result>
+    <commentary xml:space="preserve">You see nothing special about the bars.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="566">NO</temporary>
+    <children>
+      <child nodeId="node-0x1770c4c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1770c4c0">
+    <command xml:space="preserve">x horse</command>
+    <result xml:space="preserve">Your horse (or technically: somebody else&apos;s horse) seems to be tired of the long ride from Abilene. You tied it down in front of the saloon&apos;s veranda so it could rest, eat and drink.
+
+&gt;</result>
+    <commentary xml:space="preserve">Your horse (or technically: somebody else&apos;s horse) seems to be tired of the long ride from Abilene. You tied it down in front of the saloon&apos;s veranda so it could rest, eat and drink.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="566">NO</temporary>
+    <children>
+      <child nodeId="node-0x2d2100" />
+    </children>
+  </item>
+  <item nodeId="node-0x2d2100">
+    <command xml:space="preserve">take horse</command>
+    <result xml:space="preserve">I don&apos;t suppose the horse would care for that.
+
+&gt;</result>
+    <commentary xml:space="preserve">I don&apos;t suppose the horse would care for that.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="566">NO</temporary>
+    <children>
+      <child nodeId="node-0x28eca20" />
+    </children>
+  </item>
+  <item nodeId="node-0x28eca20">
+    <command xml:space="preserve">climb on horse</command>
+    <result xml:space="preserve">Your horse is very tired. Going for a ride would not improve its condition. Besides, you are to get some dinner.
+
+&gt;</result>
+    <commentary xml:space="preserve">Your horse is very tired. Going for a ride would not improve its condition. Besides, you are to get some dinner.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="565">NO</temporary>
+  </item>
+  <item nodeId="node-0x2a2680">
+    <command xml:space="preserve">ask barman about hardware store</command>
+    <result xml:space="preserve">You ask the barman if he can tell you anything about Zimmermann&apos;s Hardware Store, but he suggests you go outside to see for yourself.
+
+&gt;</result>
+    <commentary xml:space="preserve">You ask the barman if he can tell you anything about Zimmermann&apos;s Hardware Store, but he suggests you go outside to see for yourself.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="571">NO</temporary>
+  </item>
+  <item nodeId="node-0x174d92e0">
+    <command xml:space="preserve">x steak</command>
+    <result xml:space="preserve">A lovely steak.
+
+&gt;</result>
+    <commentary xml:space="preserve">A lovely steak.
+
+&gt;</commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="575">NO</temporary>
+  </item>
+  <item nodeId="node-0x5a5b70">
     <command xml:space="preserve">x barman</command>
     <result xml:space="preserve">This guy looks like he has been standing behind the bar for at least three days straight without any sleep. His moustache is yellow with nicotine stains.
 
@@ -1463,105 +1183,5 @@ outside.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="255">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f55c0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f55c0">
-    <command xml:space="preserve">test part1</command>
-    <result xml:space="preserve">(Testing.)
-
-&gt;[1] go outside
-Not without your dinner.
-
-&gt;[2] ask barman about dinner
-You approach the barman: &quot;Good afternoon&quot;.
-
-&quot;A good afternoon to you as well, sir. How may I help you? &quot;
-
-&quot;I&apos;d like some food,&quot; you say.  
-
-&quot;But of course,&quot; the barman replies, &quot;such a desire is not unheard of. But could you be so kind as to first make a choice from our menu?&quot;
-
-&gt;[3] ask barman about menu
-&quot;Can you tell me more about the menu?&quot; you ask. 
-
- &quot;Considering the multitude of choices presented on our menu, I&apos;d suggest you examine the menu yourself.&quot;
-
-&gt;[4] x menu
-&quot;Today: steak,&quot; someone has written. Catchy and to the point.
-
-&gt;[5] ask barman about steak
-&quot;One steak please,&quot; you ask. 
-
-&quot;STEAK!,&quot; the barman shouts at a hidden back room. A few moments later, the cook scurries out of the back room and presents a large grilled piece of meat. 
-
- The barman slams the steak on a plate. &quot;Here you are, sir, one of the finest steaks in Dodge Town. Recently slaughtered and lovingly prepared for your pleasure.&quot;
-
-The barman hands you a steak.
-
-&gt;[6] ask barman about steak
-&quot;One steak please,&quot; you ask. 
-
-&quot;I&apos;m afraid I&apos;ve already given you the last steak available.&quot;
-
-&gt;[7] drop steak
-Why would you want to drop such a lovely steak?
-
-&gt;[8] eat steak
-You notice that you don&apos;t have a fork on you. And let&apos;s be honest: Eating steak without a fork? You might be an outlaw, but you are no barbarian!
-
-&gt;[9] ask barman about fork
-I&apos;d like a fork to eat this,&quot; you suggest.
-
-&quot;A fork?&quot;, the barman responds. If this were a famous and fancy hotel we might comply with your wishes. But this is just a lowly saloon. You might want to go outside, and then visit the hardware store.
-
-&gt;[10] go outside
-
-The Thoroughfare
-You find yourself in the busiest street of Dodge Town. Every day, hundreds of cows are driven through this street to the cattle market. The thoroughfare continues to the east and to the west.
-
-Right now, you are standing in front of the Long Branch Saloon.
-
-You can see a horse here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="254">YES</temporary>
-  </item>
-  <item nodeId="node-0x5f5400">
-    <command xml:space="preserve">rules</command>
-    <result xml:space="preserve">Rules tracing now switched on. Type &quot;rules off&quot; to switch it off again, or &quot;rules all&quot; to include even rules which do not apply.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="172">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f5470" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f5470">
-    <command xml:space="preserve">actions</command>
-    <result xml:space="preserve">Actions listing on.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="172">YES</temporary>
-    <children>
-      <child nodeId="node-0x5f54e0" />
-    </children>
-  </item>
-  <item nodeId="node-0x5f54e0">
-    <command xml:space="preserve">ask barman about saloon</command>
-    <result xml:space="preserve">[interrogating the barman about the Long Branch Saloon]
-[interrogating the barman about the Long Branch Saloon - succeeded]
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="171">YES</temporary>
   </item>
 </Skein>

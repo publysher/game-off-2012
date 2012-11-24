@@ -53,182 +53,182 @@
     </dict>
     <key>7</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>129</integer>
+        <key>Line</key><integer>131</integer>
         <key>Title</key><string>Chapter 6 - Notable</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>8</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>134</integer>
+        <key>Line</key><integer>136</integer>
         <key>Title</key><string>Chapter 7 - NSFW</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>9</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>139</integer>
+        <key>Line</key><integer>141</integer>
         <key>Title</key><string>Part 2 - The Game</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>10</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>145</integer>
+        <key>Line</key><integer>147</integer>
         <key>Title</key><string>Chapter 1 - Background</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>11</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>153</integer>
+        <key>Line</key><integer>155</integer>
         <key>Title</key><string>Chapter 2 - The player</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>12</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>179</integer>
+        <key>Line</key><integer>181</integer>
         <key>Title</key><string>Chapter 3 - Getting Dinner</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>13</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>210</integer>
+        <key>Line</key><integer>212</integer>
         <key>Title</key><string>Chapter 4 - Discovering the Quest</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>14</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>222</integer>
+        <key>Line</key><integer>224</integer>
         <key>Title</key><string>Part 3 - The Setting</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>15</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>224</integer>
+        <key>Line</key><integer>226</integer>
         <key>Title</key><string>Chapter 1 - Dodge City</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>16</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>226</integer>
+        <key>Line</key><integer>228</integer>
         <key>Title</key><string>Section 1 - The saloon</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>17</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>257</integer>
+        <key>Line</key><integer>259</integer>
         <key>Title</key><string>Section 2 - The thoroughfare, in front of the saloon</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>18</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>275</integer>
+        <key>Line</key><integer>277</integer>
         <key>Title</key><string>Section 3 - The thoroughfare, in front of the liquor store</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>19</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>281</integer>
+        <key>Line</key><integer>283</integer>
         <key>Title</key><string>Section 4 - The thoroughfare, in front of the hardware store</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>20</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>308</integer>
+        <key>Line</key><integer>310</integer>
         <key>Title</key><string>Section 5 - The hardware store</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>21</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>316</integer>
+        <key>Line</key><integer>318</integer>
         <key>Title</key><string>Section 6 - The liquor store</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>22</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>321</integer>
+        <key>Line</key><integer>323</integer>
         <key>Title</key><string>Part 4 - The Cast</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>23</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>323</integer>
+        <key>Line</key><integer>325</integer>
         <key>Title</key><string>Chapter 1 - The Barman</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>24</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>351</integer>
+        <key>Line</key><integer>353</integer>
         <key>Title</key><string>Chapter 2 - Mister Zimmermann</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>25</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>379</integer>
+        <key>Line</key><integer>387</integer>
         <key>Title</key><string>Part 5 - Vorple</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>26</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>381</integer>
+        <key>Line</key><integer>389</integer>
         <key>Title</key><string>Chapter 1 - Images</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>27</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>402</integer>
+        <key>Line</key><integer>410</integer>
         <key>Title</key><string>Part 6 - Extensions</string>
         <key>Level</key><integer>3</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
     <key>28</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>404</integer>
+        <key>Line</key><integer>412</integer>
         <key>Title</key><string>Chapter 1 - Debugging - Not For Release</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>29</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>428</integer>
+        <key>Line</key><integer>436</integer>
         <key>Title</key><string>Chapter 2 - Tutorial Mode by Emily Short</string>
         <key>Level</key><integer>4</integer>
         <key>Indentation</key><integer>2</integer>
     </dict>
     <key>30</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>431</integer>
+        <key>Line</key><integer>439</integer>
         <key>Title</key><string>Section 1 - Creating tutorial mode and controls</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>31</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>460</integer>
+        <key>Line</key><integer>468</integer>
         <key>Title</key><string>Section 2 - Forcing player response</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
     </dict>
     <key>32</key><dict>
         <key>Filename</key><string>/Users/yigalduppen/src/game-off-2012/Long Branch.inform/Source/story.ni</string>
-        <key>Line</key><integer>489</integer>
+        <key>Line</key><integer>497</integer>
         <key>Title</key><string>Section 3 - The Instructional Rules</string>
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>3</integer>
