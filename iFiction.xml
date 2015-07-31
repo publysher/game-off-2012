@@ -24,30 +24,54 @@
                 <description>Custom JavaScript</description>
             </auxiliary>
             <auxiliary>
-                <leafname>media/img/leather_1.png</leafname>
-                <description>Background</description>
+                <leafname>media/img/saloon.jpg</leafname>
+                <description>The Long Branch Saloon</description>
             </auxiliary>
             <auxiliary>
-                <leafname>media/img/saloon.jpg</leafname>
-                <description>Saloon</description>
+                <leafname>media/img/hardware-store-front.jpg</leafname>
+                <description>The Hardware Store</description>
+            </auxiliary>
+            <auxiliary>
+                <leafname>media/img/liquor-store-front.jpg</leafname>
+                <description>The Liquor Store</description>
+            </auxiliary>
+            <auxiliary>
+                <leafname>media/img/thoroughfare.jpg</leafname>
+                <description>Dodge Town</description>
+            </auxiliary>
+            <auxiliary>
+                <leafname>media/img/barman.jpg</leafname>
+                <description>The barman</description>
             </auxiliary>
             <auxiliary>
                 <leafname>media/img/lemat-revolver.jpg</leafname>
-                <description>Gun</description>
+                <description>Your gun</description>
+            </auxiliary>
+            <auxiliary>
+                <leafname>media/img/knife.jpg</leafname>
+                <description>Your knife</description>
+            </auxiliary>
+            <auxiliary>
+                <leafname>media/img/money.jpg</leafname>
+                <description>Your money</description>
+            </auxiliary>
+            <auxiliary>
+                <leafname>media/img/bullshorns.jpg</leafname>
+                <description>A pair of bull's horns</description>
             </auxiliary>
             <auxiliary>
                 <leafname>media/img/custer.jpg</leafname>
-                <description>General Custer</description>
+                <description>A picture of general Custer</description>
             </auxiliary>
             <auxiliary>
                 <leafname>media/img/steak.jpg</leafname>
-                <description>Steak</description>
+                <description>A steak</description>
             </auxiliary>
         </resources>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2012-11-10</releasedate>
+                    <releasedate>2015-07-31</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6G60</compilerversion>
@@ -57,10 +81,10 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>6G60</generatorversion>
-            <originated>2012-11-10</originated>
+            <originated>2015-07-31</originated>
         </colophon>
         <zcode>
-            <serial>121110</serial>
+            <serial>150731</serial>
             <release>1</release>
             <compiler>Inform 7 build 6G60</compiler>
         </zcode>
