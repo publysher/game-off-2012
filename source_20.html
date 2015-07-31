@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>Publysher - Dinner at the Long Branch Saloon — 22 of 23</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="author" content="Publysher" />
+  <meta name="description" content="A page for the game Dinner at the Long Branch Saloon by Publysher." />
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+<div class = "container">
+
+<div class ="sourcecoverimage">
+	<span><a href="Cover.jpg"><img src="Small Cover.jpg" border="1" /></a></span>
+</div>
+
+<div class ="sourceintroduction">
+	<h1>
+		<span>Dinner at the Long Branch Saloon</span> <span class="pagination">— 22 of 23</span>
+	</h1>
+	<h2>
+		<span>Publysher</span>
+	</h2>
+	<div class ="sourcebibliography">
+		<span>Release 1</span>
+	</div>
+</div>
+
+<div class = "links">
+<ul>
+<li><a href="index.html">Home page</a></li><li><a href="source.html">Beginning</a></li><li><a href="source_19.html">Previous</a></li><li><a href="source_21.html">Next</a></li>
+</ul>
+</div>
+
+<div class = "source">
+<p class="indent0"><span class="heading">Section 2 - Forcing player response</span></p><p class="indent0"></p><p class="indent0">The expected command is indexed text that varies. </p><p class="indent0">The held rule is a rule that varies. </p><p class="indent0">The completed instruction list is a list of rules that varies.</p><p class="indent0"></p><p class="indent0">Understand &quot;<span class="quote">restore</span>&quot; or &quot;<span class="quote">quit</span>&quot; or &quot;<span class="quote">save</span>&quot; or &quot;<span class="quote">restart</span>&quot; or &quot;<span class="quote">version</span>&quot; or &quot;<span class="quote">urbzig</span>&quot; as &quot;<span class="quote">[</span><span class="substitution">meta</span><span class="quote">]</span>&quot;.</p><p class="indent0"></p><p class="indent0">After reading a command when tutorial mode is true (this is the require correct response rule):</p><p class="indent1">if the player's command includes &quot;<span class="quote">tutorial</span>&quot;, make no decision;</p><p class="indent1">if the player's command includes &quot;<span class="quote">[</span><span class="substitution">meta</span><span class="quote">]</span>&quot;, make no decision;</p><p class="indent1">if the expected command is &quot;<span class="quote"></span>&quot;, make no decision;</p><p class="indent1">let the translated command be indexed text;</p><p class="indent1">let the translated command be &quot;<span class="quote">[</span><span class="substitution">the player's command</span><span class="quote">]</span>&quot;;</p><p class="indent1">replace the text &quot;<span class="quote">the </span>&quot; in the expected command with &quot;<span class="quote"></span>&quot;;</p><p class="indent1">replace the text &quot;<span class="quote">the </span>&quot; in the translated command with &quot;<span class="quote"></span>&quot;;</p><p class="indent1">if the translated command is the expected command:</p><p class="indent2">now the expected command is &quot;<span class="quote"></span>&quot;;</p><p class="indent2">if the held rule is a selector listed in the Table of Instruction Followups:</p><p class="indent3">choose row with a selector of the held rule in the Table of Instruction Followups;</p><p class="indent3">say &quot;<span class="quote">[</span><span class="substitution">italic type</span><span class="quote">][</span><span class="substitution">followup entry</span><span class="quote">][</span><span class="substitution">roman type</span><span class="quote">][</span><span class="substitution">paragraph break</span><span class="quote">]</span>&quot;;</p><p class="indent2">otherwise:</p><p class="indent3">say &quot;<span class="quote">[</span><span class="substitution">italic type</span><span class="quote">][</span><span class="substitution">one of</span><span class="quote">]Good[</span><span class="substitution">or</span><span class="quote">]Good job[</span><span class="substitution">or</span><span class="quote">]Very good[</span><span class="substitution">or</span><span class="quote">]Excellent[</span><span class="substitution">or</span><span class="quote">]Nice work[</span><span class="substitution">or</span><span class="quote">]Superb[</span><span class="substitution">or</span><span class="quote">]Perfect[</span><span class="substitution">at random</span><span class="quote">][</span><span class="substitution">one of</span><span class="quote">]![</span><span class="substitution">or</span><span class="quote">].[</span><span class="substitution">at random</span><span class="quote">][</span><span class="substitution">roman type</span><span class="quote">]</span>&quot;;</p><p class="indent2">add the held rule to the completed instruction list;</p><p class="indent2">now the held rule is the little-used do nothing rule;</p><p class="indent1">otherwise:</p><p class="indent2">say &quot;<span class="quote">[</span><span class="substitution">italic type</span><span class="quote">][</span><span class="substitution">one of</span><span class="quote">]Nope[</span><span class="substitution">or</span><span class="quote">]No[</span><span class="substitution">or</span><span class="quote">]Sorry[</span><span class="substitution">or</span><span class="quote">]Whoops[</span><span class="substitution">at random</span><span class="quote">][</span><span class="substitution">one of</span><span class="quote">], that's not it[</span><span class="substitution">or</span><span class="quote">][</span><span class="substitution">or</span><span class="quote">] -- try again[</span><span class="substitution">at random</span><span class="quote">].[</span><span class="substitution">roman type</span><span class="quote">]</span>&quot;;</p><p class="indent2">reject the player's command;</p><p class="indent0"></p>
+</div>
+
+<div class ="notes">
+
+</div>
+
+</div>
+
+</body>
+
+</html>
